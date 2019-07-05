@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Devops and The Principle Of Flow &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Devops and The Principle Of Flow</h1>
+  <time datetime=2018-04-29T17:01:20Z class="post-date">Sun, Apr 29, 2018</time>
+  
+
+<p><img src="https://priyankvex.files.wordpress.com/2018/04/lean-software-development-1-728.jpg" alt="lean-software-development-1-728" /></p>
+
+<p>In the technology value stream, work typically flows from Development to Operations, steps consisting of functional areas between our business and our customers.</p>
+
+<p>As stated in the lean principles developed by Toyota, we should optimize to get a single-piece fast and smooth flow for our releases.</p>
+
+<p>We increase flow by:</p>
+
+<pre><code>  1. Making work visible,
+  2. Reducing batch sizes and intervals of work
+  3. Building in the quality, preventing defects from being passed to downstream work centers.
+</code></pre>
+
+<h2 id="why-a-fast-flow-is-needed">Why a fast flow is needed?</h2>
+
+<p>By speeding up the flow through the technology value stream, we reduce the lead time required to fulfill internal and external customer requests, further increasing the quality of the work while making us more agile.</p>
+
+<p>Our goal is to decrease the amount of time required to deploy the changes into production and increase the reliability of those services.</p>
+
+<h2 id="make-our-work-visible">Make our work visible</h2>
+
+<p><img src="https://priyankvex.files.wordpress.com/2018/04/agile-pm-kanban-board.png" alt="agile-pm-kanban-board" /></p>
+
+<p>A significant difference between manufacturing and technology value streams is that our work is invisible.</p>
+
+<p>It&rsquo;s so easy for work to keep bouncing off between teams and yet have no visual control over it.</p>
+
+<p>To prevent this and make out work more visible, we can use something like a Kanban board. (I prefer Trello for this).</p>
+
+<p>Ideally, our Kanban board will span the entire value stream, defining work as completed only when it reaches the right side of the board.</p>
+
+<p>Work is not done when development completes, but only when our application is running successfully in production.</p>
+
+<h2 id="limit-work-in-progress-wip">Limit Work In Progress (WIP)</h2>
+
+<p>In technology, our work is far more dynamic than manufacturing. Teams have to satisfy demands of multiple stakeholders. As a result daily work gets dominated by urgent requests for work coming through every communication channel possible.</p>
+
+<p>We can limit multi-tasking by using Kanban board, such as by codifying and enforcing WIP limits for each column on the board.</p>
+
+<p>For example, we may set a WIP limit of three cards of testing. When there are already three cards in the testing column, no new cards can be added.</p>
+
+<p>Using Kanban ensures that work is visible and WIP doesn&rsquo;t get piled up.</p>
+
+<h2 id="reduce-batch-sizes">Reduce Batch Sizes</h2>
+
+<p><img src="https://priyankvex.files.wordpress.com/2018/04/one-piece-flow.png" alt="one-piece-flow" /></p>
+
+<p>Another key component to creating smooth and fast-flow is performing work in small batch sizes. Prior to the lean manufacturing revolution, it was common practice to manufacture work in large batches.</p>
+
+<p>However, large batch sizes result in skyrocketing levels of WIP. According to lean principles, the ideal is a single piece flow, where each batch size is of just one.</p>
+
+<p>Let&rsquo;s take an example:</p>
+
+<p>Suppose we have ten brochures to mail and mailing each one of them requires 4 steps:</p>
+
+<pre><code>  1. fold the paper
+  2. insert the paper into the envelope
+  3. seal the envelope
+  4. stamp the envelope
+</code></pre>
+
+<p>Now in the traditional batch processing flow, we will perform each step sequentially for all ten envelopes.</p>
+
+<p>In the lean one-piece flow, only one envelope can be at any given step. In other words, we fold the paper, insert it into the envelope, seal the envelope and stamp it before starting the next one.</p>
+
+<h2 id="how-is-one-piece-flow-dramatically-better">How is one-piece flow dramatically better?</h2>
+
+<p>In the above example, suppose each step takes 10 seconds. In batch processing, we get our first complete envelope after 310 seconds, but with the one-piece flow we get it just after 40 seconds.</p>
+
+<p>Worst, what if we find that the way we have folded the paper, doesn&rsquo;t allow the envelope to be sealed. In which case we&rsquo;ll be in a bigger trouble?</p>
+
+<h2 id="eliminating-hardships-and-wastes-in-the-value-stream">Eliminating hardships and wastes in the value stream</h2>
+
+<p>According to the <strong>Toyota Production System</strong> pioneer <strong>Shiego Shingo</strong>, a waste is:</p>
+
+<blockquote>The use of any material or resource beyond what the customer required or is willing to pay for</blockquote>
+
+<p>In software development value stream, a waste is anything that causes a delay for the customer, such as activities that can be bypassed without affecting the result.</p>
+
+<p>The following are some common categories of waste that we encounter when implementing lean in software value stream.</p>
+
+<pre><code>  1. Partially done work
+  2. Extra processes
+  3. Extra features
+  4. Task switching
+  5. Waiting on QA or testing or acceptance testing
+  6. Defects and bugs
+  7. Non-standard or manual work
+</code></pre>
+
+<p>Explaining each of the above point deserves a post of its own. Will do that soon.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Improving flow through the technology value stream is essential to achieving DevOps outcomes. We do this by making work visible, limiting WIP, reducing batch sizes and eliminating wastes from our processes.</p>
+
+<p>All of this will allow us to become more agile and will help in reducing lead times dramatically, and at the same time increasing the quality of releases.</p>
+
+<h1 id="that-s-all-folks">That’s all, folks!</h1>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

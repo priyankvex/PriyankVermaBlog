@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Deploying a nginx application using Kubernetes for Self-Healing and Scaling &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Deploying a nginx application using Kubernetes for Self-Healing and Scaling</h1>
+  <time datetime=2017-11-19T15:50:50Z class="post-date">Sun, Nov 19, 2017</time>
+  
+
+<p>Kubernetes is an open source system for automating deployment, scaling and management of containerized applications. A more technical term for it is, <em>container orchestrator</em> which is used to manage large fleets of containers.</p>
+
+<p><em><strong>Minikube</strong></em> is an all-in-one single node installation for trying out kubernetes on local machines. And the following post covers deploying a nginx application container using kubernetes in minikube.</p>
+
+<p>If you don&rsquo;t have, then this link has it all to install minikube and kubectl (command line tool to access minikube) : <a href="https://kubernetes.io/docs/tasks/tools/install-minikube/">Download and install minikube and kubectl</a></p>
+
+<p><strong>Step 1 : Making minikube up and running</strong></p>
+
+<p>Ensure that minikube is running.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/11/starting_minikube.png" alt="starting_minikube" /></p>
+
+<p><strong>Step 2 : Open the minikube dashboard</strong></p>
+
+<p>Minikube comes with a GUI tool that opens in the web browser. Open the minikube dashboard with following command :</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/11/opening_dashboard.png" alt="opening_dashboard" /></p>
+
+<p>It should open the dashboard in a browser window and it&rsquo;ll look something like this:</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/11/first_look_dashboard.png" alt="first_look_dashboard" /></p>
+
+<p>Looks cool! No?</p>
+
+<p><strong>Step 3 : Deploy a webserver using the</strong> <strong>nginx:alpine</strong> <strong>image</strong></p>
+
+<p>Alpine linux is preferred for containers because of its small size. We&rsquo;ll be using the nginx:alpine docker image to deploy a nginx powered webserver.</p>
+
+<p>Now, go the deployments section and click the create button, which will open an interface like below.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/11/create_app_filled.png" alt="create_app_filled" /></p>
+
+<p>Fill in the details as shown in the image.</p>
+
+<p>We can either provide the application details here, or we can upload a YAML file with our Deployment details.</p>
+
+<p>As shown, we are asking kubernetes to create a deployment with nginx:alpine image as container and that we want 3 pods (or simply instances) of that.</p>
+
+<p>A pod in kubernetes is a scheduling unit, a logical collection of one or more containers that are always scheduled together.</p>
+
+<p>Go on and click that awesome deploy button!</p>
+
+<p><strong>Step 4 : Analyzing the deployment</strong></p>
+
+<p>Once we click the deploy button. Kubernetes will trigger the deployment. Deployment will create a ReplicaSet. A ReplicaSet is a replication controller that ensures that specified number of replicas for a pod are running at any given point of time.</p>
+
+<p>Flow is something like this:</p>
+
+<p>Deployment create ReplicaSets, ReplicaSets create Pods. Pods is where the real application resides.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/11/deployment_overview.png" alt="deployment_overview" /></p>
+
+<p>As expected, we have our deployment, replica set and pods in place.</p>
+
+<p>We can also, check our deployment via command line using kubectl.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/11/deployment_overview_cli.png" alt="deployment_overview_cli" /></p>
+
+<p>**Step 5 : Create a Service and expose it to the external world with NodePort
+**</p>
+
+<p>So far, we have our pods up and running. But how do we access them?</p>
+
+<p>This is where a service comes into play. K8S provides a higher level abstraction called as a service that logically groups pods and policy to access them. This grouping is done via labels and selectors.</p>
+
+<p>Then we expose the service to the world by defining its service type and service redirects our request to one of the pod and load balances them.</p>
+
+<p>Create a <strong>my-nginx-webserver.yaml</strong> file with the following content:</p>
+
+<p><a href="https://gist.github.com/priyankvex/3b34ec02c82934b84c8dfb68272ed4f1">https://gist.github.com/priyankvex/3b34ec02c82934b84c8dfb68272ed4f1</a></p>
+
+<pre><code>apiVersion: v1
+kind: Service
+metadata:
+  name: my-nginx-web-service
+  labels:
+    run: my-nginx-web-service
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    app: my-nginx-webserver
+</code></pre>
+
+<p>Enter the following commands to create a service name my-nginx-web-service</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/11/creating_service_cli.png" alt="creating_service_cli" /></p>
+
+<p>We can now verify that our service is running :</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/11/service_running.png" alt="service_running" /></p>
+
+<p><strong>Step 6 : Accessing the application</strong></p>
+
+<p>Our application is running inside the minikube VM. To access the application from our workstation, let&rsquo;s first get the IP address of the minikube VM:</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/11/minikube_ip.png" alt="minikube_ip" /></p>
+
+<p>Now head to the address and port number of the service we got in above step.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/11/application_running.png" alt="application_running" /></p>
+
+<p>And our app is running! Amazing, give yourself a pat now!</p>
+
+<p>**Taste of self-healing feature of the kubernetes system : **</p>
+
+<p>One of the most powerful feature of kubernetes is self-healing capabilities (just like Piccolo. DBZ, anyone?). While defining our app we created a replica set with 3 pods. Let&rsquo;s go ahead and kill one pod and kubernetes wil create another one to maintain the running pod count 3.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/11/self-healing.png" alt="self-healing.png" /></p>
+
+<p>As we can see in the image. We deleted the bottom-most pod and K8S created a new one instantly.</p>
+
+<p>Such kubernetes! Much HA (High Availability)!</p>
+
+<p><strong>Taste of scaling with Kubernetes:</strong></p>
+
+<p>Now, our app is receiving a crazy amount of traffic and three nginx pods are not enough to handle the load. Kubernetes allows us to scale our deployments with almost zero effort.</p>
+
+<p>Let&rsquo;s go ahead and spin up a new pod.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/11/scaling_menu_option.png" alt="scaling_menu_option.png" /></p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/11/scaling_to_4.png" alt="scaling_to_4.png" /></p>
+
+<p>Click OK. Now let&rsquo;s go and check our pods.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/11/scaled_deployment.png" alt="scaled_deployment.png" /></p>
+
+<p>As we can see in the image, we have now 4 pods running to handle the increased traffic.</p>
+
+<p>Isn&rsquo;t it amazing? We just horizontally scaled our application with the power of kubernetes.</p>
+
+<p>This was just the tip of the iceberg what Kubernetes can do. I am also exploring the kubernetes and containerized architecture just like you, hopefully we&rsquo;ll be back with another post soon with more kubernetes stuff!</p>
+
+<h1 id="that-s-all-folks">That’s all, folks!</h1>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

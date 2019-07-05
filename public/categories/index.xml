@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/categories/</link>
+    <description>Recent content in Categories on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Jun 2019 13:29:07 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Software Engineering</title>
+      <link>https://example.org/categories/software-engineering/</link>
+      <pubDate>Tue, 25 Jun 2019 13:29:07 +0000</pubDate>
+      
+      <guid>https://example.org/categories/software-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Growth and Self-Development</title>
+      <link>https://example.org/categories/growth-and-self-development/</link>
+      <pubDate>Sat, 21 Jul 2018 18:17:06 +0000</pubDate>
+      
+      <guid>https://example.org/categories/growth-and-self-development/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

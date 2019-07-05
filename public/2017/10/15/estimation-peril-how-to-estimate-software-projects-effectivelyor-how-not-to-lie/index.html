@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Estimation  Peril:  How To Estimate  Software Projects Effectively(or How Not To Lie) &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Estimation  Peril:  How To Estimate  Software Projects Effectively(or How Not To Lie)</h1>
+  <time datetime=2017-10-15T17:24:51Z class="post-date">Sun, Oct 15, 2017</time>
+  
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/10/road-1668916_960_720.jpg" alt="road-1668916_960_720" /></p>
+
+<p>Consider, you are a rockstar engineer and you are given a task by your favorite person, your project manager, to show some new fields in the dashboard.</p>
+
+<p>As usual, you are asked to estimate it as soon as possible. You think that well, seems like a quickie and you are tempted to estimate it a day. But you, being burnt before, decided to look at the fields that are to be added carefully. These fields are for analytics. You think, ok, let&rsquo;s make it 2 days then. But being more cautious, you dig deeper and find that those analytics are not even being tracked on the app.</p>
+
+<p>Now to complete the story, you&rsquo;ll have to track the analytics, send them to the server, make the backend accept those and store them, show these on the dashboard, write tests etc&hellip;.</p>
+
+<p>What seemed a simple task is now a 1-2 week thing. Very hard to estimate. And your manager was expecting a response like, &ldquo;would be done by end of day&rdquo;.</p>
+
+<p><strong>What is the problem with estimates?</strong></p>
+
+<p>The main problem with an estimate is that the &ldquo;estimate&rdquo; gets translated into commitment. And when you miss a commitment, you breed distrust.</p>
+
+<p>Most estimations are poor because we don&rsquo;t know what they are for. They are uncertain. A problem that seemed simple to you on the whiteboard, turned out not to be so simple. There were non-functional requirements, codebase friction, some unfortunate bugs etc. We deal with uncertainty.</p>
+
+<p>There is a rule in software engineering that everything takes 3X more time than you think it should, and this holds true even when you know this and take it into account!</p>
+
+<p>Estimates can go the other way too, that is when you overestimate. This is as dangerous as underestimating.</p>
+
+<p><strong>What should an estimate look like?</strong></p>
+
+<p>An estimate should have 3 characteristics :</p>
+
+<pre><code>  1. Honest (Hardest)
+  2. Accurate
+  3. Precise
+</code></pre>
+
+<p>**1. Honest : **</p>
+
+<p>You have to be able to communicate bad news when the news is bad. And when the continuous outrage of your managers and stakeholders is on your face, you need to be able to continue and assert that the news is bad.</p>
+
+<p>Honesty is important as you breed trust. You are not eliminating disappointment, rage and people getting mad, but you will eliminate distrust.</p>
+
+<p><strong>2. Accurate :</strong></p>
+
+<p>You are given a task and you estimate it to take somewhere between now to the end of the universe. That&rsquo;s definitely accurate, it&rsquo;ll be done within that time.</p>
+
+<p>We won&rsquo;t breed distrust, but we definitely will breed something else.</p>
+
+<p>Which brings us to the 3rd characteristic.</p>
+
+<p>**3. Precise : **</p>
+
+<p>An estimate should have just the right amount of precision.</p>
+
+<blockquote>What is the most honest estimation that you can make? I don't know!</blockquote>
+
+<p>This is as honest as it can get. You really don&rsquo;t know. But this estimation is neither accurate not precise.</p>
+
+<p>But when we try to make precise estimates, we must note that we are assuming that everything goes right. We get the right breakfast, traffic doesn&rsquo;t suck, your co-worker is having a good day, no meetings, no hidden requirements, no non-functional complexities etc.</p>
+
+<p><strong>Estimating by work break down</strong></p>
+
+<p>The most common way to estimate a complex task is to break it down into smaller tasks, into sub-tasks. And then those sub-tasks into sub-sub-tasks and so on until each task in hand is manageable and ideally not more than 4 hours of work.</p>
+
+<p>Imagine this forming a tree, with executable tasks at the bottom as leaves. You just estimate the leaves and it all adds up.</p>
+
+<p>This approach works, but there are 2 problems :</p>
+
+<pre><code>  1. We missed the integration cost
+  2. We missed some tasks
+</code></pre>
+
+<p>There is a fundamental truth to work break down structure estimates:</p>
+
+<p>The only way to estimate using work break down chart accurately, to know what are the exact sub-tasks, is to implement the feature!</p>
+
+<p><strong>What to expect from an estimate?</strong></p>
+
+<p>Estimates are uncertain. There is no guarantee that your estimate will work itself out. And that&rsquo;s OK. It&rsquo;s your manager&rsquo;s job to manage that risk. We are not asking them to do something outside of their job.</p>
+
+<p>The problem arises when you make a commitment. If you make a commitment, you must make it. Be ready to move heaven and earth to make it. But if you are not in a position to make a commitment, then don&rsquo;t make one.</p>
+
+<p>Because he&rsquo;s going to set up a whole bunch of dominos based on that commitment, and if you fail to deliver, everything fails.</p>
+
+<p><strong>Some interesting links :</strong></p>
+
+<p><a href="https://medium.com/swlh/your-app-is-an-onion-why-software-projects-spiral-out-of-control-bb9247d9bdbd">https://medium.com/swlh/your-app-is-an-onion-why-software-projects-spiral-out-of-control-bb9247d9bdbd</a></p>
+
+<p>Uncle Bob on Estimates: <a href="https://www.youtube.com/watch?v=eisuQefYw_o">https://www.youtube.com/watch?v=eisuQefYw_o</a></p>
+
+<p>Happy Estimating!</p>
+
+<h1 id="that-s-all-folks">That&rsquo;s all, folks!</h1>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Acceptance Tests: The Best Medium of Communication Between Stakeholders (if done right) &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Acceptance Tests: The Best Medium of Communication Between Stakeholders (if done right)</h1>
+  <time datetime=2018-08-05T18:41:18Z class="post-date">Sun, Aug 5, 2018</time>
+  
+
+<p><img src="https://priyankvex.files.wordpress.com/2018/08/meditation-nature-sounds.jpg" alt="meditation-nature-sounds" /></p>
+
+<p>It&rsquo;s a nice pleasant morning, and you have just entered the office. You greet your friends and grab a cup of coffee. You check your email and there is a new story assigned to you.</p>
+
+<p><strong>&ldquo;As a customer, I get my usage logs backed up&rdquo;</strong></p>
+
+<p>This is where is fun begins.</p>
+
+<h2 id="communicating-requirements">Communicating Requirements</h2>
+
+<p>A product engineer&rsquo;s job is to have effective and clear communication as much as it is to write code. And one of the most common communication issues between engineers and business is communicating requirements.</p>
+
+<p>You go through the requirements document and it states a vague statement.</p>
+
+<p><em>&ldquo;Few customers want to access their last night&rsquo;s usage logs, our system should support that. It should backup logs daily&rdquo;.</em></p>
+
+<p><strong>Premature precision</strong></p>
+
+<p>Two of the biggest threats to effective communication of requirements is aiming for premature precision and even worse having late ambiguity.</p>
+
+<p>Both business and engineers are tempted to fall into the trap of premature precision. Business wants to know exactly what they want before the system is built, engineers want to know exactly what they have to deliver.</p>
+
+<p>The problem is that things appear different on paper than they do on the working systems. Once the product managers see the requirements running. they have a clearer idea of what they want, and it&rsquo;s often not what they are seeing.</p>
+
+<p><strong>Late Ambiguity</strong></p>
+
+<p>Solution to premature precision is to focus on the idea validations and not on the precise details, which can lead to another malady: late ambiguity.</p>
+
+<p>Often stakeholders disagree, and they tend to wordsmith their way around and no one has a precise idea about what exactly is going to be built until it is built.</p>
+
+<p>Of course, it doesn&rsquo;t need an argument to create ambiguity. Let&rsquo;s look at the conversation you ended up having with your product manager.</p>
+
+<p>Rick (product manager): Hey, we want the usage logs to be backed up.</p>
+
+<p>Morty (engineer): Ok. how often?</p>
+
+<p>Rick: Daily!</p>
+
+<p>Morty: Ok, what time?</p>
+
+<p>Rick: End of day works.</p>
+
+<p>Morty: Got it.</p>
+
+<p>Though sounds innocent, the conversation above is a recipe for disaster.</p>
+
+<p>It leaves room for too much ambiguity:</p>
+
+<pre><code>  1. We have only 1 GB of storage per customer. For how long should we persist the logs?
+  2. End of day is not a precise time, if it meant mid-night then in which timezone?
+  3. Customers will not be able to access logs until they are backed up, the time of backup needs to be in accordance to what suits customers.
+  4. How will the customers access logs?
+  5. What should the log files be named?
+</code></pre>
+
+<p>etc</p>
+
+<p>I assume we have detected the ambiguity now. Paper requirements often don&rsquo;t survive the touch of the real system. As product engineers. it is our job to make sure that all the ambiguity from the requirements is removed.</p>
+
+<p>It is hard, and there only one way I know how to do it.</p>
+
+<h2 id="acceptance-tests">Acceptance Tests</h2>
+
+<p>The term acceptance test is overloaded and since the time agile manifesto was written, it has lost its true meaning. The definition I find the best is:</p>
+
+<blockquote>Acceptance tests are tests written by collaboration of the stakeholders, engineers and QAs inorder to define when a requirement is done.</blockquote>
+
+<p><strong>The Definition of &ldquo;DONE&rdquo;</strong></p>
+
+<p>The most important term associated with acceptance tests is the &ldquo;definition of done&rdquo;. When do we consider a feature request to be done?</p>
+
+<p>When the engineer is done coding it?</p>
+
+<p>When the stakeholders have tested it?</p>
+
+<p>When the user has used it?</p>
+
+<p>There should be a single definition of done, <em><strong>the feature is done when the acceptance tests written for it pass.</strong></em></p>
+
+<p>That brings another very important point that teams should adopt as they scale. Acceptance tests should always be automated. There are many tools like The Robot Framework etc that helps you write acceptance tests in fairly high-level English like language.</p>
+
+<p>But rarely product managers have the skills or the inclination to put so much effort into creating acceptance tests. Worst case, acceptance tests should be at least properly and objectively documented.</p>
+
+<p>As effective engineers, it is our job to drive the definition of the requirements all the way to a suite of automated acceptance tests(or worst case, documented).</p>
+
+<p>Let&rsquo;s look at a more effective communication that you could&rsquo;ve had with your product manager.</p>
+
+<p>Rick (product manager): Hi! we want the usage logs to be backed up?</p>
+
+<p>Morty (engineer): Ok, how often?</p>
+
+<p>Rick: Daily!</p>
+
+<p>Morty: Ok. At what time?</p>
+
+<p>Rick: End of day works.</p>
+
+<p>Morty: That&rsquo;s too vague. Do you mean midnight? If yes then in which timezone?</p>
+
+<p>Rick: Hmm. I didn&rsquo;t think of this. What do you suggest?</p>
+
+<p>Morty: Simplest and the most standard way would be UTC.</p>
+
+<p>Rick: Sounds good to me.</p>
+
+<p>Morty: Great. Let&rsquo;s add a test that a new daily backup should be created at 12 midnight UTC. Also, we&rsquo;ll have to communicate this time to the user.</p>
+
+<p>Rick: Okay.</p>
+
+<p>Morty: What should be the name of the files?</p>
+
+<p>Rick: I don&rsquo;t know. You decide that.</p>
+
+<p>Morty: Okay. I&rsquo;ll name it business_name_date_backup.log</p>
+
+<p>Rick: Okay. Let&rsquo;s add an acceptance test that a log file should be created daily at UTC midnight named business_name_date_backup.log too (in a tone mocking you.)</p>
+
+<p>Morty: That&rsquo;s funny. Also, for how many past days we want to persist the logs?</p>
+
+<p>Rick: What do you mean?</p>
+
+<p>Morty: We have 1 GB storage per customer, we can only persist a finite number of days worth of logs.</p>
+
+<p>Rick: Can&rsquo;t we decide this later?</p>
+
+<p>Morty: No. This can change the way how the system is implemented. Let&rsquo;s get on a call with a few users and ask them what&rsquo;s the number that they are looking at.</p>
+
+<p>AFTER THE CALL</p>
+
+<p>Rick: Seems like they at most want the logs of past 7 days.</p>
+
+<p>Morty: Okay. Let&rsquo;s make it 15. The system will persist logs past 15 days worth of logs.</p>
+
+<p>Let&rsquo;s add an acceptance test that the system should be able to persist logs of past 15 days.</p>
+
+<p>Rick: Okay, if you insist. What will happen to the logs older than that?</p>
+
+<p>Morty: Great question. Let&rsquo;s move it AWS Glacier. It&rsquo;ll be cost-effective for the business and we&rsquo;ll also not lose any logs.</p>
+
+<p>Rick: Okay. (Thinking what is AWS Glacier? Sounds cool!)</p>
+
+<p>Morty: Great!</p>
+
+<p>The above confirmation drives the vague requirements towards the clear definition of done. Acceptance tests help in defining this definition of done.</p>
+
+<h2 id="when-to-write-acceptance-tests">When To Write Acceptance Tests</h2>
+
+<p>Implementation of a feature begins when the acceptance tests for it are ready. That should be the thumb rule for all the teams.  I&rsquo;ve seen my team at work not follow this and it leads to enormous wastage and back and forth with each release.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Communication about details is hard. It is too easy for each party to wave their hands off and assume that the other party understands. The only way I know of to effectively eliminate communication errors between engineers and stakeholders is to write acceptance tests collaboratively. They are unambiguous, and they cannot go out of sync with the application. They are the perfect requirements doc.</p>
+
+<h1 id="that-s-all-folks">That’s all, folks!</h1>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

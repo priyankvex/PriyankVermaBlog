@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dependency Injection: Taming the modules that make up our software. &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Dependency Injection: Taming the modules that make up our software.</h1>
+  <time datetime=2019-06-25T13:29:07Z class="post-date">Tue, Jun 25, 2019</time>
+  
+
+<h2 id="introduction">Introduction</h2>
+
+<p>All software projects, (even relatively smaller ones) are the result of aggregation of several components and modules. As these software projects grow and evolve, the way we connect these components becomes a <strong>win or lose factor</strong>.<br />
+I believe, that the way we orchestrate these components decides if the software will evolve as fast as the business needs it to, or gets tangled in its own complexity and slows the business down. If we set down the path to follow something like <em>Domain Driven Design</em>, where modules map to the domain model, this problem becomes even more prevalent.</p>
+
+<p>Stripping this down to its first principles, we are left with a simple problem:<br />
+<em>&ldquo;Given a module X, how does it procures an instance of module Y&rdquo;?</em><br />
+There are many methodologies, design patterns (ServiceLocator, Dependency Injection) and frameworks (Dagger, PicoContainer) which have taken a stab at this problem. But to understand and leverage these patterns to their fullest, it&rsquo;s very important that we understand the problem itself.</p>
+
+<pre><code>Note: Recently I have switched to a JS stack, so I'll try to keep the code samples in JS.
+</code></pre>
+
+<h3 id="what-s-a-module">What&rsquo;s a Module?</h3>
+
+<p>Whenever I discuss the topic of wiring software &ldquo;elements&rdquo; together, I always find this overloaded term being used extensively in the discussions. It&rsquo;ll be really helpful we set the meaning of this here for the context of this post.<br />
+By module I simply mean a glob of code that does one thing and is intended to be used without change by the application or other modules. By &ldquo;without change&rdquo; I mean the application doesn&rsquo;t alter the functionality of the module.<br />
+As a general rule of thumb, modules should have <strong>_high cohesion _</strong>and<strong>_ low coupling_</strong>.</p>
+
+<h3 id="a-simple-example">A Simple Example</h3>
+
+<p>To get ourselves to the meat of the problem, let&rsquo;s consider a simple example.<br />
+Let&rsquo;s say we are implementing a <code>PokemonFightController</code> which depends on a <code>PokemonDBLayer</code> to access the persistence layer.</p>
+
+<p><a href="https://gist.github.com/priyankvex2/1e46089329965c675c60da76b968783f">https://gist.github.com/priyankvex2/1e46089329965c675c60da76b968783f</a></p>
+
+<p><a href="https://gist.github.com/priyankvex2/3ad057fa89c76815ff921514c92f16fa">https://gist.github.com/priyankvex2/3ad057fa89c76815ff921514c92f16fa</a></p>
+
+<p>The implementation of this function is very naive. I have deliberately tried to keep it very simple. Whether you like Pokemon or not is not the point. The main point of this example is the <code>PokemonDBLayer</code> object.</p>
+
+<p>Let&rsquo;s say my friend wants to use the same controller for her application but needs to plug-in a different data source.<br />
+If it&rsquo;s a different Postgres DB, then we can try to handle it by having different conf files.       But what if by different I mean, the data source is completely different, instead of reading from a database, we want use an API service, or read from a CSV file?</p>
+
+<p>How does this controller procures the instance of the <code>PokemonDBLayer</code> is very interesting and decides how reusable and decoupled our <code>PokemonController</code> remains.</p>
+
+<p>Expanding this into a real system, we will have many modules, each dependent on other modules to delegate some part of the work.<br />
+And if we want our modules to be reusable, we need them to be able to use plugins, which can have different implementations but have same the interface.</p>
+
+<p>So the core problem is how do we assemble these plugins that make up our application.<br />
+This is what we are going to focus in the rest of this post?</p>
+
+<h2 id="inversion-of-control">Inversion of Control</h2>
+
+<p>Whenever we talk about IoC in context of something like dependency injection, I feel very puzzled. I feel that this makes us miss the essence of this simple but rather powerful idea.<br />
+The pressing point is, <em>&ldquo;what aspect of control are you inverting&rdquo;</em>?<br />
+A simple weather checking program that polls the weather API for updates, can get the weather updates via a webhook.  The control of the program was inverted, moved away from the polling mechanism to the webhook.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2019/06/screen-shot-2019-06-24-at-1.02.07-pm.png" alt="" />
+Dependency Diagram</p>
+
+<p>For applications and modules, the inversion is how modules lookup their dependencies.<br />
+In our example above, the Pokemon controller gets the instance of Pokemon DB Layer by directly instantiating it. This makes it rather coupled with a specific implementation of the Pokemon DB Layer.</p>
+
+<p>The approach that inverts the control here, is that the user of the plugin follows some protocol to use the plugin so that different plugins following the same protocol can be used.<br />
+This arises a need for a specific term that denotes this patterns, IoC is rather generic. Hence we reach <strong>Dependency Injection</strong>.</p>
+
+<h2 id="dependency-injection">Dependency Injection</h2>
+
+<p>The basic idea of dependency injection is to have a separate object, a sort of assembler, that provides an implementation of the Pokemon DB plugin to our Pokemon controller class.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2019/06/screen-shot-2019-06-24-at-1.06.20-pm.png" alt="" />
+Dependency Injection Dependency Diagram</p>
+
+<p>In other terms, a module should be provided or injected with its dependencies instead of it creating its own. The user of the plugin should have no knowledge about how to instantiate or get the dependencies it needs. This allows the module to remain &ldquo;stateless&rdquo;.</p>
+
+<p>There are mainly a couple of forms of dependency injection:<br />
+1. Constructor Injection:<br />
+   Dependencies are injected into the constructor of the object.<br />
+2. Property Injection:<br />
+      Dependencies are injected into the properties of the object.</p>
+
+<p>But since property injection requires that the object must be instantiated in an inconsistent state, it&rsquo;s generally avoided until and unless it&rsquo;s explicitly required.</p>
+
+<p>Let&rsquo;s see how we can refactor our PokemonController and PokemonDBLayer to follow a DI pattern.</p>
+
+<p>First step is to convert our module into a module factory. Note how we are using the Factory Pattern and passing the dependencies that the module need to the factory method.</p>
+
+<p><a href="https://gist.github.com/priyankvex2/589e87afb3d328c0f43f8c3934da874e">https://gist.github.com/priyankvex2/589e87afb3d328c0f43f8c3934da874e</a></p>
+
+<p>Next is how we wire things together. Note how our PokemonController remains reusable and decoupled with any concrete implementation of the PokemonDBLayer as it&rsquo;s being injected into it.</p>
+
+<p><a href="https://gist.github.com/priyankvex2/86d3a486c4b778f6b44e7d228d754a4c">https://gist.github.com/priyankvex2/86d3a486c4b778f6b44e7d228d754a4c</a></p>
+
+<h2 id="advantages-of-di">Advantages of DI</h2>
+
+<p>So, a question that must be arising in our minds will be, &ldquo;Is DI even worth all this effort&rdquo;? After all it does involve some learning curve and wiring dependencies graph manually.<br />
+Sometimes people see DI as a way to ease out testing. I think this is just one of the many advantages that DI provides.<br />
+Few of the many advantages that come with DI are:</p>
+
+<p><strong>1. Higher level modules stay reusable:</strong><br />
+Noticed how our PokemonController was reusable against different PokemonDBLayer implementations? Using DI our higher level modules that depend on lower level modules remain reusable, even if our system if deployed in different ways.</p>
+
+<p><strong>2. Code against to an interface:</strong><br />
+Dependency Injection is possible because instead of coding against a concrete implementation of a module, we code against its standard protocol or interface.</p>
+
+<p><strong>3. Easier testing:</strong><br />
+The most obvious benefit of DI is ease in testing. We can easily supply testing implementation of dependencies to the module being tested without need to mock method calls.</p>
+
+<h2 id="concluding-thoughts">Concluding Thoughts</h2>
+
+<p>Managing dependencies within an application has been a problem that many frameworks and personalities have tried to address. Dependency Injection, Service Locator etc focus on separating the configuration of objects from their usage, which is indeed a powerful idea can has many benefits.<br />
+DI can get complex if the dependency graph is huge, but in that case there are libraries to manage DI containers and help us out here.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

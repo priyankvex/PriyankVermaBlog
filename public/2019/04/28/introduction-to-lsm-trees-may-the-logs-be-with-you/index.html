@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Introduction to LSM Trees: May the logs be with you &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Introduction to LSM Trees: May the logs be with you</h1>
+  <time datetime=2019-04-28T10:40:27Z class="post-date">Sun, Apr 28, 2019</time>
+  
+
+<ul>
+<li><img src="https://priyankvex.files.wordpress.com/2019/04/1200px-lsm_tree.png?w=1024" alt="" />
+LSM Trees overview<br />
+<br /></li>
+</ul>
+
+<p><em>This post is a part of a newsletter that I run: “<a href="http://scammingthecodinginterview.com/">Scamming The Coding Interview</a>“, which is geared towards helping people <strong>ACE</strong> their coding interviews. We send a coding question on weekdays along with a system design article like this one on weekends. Do subscribe If you find this article valuable.</em></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>What will be the simplest implementation of a database that we can think of?<br />
+A simple append only file where each new entry is appended to the file seems to be a viable design.<br />
+In fact, this simple idea of maintaining immutable append-only data structures is a really powerful idea in the database world.<br />
+This idea of storing data into append only logs is the basic idea behind data structures like SSTables and LSM Trees which power many databases like Casandra, RockDB etc.</p>
+
+<h2 id="what-is-an-lsm-tree">What is an LSM Tree?</h2>
+
+<p>If we try to define an LSM Tree, we can go something like:</p>
+
+<p>An LSM Tree or &ldquo;Log Structured Merge Tree&rdquo; is a data structure with performance characteristics that make it very attractive to store data with high insert and update rates.<br />
+An LSM tree comprises of two or more levels of tree-like data structures. The simplest versions consist of just two levels C0 and C1.</p>
+
+<p>C0 is called the memtable and resides completely in-memory. The memtable is generally implemented using a balanced tree data structure like AVL Tree and stores key-value pairs sorted by key. All the inserts and updates are written in C0.</p>
+
+<p>C1 is meant to be very large in size and is stored in disk. C1 comprises of many immutable log segments accompanied by indexes like hash indexes for quick key look ups.<br />
+C1 is generally implemented using SSTables.</p>
+
+<h2 id="what-are-sstables-and-how-does-it-fit-in-the-lsm-tree">What are SSTables and how does it fit in the LSM tree?</h2>
+
+<p>In log based data structures, inserts and updates are appended into log files. The main idea is that appending to files is really efficient and quick and thus can make the database support large amount of write workload.</p>
+
+<p>As these log files start to grow, it makes sense to segment them. This is where SSTables or &ldquo;String Sorted Tables&rdquo; come into play.</p>
+
+<p>SSTables are used to store key-value pairs in immutable log segments in the order sorted by string.</p>
+
+<p>This provides many key advantages:</p>
+
+<ol>
+<li>Lookups can be very efficient even if full hash index is not present.  2. Range queries are possible.</li>
+</ol>
+
+<p>When the size of the in-memory C0 exceeds a certain threshold, (typically a few megabytes), it&rsquo;s flushed to disk as a new segment as SSTable sorted by key.</p>
+
+<h2 id="overview-of-lsm-tree-s-working">Overview of LSM Tree&rsquo;s working:</h2>
+
+<p>Now, since we have gone through all the concepts involved in the LSM Tree we can cover it&rsquo;s working with a bird&rsquo;s eye view to fit all the pieces into the bigger picture.</p>
+
+<p><strong>Inserting data into LSM Tree:</strong></p>
+
+<ol>
+<li>When a write comes, it is inserted in the memory-resident memtable.  2. When the size of the memtable exceeds a certain threshold, it&rsquo;s flushed to the disk.  3. As memtable is already sorted, creating a new SSTable segment from it is efficient enough.  4. Old segments are periodically merged together to save disk space and reduce fragmentation of data.</li>
+</ol>
+
+<p><strong>Reading data from LSM Tree:</strong></p>
+
+<ol>
+<li>A given key is first looked up in the memtable.  2. Then using a hash index it&rsquo;s searched in one or more segments depending upon the status of the compaction.</li>
+</ol>
+
+<h2 id="sample-use-case-in-a-system">Sample use case in a system</h2>
+
+<p>As the design of LSMTree indicates, these are really good candidates to process and store high write workloads like transaction logs, user events or any stream of data.</p>
+
+<p>For example, LSM trees can be leveraged to store events generated by an application.</p>
+
+<h2 id="advantages-of-lsm-tree">Advantages of LSM tree</h2>
+
+<ol>
+<li>LSM Trees can handle very high write throughput  2. LSM Trees can be compressed better and thus result into smaller log segment files.</li>
+</ol>
+
+<h2 id="disadvantages-of-lsm-tree">Disadvantages of LSM Tree</h2>
+
+<ol>
+<li>Compaction process sometime interfere with the performance of ongoing reads and writes.  2. Read/Write throughput can be consumed by compaction, again depleting performancce.  3. Each key can exist at multiple places and thus checking if a key doesn&rsquo;t exist needs<br />
+all segments to be scanned.</li>
+</ol>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>LSM trees are based on a simple and yet powerful idea of append only logs. They work well with very high write throughput where traditional databases can become a bottleneck.<br />
+We also covered an overview of how LSM Trees work and where they can be used.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

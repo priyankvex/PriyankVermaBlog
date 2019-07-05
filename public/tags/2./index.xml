@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2. on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/2./</link>
+    <description>Recent content in 2. on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Sep 2018 17:42:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/2./index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A plea for lean software: 6 Lessons I learned to help keep software simple</title>
+      <link>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</link>
+      <pubDate>Sun, 02 Sep 2018 17:42:58 +0000</pubDate>
+      
+      <guid>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</guid>
+      <description>Preface Recently, I was browsing the codebase of my company and saw that it has three versions of dashboards for an analytics page in it. I am pretty sure that customers don&amp;rsquo;t need that. This sparked something in my naive brain and I started exploring the internet for related ideas. That&amp;rsquo;s when I found this age-old paper, A Plea for Lean Software.
+This post is largely influenced by ideas presented in the paper that resonated with me.</description>
+    </item>
+    
+    <item>
+      <title>6 Lessons On Work Ethic I Learned In One Year Of Professional Career</title>
+      <link>https://example.org/2018/07/21/6-lessons-on-work-ethic-i-learned-in-one-year-of-professional-career/</link>
+      <pubDate>Sat, 21 Jul 2018 18:17:06 +0000</pubDate>
+      
+      <guid>https://example.org/2018/07/21/6-lessons-on-work-ethic-i-learned-in-one-year-of-professional-career/</guid>
+      <description>Time flies. Recently I had completed one year as a full-time employee at my current employer **Squad. **A year has passed, and I decided it was time to revisit instances, memories, and experiences and to recollect what I had learned as a professional in this past year.
+It was also a wake-up call to reassess and redirect the ship named professional career to make sure it doesn&amp;rsquo;t get stuck in a whirlpool.</description>
+    </item>
+    
+    <item>
+      <title>Tracking Metrics to Surface and Solve Problems: Metric Tracking Practices I&#39;ve Learned So Far</title>
+      <link>https://example.org/2018/05/21/tracking-metrics-to-surface-and-solve-problems-metric-tracking-practices-ive-learned-so-far/</link>
+      <pubDate>Sun, 20 May 2018 20:11:59 +0000</pubDate>
+      
+      <guid>https://example.org/2018/05/21/tracking-metrics-to-surface-and-solve-problems-metric-tracking-practices-ive-learned-so-far/</guid>
+      <description>It is a nice pleasant evening, you are sipping coffee and reviewing your code one final time, just so that you can gather enough confidence to hit the deploy button.
+But a fact of life as a software engineer is that things can go wrong. Small changes may result in unexpected outcomes, including outages, errors or negatively impacting customers.
+And when problems occur, either we can do random checks and validations that may or may not solve the problem or we can have a disciplined problem-solving approach that relies on data rather than intuitions.</description>
+    </item>
+    
+    <item>
+      <title>7 Tips On Making Your Engineering Workflow Faster</title>
+      <link>https://example.org/2018/04/23/7-tips-on-making-your-engineering-workflow-faster/</link>
+      <pubDate>Sun, 22 Apr 2018 19:55:28 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/23/7-tips-on-making-your-engineering-workflow-faster/</guid>
+      <description>One of the most important thing that I like about pair programming with other awesome engineers is you get to see their workflows. How they get things done? How they get find and make their way around tools, terminal, and editors?
+After witnessing and getting awestruck by many such experiences I realized that having an effective workflow can increase your day to productivity many folds.
+The next step was to take action, and while doing so, I have compiled few tips to make your engineering flow faster too.</description>
+    </item>
+    
+  </channel>
+</rss>

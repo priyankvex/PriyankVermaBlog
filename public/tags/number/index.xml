@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>number on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/number/</link>
+    <description>Recent content in number on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Sep 2018 17:42:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/number/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A plea for lean software: 6 Lessons I learned to help keep software simple</title>
+      <link>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</link>
+      <pubDate>Sun, 02 Sep 2018 17:42:58 +0000</pubDate>
+      
+      <guid>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</guid>
+      <description>Preface Recently, I was browsing the codebase of my company and saw that it has three versions of dashboards for an analytics page in it. I am pretty sure that customers don&amp;rsquo;t need that. This sparked something in my naive brain and I started exploring the internet for related ideas. That&amp;rsquo;s when I found this age-old paper, A Plea for Lean Software.
+This post is largely influenced by ideas presented in the paper that resonated with me.</description>
+    </item>
+    
+    <item>
+      <title>Acceptance Tests: The Best Medium of Communication Between Stakeholders (if done right)</title>
+      <link>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</link>
+      <pubDate>Sun, 05 Aug 2018 18:41:18 +0000</pubDate>
+      
+      <guid>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</guid>
+      <description>It&amp;rsquo;s a nice pleasant morning, and you have just entered the office. You greet your friends and grab a cup of coffee. You check your email and there is a new story assigned to you.
+&amp;ldquo;As a customer, I get my usage logs backed up&amp;rdquo;
+This is where is fun begins.
+Communicating Requirements A product engineer&amp;rsquo;s job is to have effective and clear communication as much as it is to write code.</description>
+    </item>
+    
+    <item>
+      <title>Tracking Metrics to Surface and Solve Problems: Metric Tracking Practices I&#39;ve Learned So Far</title>
+      <link>https://example.org/2018/05/21/tracking-metrics-to-surface-and-solve-problems-metric-tracking-practices-ive-learned-so-far/</link>
+      <pubDate>Sun, 20 May 2018 20:11:59 +0000</pubDate>
+      
+      <guid>https://example.org/2018/05/21/tracking-metrics-to-surface-and-solve-problems-metric-tracking-practices-ive-learned-so-far/</guid>
+      <description>It is a nice pleasant evening, you are sipping coffee and reviewing your code one final time, just so that you can gather enough confidence to hit the deploy button.
+But a fact of life as a software engineer is that things can go wrong. Small changes may result in unexpected outcomes, including outages, errors or negatively impacting customers.
+And when problems occur, either we can do random checks and validations that may or may not solve the problem or we can have a disciplined problem-solving approach that relies on data rather than intuitions.</description>
+    </item>
+    
+    <item>
+      <title>Organization Archetypes And The Concept Of Market-Oriented &#34;Solver Teams&#34;</title>
+      <link>https://example.org/2018/05/05/organization-archetypes-and-the-concept-of-market-oriented-solver-teams/</link>
+      <pubDate>Sat, 05 May 2018 15:56:15 +0000</pubDate>
+      
+      <guid>https://example.org/2018/05/05/organization-archetypes-and-the-concept-of-market-oriented-solver-teams/</guid>
+      <description>Organizations which designs systems are constrained to produce designs which are copies of the communication structure of the organization.
+In other words, how we organize our teams has a powerful effect on the software we produce, as well as our resulting architectural and production outcomes.
+Thus, in order to get a fast flow of work from Development to Operations, with high quality, great customer outcomes and fast speed of delivery, we must organize our teams to bring the team structure to our advantage.</description>
+    </item>
+    
+    <item>
+      <title>How to detect emails, phone numbers, web URLs, hashtags in Android TextView? : SmartTextView library</title>
+      <link>https://example.org/2016/08/17/how-to-detect-emails-phone-numbers-web-urls-hashtags-in-android-textview-smarttextview-library/</link>
+      <pubDate>Wed, 17 Aug 2016 12:53:19 +0000</pubDate>
+      
+      <guid>https://example.org/2016/08/17/how-to-detect-emails-phone-numbers-web-urls-hashtags-in-android-textview-smarttextview-library/</guid>
+      <description>Smart Text View Star On GitHub Follow On GitHub
+Many applications in android use TextView that detects and highlight various string patterns like emails, phone numbers, web URLs and even hashtags.
+This functionality is very common and and is used extensively and frequently in many app. Thus to ease the process of adding this functionality I have authored an Android library SmartTextView.
+Find and Star it on GitHub : https://github.</description>
+    </item>
+    
+    <item>
+      <title>Rails Number Helper Port to Android</title>
+      <link>https://example.org/2015/10/06/rails-number-helper-port-to-android/</link>
+      <pubDate>Tue, 06 Oct 2015 14:06:02 +0000</pubDate>
+      
+      <guid>https://example.org/2015/10/06/rails-number-helper-port-to-android/</guid>
+      <description>A polyglot developer will understand, there is always something you like about one language and you wish was available for another language too.
+So, recently I started learning rails and found _number_helper _API very cool and fun to use. It gives you easy API to convert numbers into many formats like _number_to_human _which will convert 20000 to _20 Thousands _or number_to_human_size that will convert 1024 to 1 KB.
+That was it I wanted this stuff for Android too.</description>
+    </item>
+    
+  </channel>
+</rss>

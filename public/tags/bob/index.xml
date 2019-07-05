@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bob on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/bob/</link>
+    <description>Recent content in Bob on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Oct 2017 17:24:51 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/bob/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Estimation  Peril:  How To Estimate  Software Projects Effectively(or How Not To Lie)</title>
+      <link>https://example.org/2017/10/15/estimation-peril-how-to-estimate-software-projects-effectivelyor-how-not-to-lie/</link>
+      <pubDate>Sun, 15 Oct 2017 17:24:51 +0000</pubDate>
+      
+      <guid>https://example.org/2017/10/15/estimation-peril-how-to-estimate-software-projects-effectivelyor-how-not-to-lie/</guid>
+      <description>Consider, you are a rockstar engineer and you are given a task by your favorite person, your project manager, to show some new fields in the dashboard.
+As usual, you are asked to estimate it as soon as possible. You think that well, seems like a quickie and you are tempted to estimate it a day. But you, being burnt before, decided to look at the fields that are to be added carefully.</description>
+    </item>
+    
+    <item>
+      <title>Marketing Your Retail Store in the Internet Age by Bob Negen  : Reading Experience</title>
+      <link>https://example.org/2016/06/21/marketing-your-retail-store-in-the-internet-age-by-bob-negen-reading-experience/</link>
+      <pubDate>Tue, 21 Jun 2016 15:24:50 +0000</pubDate>
+      
+      <guid>https://example.org/2016/06/21/marketing-your-retail-store-in-the-internet-age-by-bob-negen-reading-experience/</guid>
+      <description>This was the book that I knew prior to reading it that it won&amp;rsquo;t be too interesting and might even feel too slow. I searched it on the internet and picked it to read to get a perspective of a retail seller. As me and my team are trying to start a company that will work very closely with retail stores and their owners I thought this book will provide some value.</description>
+    </item>
+    
+  </channel>
+</rss>

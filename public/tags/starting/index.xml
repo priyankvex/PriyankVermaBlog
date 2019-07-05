@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>starting on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/starting/</link>
+    <description>Recent content in starting on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Apr 2018 17:01:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/starting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Devops and The Principle Of Flow</title>
+      <link>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</link>
+      <pubDate>Sun, 29 Apr 2018 17:01:20 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</guid>
+      <description>In the technology value stream, work typically flows from Development to Operations, steps consisting of functional areas between our business and our customers.
+As stated in the lean principles developed by Toyota, we should optimize to get a single-piece fast and smooth flow for our releases.
+We increase flow by:
+ 1. Making work visible, 2. Reducing batch sizes and intervals of work 3. Building in the quality, preventing defects from being passed to downstream work centers.</description>
+    </item>
+    
+    <item>
+      <title>Business In Boxers 3 : The Psychological Roller Coaster</title>
+      <link>https://example.org/2016/06/30/business-in-boxers-3-the-psychological-roller-coaster/</link>
+      <pubDate>Thu, 30 Jun 2016 18:58:30 +0000</pubDate>
+      
+      <guid>https://example.org/2016/06/30/business-in-boxers-3-the-psychological-roller-coaster/</guid>
+      <description>One of my favorite things about instrumental music is that the listener is encouraged to use his or her imagination. I have been a huge Owl City and Adam Young fan since forever. Lately he is releasing sets of instrumental music called as Adam Young Scores inspired by incidents that made a lasting impression on the world. Reading about all those incidents has made a lasting impression on my mind for sure, our small failures and success doesn&amp;rsquo;t even matter to the world, we have got to make it large.</description>
+    </item>
+    
+    <item>
+      <title>The Lean Startup : Reading Experience</title>
+      <link>https://example.org/2016/03/28/the-lean-startup-reading-experience/</link>
+      <pubDate>Mon, 28 Mar 2016 21:06:43 +0000</pubDate>
+      
+      <guid>https://example.org/2016/03/28/the-lean-startup-reading-experience/</guid>
+      <description>My 3rd book of the year was The Lean Startup by Eric Ries. I first got to know about the existence of this book during a keynote video of Gary Vaynerchuk where it was up for display. Finally got the time to read it.
+The book focuses on how the lean manufacturing using in Toyota can be used in startups as well. And it makes sense! The case studies to new terms defined all help you shape your mind to run your startup in a lean manner.</description>
+    </item>
+    
+    <item>
+      <title>Starting c/c&#43;&#43; programming in Linux.</title>
+      <link>https://example.org/2014/03/11/starting-cc-programming-in-linux/</link>
+      <pubDate>Tue, 11 Mar 2014 19:04:44 +0000</pubDate>
+      
+      <guid>https://example.org/2014/03/11/starting-cc-programming-in-linux/</guid>
+      <description>So, guys this post is just a kick off to my blog.
+This post is about coding in c or c++ in Linux . So, if you are a beginner looking to get your hand on coding in c or c++ in Linux, this will be of great help.
+STEPS:
+1.You can use gedit or i recommend you download Sublime Text for Linux.
+ Select your language as c/c++ and code and save the file.</description>
+    </item>
+    
+  </channel>
+</rss>

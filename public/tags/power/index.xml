@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>power on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/power/</link>
+    <description>Recent content in power on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Sep 2018 17:42:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/power/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A plea for lean software: 6 Lessons I learned to help keep software simple</title>
+      <link>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</link>
+      <pubDate>Sun, 02 Sep 2018 17:42:58 +0000</pubDate>
+      
+      <guid>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</guid>
+      <description>Preface Recently, I was browsing the codebase of my company and saw that it has three versions of dashboards for an analytics page in it. I am pretty sure that customers don&amp;rsquo;t need that. This sparked something in my naive brain and I started exploring the internet for related ideas. That&amp;rsquo;s when I found this age-old paper, A Plea for Lean Software.
+This post is largely influenced by ideas presented in the paper that resonated with me.</description>
+    </item>
+    
+    <item>
+      <title>7 Tips On Making Your Engineering Workflow Faster</title>
+      <link>https://example.org/2018/04/23/7-tips-on-making-your-engineering-workflow-faster/</link>
+      <pubDate>Sun, 22 Apr 2018 19:55:28 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/23/7-tips-on-making-your-engineering-workflow-faster/</guid>
+      <description>One of the most important thing that I like about pair programming with other awesome engineers is you get to see their workflows. How they get things done? How they get find and make their way around tools, terminal, and editors?
+After witnessing and getting awestruck by many such experiences I realized that having an effective workflow can increase your day to productivity many folds.
+The next step was to take action, and while doing so, I have compiled few tips to make your engineering flow faster too.</description>
+    </item>
+    
+  </channel>
+</rss>

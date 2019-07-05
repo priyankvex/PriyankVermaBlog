@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blue on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/blue/</link>
+    <description>Recent content in blue on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Jan 2017 10:49:59 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/blue/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Blue Ocean Strategy : How To Create Uncontested Market Space and Make the Competition Irrelevant</title>
+      <link>https://example.org/2017/01/15/the-blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant/</link>
+      <pubDate>Sun, 15 Jan 2017 10:49:59 +0000</pubDate>
+      
+      <guid>https://example.org/2017/01/15/the-blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant/</guid>
+      <description>When Henry Ford made cheap, reliable cars people said, ‘Nah, what’s wrong with a horse?’ That was a huge bet he made, and it worked. The whole idea of _The Blue Ocean Strategy _is to create uncontested market spaces that creates new demands and make the competition irrelevant.
+The book describes _Red Oceans _as known market places that have bloody competition among businesses trying to win customers. Here there is a fixed existing demand of which every company wants a share.</description>
+    </item>
+    
+  </channel>
+</rss>

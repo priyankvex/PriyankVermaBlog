@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tracking Metrics to Surface and Solve Problems: Metric Tracking Practices I&#39;ve Learned So Far &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Tracking Metrics to Surface and Solve Problems: Metric Tracking Practices I&#39;ve Learned So Far</h1>
+  <time datetime=2018-05-20T20:11:59Z class="post-date">Sun, May 20, 2018</time>
+  
+
+<p>It is a nice pleasant evening, you are sipping coffee and reviewing your code one final time, just so that you can gather enough confidence to hit the deploy button.</p>
+
+<p>But a fact of life as a software engineer is that things can go wrong. Small changes may result in unexpected outcomes, including outages, errors or negatively impacting customers.</p>
+
+<p>And when problems occur, either we can do random checks and validations that may or may not solve the problem or we can have a disciplined problem-solving approach that relies on data rather than intuitions.</p>
+
+<h1 id="metrics-and-telemetry">Metrics and Telemetry</h1>
+
+<p>To enable a disciplined problem-solving method, we need our software to track the right metrics and the right places. We need to design our systems so that they are continually creating <em><strong>telem</strong><strong>etry</strong></em>.</p>
+
+<h3 id="what-is-telemetry">What is Telemetry?</h3>
+
+<p>The DevOps handbook defines telemetry as,</p>
+
+<blockquote>An automated communication process by which metrics are collected at remote points and are sent over to receiving equipments.</blockquote>
+
+<p>When designing systems, it is a high leverage activity to include creating telemetry as a first-class citizen to enable and ease tracking metrics at all the levels needed, right from business level metrics to deployment pipeline level.</p>
+
+<h1 id="levels-of-metrics-tracking">Levels Of Metrics Tracking</h1>
+
+<p>As engineers, the software we write impacts the organization at multiple levels, from infrastructure to the product, to business. Thus, to resolve problems quickly, we need to track metrics all these levels.</p>
+
+<p>Following levels of metrics have been really useful for me to keep a checklist for adding the right metrics in the software that I write.</p>
+
+<h4 id="1-business-level-metrics">1. Business Level Metrics:</h4>
+
+<p>These metrics directly affect the business. Thus are really imported to keep an eye on.</p>
+
+<p>Examples include sales transactions, numbers of items clients sent, total successful items processed, hourly processing rates, etc.</p>
+
+<h4 id="2-application-level-metrics">2. Application Level Metrics:</h4>
+
+<p>These metrics track the functioning of the application.</p>
+
+<p>Examples include latency of the APIs, response time of queries, number of errors etc.</p>
+
+<h4 id="3-infrastructure-level-metrics"><strong>3. Infrastructure Level Metrics:</strong></h4>
+
+<p>These metrics track the infrastructure that runs our application.</p>
+
+<p>Examples include CPU usage, available memory, IOPS spikes etc.</p>
+
+<h4 id="4-product-level-metrics">4. Product Level Metrics:</h4>
+
+<p>These metrics track the product progress and results. As product engineers, it&rsquo;s a high leverage task to track product-related metrics too.</p>
+
+<p>Examples include A/B test results, feature toggling results, product progress, product extensibility, and configurability etc</p>
+
+<p>By having telemetry coverage in all these areas, we will be to see the health of everything that our software relies on or things that rely on our software.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>With the limited time that I&rsquo;ve spent in the software industry, I&rsquo;ve come to realize the importance of metrics. Even the parts that don&rsquo;t involve any software must be tracked and measured. The key idea here is that you can not improve what you don&rsquo;t measure.</p>
+
+<p>With right telemetry built into the software that we write, we&rsquo;ll be able to not only solve the problems they arise but also surface the latent ones before they catch fire.</p>
+
+<h1 id="that-s-all-folks">That’s all, folks!</h1>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Application on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/application/</link>
+    <description>Recent content in Application on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Aug 2018 18:41:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/application/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Acceptance Tests: The Best Medium of Communication Between Stakeholders (if done right)</title>
+      <link>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</link>
+      <pubDate>Sun, 05 Aug 2018 18:41:18 +0000</pubDate>
+      
+      <guid>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</guid>
+      <description>It&amp;rsquo;s a nice pleasant morning, and you have just entered the office. You greet your friends and grab a cup of coffee. You check your email and there is a new story assigned to you.
+&amp;ldquo;As a customer, I get my usage logs backed up&amp;rdquo;
+This is where is fun begins.
+Communicating Requirements A product engineer&amp;rsquo;s job is to have effective and clear communication as much as it is to write code.</description>
+    </item>
+    
+    <item>
+      <title>Tracking Metrics to Surface and Solve Problems: Metric Tracking Practices I&#39;ve Learned So Far</title>
+      <link>https://example.org/2018/05/21/tracking-metrics-to-surface-and-solve-problems-metric-tracking-practices-ive-learned-so-far/</link>
+      <pubDate>Sun, 20 May 2018 20:11:59 +0000</pubDate>
+      
+      <guid>https://example.org/2018/05/21/tracking-metrics-to-surface-and-solve-problems-metric-tracking-practices-ive-learned-so-far/</guid>
+      <description>It is a nice pleasant evening, you are sipping coffee and reviewing your code one final time, just so that you can gather enough confidence to hit the deploy button.
+But a fact of life as a software engineer is that things can go wrong. Small changes may result in unexpected outcomes, including outages, errors or negatively impacting customers.
+And when problems occur, either we can do random checks and validations that may or may not solve the problem or we can have a disciplined problem-solving approach that relies on data rather than intuitions.</description>
+    </item>
+    
+    <item>
+      <title>Devops and The Principle Of Flow</title>
+      <link>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</link>
+      <pubDate>Sun, 29 Apr 2018 17:01:20 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</guid>
+      <description>In the technology value stream, work typically flows from Development to Operations, steps consisting of functional areas between our business and our customers.
+As stated in the lean principles developed by Toyota, we should optimize to get a single-piece fast and smooth flow for our releases.
+We increase flow by:
+ 1. Making work visible, 2. Reducing batch sizes and intervals of work 3. Building in the quality, preventing defects from being passed to downstream work centers.</description>
+    </item>
+    
+    <item>
+      <title>Deploying a nginx application using Kubernetes for Self-Healing and Scaling</title>
+      <link>https://example.org/2017/11/19/deploying-a-nginx-application-using-kubernetes-for-self-healing-and-scaling/</link>
+      <pubDate>Sun, 19 Nov 2017 15:50:50 +0000</pubDate>
+      
+      <guid>https://example.org/2017/11/19/deploying-a-nginx-application-using-kubernetes-for-self-healing-and-scaling/</guid>
+      <description>Kubernetes is an open source system for automating deployment, scaling and management of containerized applications. A more technical term for it is, container orchestrator which is used to manage large fleets of containers.
+Minikube is an all-in-one single node installation for trying out kubernetes on local machines. And the following post covers deploying a nginx application container using kubernetes in minikube.
+If you don&amp;rsquo;t have, then this link has it all to install minikube and kubectl (command line tool to access minikube) : Download and install minikube and kubectl</description>
+    </item>
+    
+    <item>
+      <title>5 notes on MVP architecture pattern for Android</title>
+      <link>https://example.org/2016/12/19/5-notes-on-mvp-architecture-pattern-for-android/</link>
+      <pubDate>Mon, 19 Dec 2016 16:31:50 +0000</pubDate>
+      
+      <guid>https://example.org/2016/12/19/5-notes-on-mvp-architecture-pattern-for-android/</guid>
+      <description>Image credits Macoscope  MVP (Model View and Presenter) is an architectural pattern inspired by the popular MVC pattern.
+MVP addresses two main points :
+ 1. Make views as dumb as possible. The dumber the better. 2. Make each layer loosely coupled and easily testable in isolation.  I am using MVP in one of my production project and have used in some dem0 apps. Here are my 5 notes on using MVP for android.</description>
+    </item>
+    
+    <item>
+      <title>Business in Boxers : 1 Month Into Running a StartUp</title>
+      <link>https://example.org/2016/03/22/business-in-boxers-1-month-into-running-a-startup/</link>
+      <pubDate>Tue, 22 Mar 2016 20:49:58 +0000</pubDate>
+      
+      <guid>https://example.org/2016/03/22/business-in-boxers-1-month-into-running-a-startup/</guid>
+      <description>**Why the Series? **
+(Inspired by book : Business In Blue Jeans)
+Hi! This is Priyank. This series is about me pen downing my start-up ride. Don&amp;rsquo;t know if it&amp;rsquo;s fast or slow, all I really know is I&amp;rsquo;m gonna enjoy the ride.
+Why the name?
+Boxers is what you&amp;rsquo;ll find me almost every time in and business is what&amp;rsquo;s always in my mind and thus the name &amp;ldquo;Business In Boxers&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Practice Shapes : Android App To Learn Shapes</title>
+      <link>https://example.org/2015/12/28/practice-shapes-android-app-to-learn-shapes/</link>
+      <pubDate>Mon, 28 Dec 2015 14:56:00 +0000</pubDate>
+      
+      <guid>https://example.org/2015/12/28/practice-shapes-android-app-to-learn-shapes/</guid>
+      <description>Only way to learn something is to learn it by yourself. Recently I have been playing with Canvas in android and it has been fun! :D
+As they say knowledge is knowing tomato is a fruit. Wisdom is not putting it in vegetable basket. And best way to persist new gained &amp;ldquo;wisdom&amp;rdquo; is to put it in use.
+Practice Shapes is a fun app both for kids and grown-up kids (Yes.</description>
+    </item>
+    
+    <item>
+      <title>How Mobile Devices Can Change the Educational Technology and Education?</title>
+      <link>https://example.org/2015/10/20/how-mobile-devices-can-change-the-educational-technology-and-education/</link>
+      <pubDate>Tue, 20 Oct 2015 18:02:32 +0000</pubDate>
+      
+      <guid>https://example.org/2015/10/20/how-mobile-devices-can-change-the-educational-technology-and-education/</guid>
+      <description>Educational technology is growing rapidly and thus is catching everyone&amp;rsquo;s attention. At the same time mobile devices are part of are lives from a long time now. Students and teachers are increasingly embracing tablets and e-book readers in their personal lives.
+Accessibility of educational technology is one of the biggest barrier that we are facing. Mobile devices are best way to make this problem less serious.
+**Advantages of mobile devices to be used as platform for ed-tech : **</description>
+    </item>
+    
+    <item>
+      <title>Making GCM client in Android and Application server in Ruby on Rails</title>
+      <link>https://example.org/2015/09/11/making-gcm-client-in-android-and-application-server-in-ruby-on-rails/</link>
+      <pubDate>Fri, 11 Sep 2015 19:17:16 +0000</pubDate>
+      
+      <guid>https://example.org/2015/09/11/making-gcm-client-in-android-and-application-server-in-ruby-on-rails/</guid>
+      <description>It is always fun to play with new APIs and tools. GCM is not something I was getting my hands on for the first time but it changed completely since last time I did a project using this.
+But the good news is it has changed for good. New service classes makes it easier to write GCM clients for Android, GCM default configuration makes writing test servers and apps to play with very less tedious.</description>
+    </item>
+    
+    <item>
+      <title>Paint App in Android</title>
+      <link>https://example.org/2015/09/06/paint-app-in-android/</link>
+      <pubDate>Sun, 06 Sep 2015 10:14:04 +0000</pubDate>
+      
+      <guid>https://example.org/2015/09/06/paint-app-in-android/</guid>
+      <description>Recently I was learning about Canvas and Custom views in Android and to put the theory in practice I made a pretty simple **Paint App. **
+Source code of the app can be found https://github.com/priyankvex/Paint-App-Android.
+[caption id=&amp;ldquo;attachment_159&amp;rdquo; align=&amp;ldquo;aligncenter&amp;rdquo; width=&amp;ldquo;480&amp;rdquo;] Screenshot of the app[/caption]
+The App is pretty simple with features 1. Create Drawings (Obvious one :P). 2. Select different brush sizes. 3. Eraser with different sizes. 4. Color pallet. 5. Save drawings in Gallery.</description>
+    </item>
+    
+    <item>
+      <title>Android Application for a basic Calculator.</title>
+      <link>https://example.org/2014/06/04/android-application-for-a-basic-calculator/</link>
+      <pubDate>Wed, 04 Jun 2014 19:35:10 +0000</pubDate>
+      
+      <guid>https://example.org/2014/06/04/android-application-for-a-basic-calculator/</guid>
+      <description>Hi there,
+This time would like to share my new project &amp;lsquo; A basic calculator built for the android platform.&amp;rsquo;
+Creating android apps always seemed cool to me . Able to start learning to create one is even cooler.
+This project uses simple things like XML layouts, Activities using java, Intents, OnclickListeners and some more basic concepts of java and android.
+Below are the screenshots of the app running in both real android device and AVD.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software engineing on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/software-engineing/</link>
+    <description>Recent content in software engineing on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Mar 2018 07:16:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/software-engineing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>8 System Design Principles I learned After Doing It Wrong More than 50 Times!</title>
+      <link>https://example.org/2018/03/11/8-system-design-principles-i-learned-after-doing-it-wrong-more-than-50-times/</link>
+      <pubDate>Sun, 11 Mar 2018 07:16:00 +0000</pubDate>
+      
+      <guid>https://example.org/2018/03/11/8-system-design-principles-i-learned-after-doing-it-wrong-more-than-50-times/</guid>
+      <description>At Squad, we strive to build awesome products to solve customer(internal and external) needs. As a product engineer, paramount part of your job is to design and build products. Dig deep into the root cause of the problems, design solutions and implement them as the end product.
+Over the course of my journey so far, here are the 8 system and product design principles that I&amp;rsquo;ve learned from other awesome people at Squad, from feedback and simply doing it not right enough multiple times.</description>
+    </item>
+    
+    <item>
+      <title>Philosophy Behind The Offensive Programming</title>
+      <link>https://example.org/2017/07/08/philosophy-behind-the-offensive-programming/</link>
+      <pubDate>Fri, 07 Jul 2017 19:30:08 +0000</pubDate>
+      
+      <guid>https://example.org/2017/07/08/philosophy-behind-the-offensive-programming/</guid>
+      <description>Recently I was listening to a podcast and there was this really smart guy Piwai talking about something that instantly captivated by attention. That was the coining of the term Offensive Programming.
+What is offensive programming?
+Well, you can find the literature on Wikipedia and also I am not the best person to explain that. So check that out please. But fundamentally, _offensive programming _refers to a style of programming that is exact opposite of the more famous counter-part the defensive programming.</description>
+    </item>
+    
+  </channel>
+</rss>

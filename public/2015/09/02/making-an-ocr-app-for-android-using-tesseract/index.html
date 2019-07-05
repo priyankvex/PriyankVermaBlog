@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Making an OCR app for Android using Tesseract. &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Making an OCR app for Android using Tesseract.</h1>
+  <time datetime=2015-09-02T11:01:58Z class="post-date">Wed, Sep 2, 2015</time>
+  <p><a href="https://github.com/priyankvex/Easy-Ocr-Scanner-Android">Star on GitHub</a></p>
+
+<p>Recently I was playing with OCR library by google called as &ldquo;Tesseract&rdquo; (cool name for a library!).</p>
+
+<p>[caption id=&ldquo;attachment_153&rdquo; align=&ldquo;alignleft&rdquo; width=&ldquo;234&rdquo;]<a href="https://priyankvex.files.wordpress.com/2015/09/screenshot_2015-08-29-23-08-38.png"><img src="https://priyankvex.files.wordpress.com/2015/09/screenshot_2015-08-29-23-08-38.png" alt="App in action." />
+</a> App in action.[/caption]</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2015/09/screenshot_2015-08-29-23-08-51.png?w=480" alt="Screenshot_2015-08-29-23-08-51" /></p>
+
+<p>It was a fun experience. This post shows how you can make a simple OCR app in Android using Tesseract.</p>
+
+<p>We will be using <a href="https://github.com/rmtheis/tess-two">Tess-Two</a> a fork of Tesseract with some additional tools like Liptonica which is an image processing library.</p>
+
+<p>If you want an even easier way to get started with OCR on Android you can try this library built by me. <a href="https://github.com/priyankvex/Easy-Ocr-Scanner-Android">Easy OCR Library.</a> Usage instructions are in the ReadMe.md file there.</p>
+
+<p>Anyways, moving forward I am using Android Studio on Ubuntu 64 bit machine here.</p>
+
+<p>**Step 1 : **</p>
+
+<p>Clone the library Tess-Two.</p>
+
+<pre><code>&lt;code&gt;
+git clone git://github.com/rmtheis/tess-two tess
+&lt;/code&gt;
+</code></pre>
+
+<p><strong>Step 2 :</strong></p>
+
+<p>Now we need to build  the library.</p>
+
+<p>For building we will need Android NDK.</p>
+
+<pre><code>&lt;code&gt;
+cd tess
+cd tess-two
+ndk-build
+android update project --path .
+ant release
+&lt;/code&gt;
+</code></pre>
+
+<p>Building may take some time so be patient. Don&rsquo;t press ctrl+c too soon :P .</p>
+
+<p><strong>Step 3  :</strong></p>
+
+<p>Yay! Time to use the library in Android Project.</p>
+
+<p>Copy the tess/tess-two folder into the root folder of your application project.</p>
+
+<p>**Step 4 : **</p>
+
+<p>In the tess-two folder you just pasted. Add build.gradle file as Android Studio uses gradle build system.</p>
+
+<p>Add following gradle script in the file.</p>
+
+<pre><code>&lt;code&gt;
+buildscript {
+    repositories {
+    mavenCentral()
+    }
+    dependencies {
+    classpath 'com.android.tools.build:gradle:1.2.3'
+    }
+}
+
+apply plugin: 'android-library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion &quot;22.0.1&quot;
+
+    defaultConfig {
+    minSdkVersion 8
+    targetSdkVersion 22
+    }
+
+    sourceSets.main {
+    manifest.srcFile 'AndroidManifest.xml'
+    java.srcDirs = ['src']
+    resources.srcDirs = ['src']
+    res.srcDirs = ['res']
+    jniLibs.srcDirs = ['libs']
+    }
+}
+&lt;/code&gt;
+</code></pre>
+
+<p>**Step 5 : **</p>
+
+<p>Add the following line in project.settings file.</p>
+
+<pre><code>&lt;code&gt;include ':tess-two'&lt;/code&gt;
+</code></pre>
+
+<p>** Step 6 :**</p>
+
+<p>Now we have successfully included the Tess-Two library in our project and we are ready to use it.</p>
+
+<p>First we need to capture the picture itself. You can use something like this code sample taken from <a href="https://github.com/priyankvex/Easy-Ocr-Scanner-Android">Easy OCR Library</a>.</p>
+
+<pre><code>&lt;code&gt;
+public void takePicture(){
+    Intent e = new Intent(&quot;android.media.action.IMAGE_CAPTURE&quot;);
+    this.filePathOriginal = FileUtils.getDirectory(this.directoryPathOriginal) + File.separator + Calendar.getInstance().getTimeInMillis() + &quot;.jpg&quot;;
+    e.putExtra(&quot;output&quot;, Uri.fromFile(new File(this.filePathOriginal)));
+
+    startActivity(e);
+    }
+&lt;/code&gt;
+</code></pre>
+
+<p>Or you can find the code <a href="http://labs.makemachine.net/2010/03/simple-android-photo-capture/">here</a>.</p>
+
+<p>We will also downscale the image a little so that the recognition is fast.</p>
+
+<p>You  can use following code sample from again Easy OCR Library</p>
+
+<pre><code>&lt;code&gt;
+ private Bitmap getBitmapFromPath() {
+    BitmapFactory.Options bmOptions = new BitmapFactory.Options();
+    bmOptions.inSampleSize = 4;
+    Bitmap bitmap = BitmapFactory.decodeFile(this.filePath, bmOptions);
+    return bitmap;
+    }
+&lt;/code&gt;
+</code></pre>
+
+<p><strong>Step 7 :</strong></p>
+
+<p>Final step. Recognize the text using the library API.</p>
+
+<pre><code>&lt;code&gt;
+ private String scanImage(){
+    TessBaseAPI baseApi = new TessBaseAPI();
+    Log.d(Config.TAG, &quot;Data path : &quot; + FileUtils.getDirectory(this.directoryPath));
+    baseApi.init(FileUtils.getDirectory(this.directoryPath) + &quot;/&quot;, this.trainedDataCode);
+    baseApi.setImage(this.mBitmap);
+    String recognizedText = baseApi.getUTF8Text();
+    baseApi.end();
+
+    return recognizedText;
+    }
+
+&lt;/code&gt;
+</code></pre>
+
+<p>Again I would recommend using the <a href="https://github.com/priyankvex/Easy-Ocr-Scanner-Android">Easy OCR Library</a> if you are having facing any problem.</p>
+
+<p>That library has many features :</p>
+
+<pre><code>  1. Very easy setup.
+  2. Handles all the image processing part in a background thread.
+  3. Provides very interface with relative callbacks for the functions of the library.
+</code></pre>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

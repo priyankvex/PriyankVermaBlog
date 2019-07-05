@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>toyota on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/toyota/</link>
+    <description>Recent content in toyota on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Apr 2018 17:01:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/toyota/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Devops and The Principle Of Flow</title>
+      <link>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</link>
+      <pubDate>Sun, 29 Apr 2018 17:01:20 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</guid>
+      <description>In the technology value stream, work typically flows from Development to Operations, steps consisting of functional areas between our business and our customers.
+As stated in the lean principles developed by Toyota, we should optimize to get a single-piece fast and smooth flow for our releases.
+We increase flow by:
+ 1. Making work visible, 2. Reducing batch sizes and intervals of work 3. Building in the quality, preventing defects from being passed to downstream work centers.</description>
+    </item>
+    
+    <item>
+      <title>Practical Problem Solving Framework: Inspired By The Toyota Way</title>
+      <link>https://example.org/2018/03/25/practical-problem-solving-framework-inspired-by-the-toyota-way/</link>
+      <pubDate>Sun, 25 Mar 2018 11:32:12 +0000</pubDate>
+      
+      <guid>https://example.org/2018/03/25/practical-problem-solving-framework-inspired-by-the-toyota-way/</guid>
+      <description>We all will agree to a certain point that having a system/process for anything reduces chances of errors.
+As an engineer or someone people look forward to propose solutions to problems it&amp;rsquo;s beneficial to have a framework in place to solve problems effectively.
+Recently I was reading _**The Toyota Way, **_and it suggested a framework to _Practical Problem Solving. _It almost felt trivial that this sort of framework would be invaluable to software engineers too (in fact for everyone).</description>
+    </item>
+    
+  </channel>
+</rss>

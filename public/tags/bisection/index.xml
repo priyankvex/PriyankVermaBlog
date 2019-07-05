@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bisection on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/bisection/</link>
+    <description>Recent content in bisection on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Apr 2014 06:28:36 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/bisection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Newton-Raphson vs Bisection Search vs Brute force for finding square root of  number.</title>
+      <link>https://example.org/2014/04/01/newton-raphson-vs-bisection-search-vs-brute-force-for-finding-square-root-of-number/</link>
+      <pubDate>Tue, 01 Apr 2014 06:28:36 +0000</pubDate>
+      
+      <guid>https://example.org/2014/04/01/newton-raphson-vs-bisection-search-vs-brute-force-for-finding-square-root-of-number/</guid>
+      <description>Computers are meant to compute things. Finding square root is a very basic algorithm which can be coded in basically 3 ways : All 3 ways are based on the _Guess and check method _ A.K.A Exhaustive Enumeration. _ &amp;gt;1. Brute force method :_
+__ In this method we test all the possible values and test them .
+_2. Bisection Search : _
+By cutting the problem into the half after every iteration.</description>
+    </item>
+    
+  </channel>
+</rss>

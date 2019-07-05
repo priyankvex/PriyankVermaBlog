@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Clean Code Chapter 1&amp;2: Clean Code &amp; Meaningful names &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Clean Code Chapter 1&amp;2: Clean Code &amp; Meaningful names</h1>
+  <time datetime=2017-08-05T08:21:28Z class="post-date">Sat, Aug 5, 2017</time>
+  
+
+<p>I have started reading the book _Clean Code by Robert C. Martin, _which is considered to be a industry standard for writing maintainable and elegant code.</p>
+
+<p>Because this book is such a heavy read, and each chapter is full of content and a knowledge bank in itself, for personal reference I&rsquo;ve decided to summarise each chapter in a set of blog posts.</p>
+
+<h2 id="chapter-1-clean-code"><strong>Chapter 1 : Clean Code</strong></h2>
+
+<p>This was more like chapter 0. Author describes what is clean code and cost of maintaining it. How clean code is directly related to team productivity and what makes clean code clean.</p>
+
+<p>It contains views on clean code by many of industries best known people like Bjarne Stroustrup, Michael Feathers etc.</p>
+
+<p>One of my favourite definitions form the book covers it best :</p>
+
+<blockquote>I like my code to be elegant and efficient. The logic should be straightforward to make it hard for bugs to hide, the dependencies minimal to ease maintenance, error handling complete according to an articulated strategy, and performance close to optimal so as not to tempt people to make the code messy with unprincipled optimizations. Clean code does one thing well - Bjarne Stroustrup</blockquote>
+
+<h2 id="chapter-2-meaningful-names"><strong>Chapter 2 : Meaningful Names</strong></h2>
+
+<p>Names are everywhere in software. We name our variables, our functions, our arguments, classes, and packages. Because we do it so much, we should do it well.</p>
+
+<p>**1. Use intention revealing names : **</p>
+
+<p>The name of a variable, function, or class, should answer all the big questions. It should tell you why it exists, what it does, and how it is used.</p>
+
+<pre><code>int d; // time elapsed
+</code></pre>
+
+<p>Here d reveals nothing. A better name would be</p>
+
+<pre><code>int timeElapsedSinceCreation;
+</code></pre>
+
+<p>**2. Avoid Disinformation : **
+Programmers must avoid leaving false clues that obscure the meaning of code. We should avoid words whose entrenched meanings vary from our intended meaning.
+ex</p>
+
+<pre><code>int accountsList;
+</code></pre>
+
+<p>Should only be named so if it is a actually a list data structure that&rsquo;s used to store the accounts. Not an array or set.</p>
+
+<p><strong>3. Make meaningful distinctions</strong>
+Entities named different, should be different, mean different.</p>
+
+<p>If we have classes called</p>
+
+<pre><code>ProductInfo
+</code></pre>
+
+<p>or</p>
+
+<pre><code>ProductData
+</code></pre>
+
+<p>, you have made the names different without making them mean anything different. Info and Data are indistinct noise that doesn&rsquo;t differentiates what they actually mean.</p>
+
+<p><strong>4. Use pronounceable names</strong></p>
+
+<p>Makes communicating about the code easy.
+ex.</p>
+
+<pre><code>long genydhms;
+</code></pre>
+
+<p>is not a good name.</p>
+
+<pre><code>long generationTimestamp;
+</code></pre>
+
+<p>is a better choice</p>
+
+<p><strong>5. Use searchable names</strong>
+Avoid single letter variables and constants as they are difficult to search.</p>
+
+<p><strong>6. Avoid Encodings</strong></p>
+
+<p>Hungarian notations, member prefixes, interface and implementations should be avoided.</p>
+
+<p>It just adds another burden to remember the encoding format being used.</p>
+
+<p><strong>7. Avoid mental mappings</strong>
+Readers shouldn’t have to mentally translate your names into other names they already know.
+ex.</p>
+
+<pre><code>int r;
+</code></pre>
+
+<p>Where</p>
+
+<pre><code>r
+</code></pre>
+
+<p>is <em>lower cased url with host name removed</em> adds to much requires too much mental juggling and mapping when working with the code.</p>
+
+<p>A better name would be,</p>
+
+<pre><code>int urlWithoutHostName;
+</code></pre>
+
+<p>**8. Class Names **
+Classes and objects should have noun or noun phrase names like Customer, WikiPage, Account, and AddressParser.
+Avoid words like Manager, Processor, Data, or Info in the of a class. A class name should not be a verb.</p>
+
+<p><strong>9. Method Names</strong>
+Methods should have verb or verb phrase names like postPayment, deletePage, or save.</p>
+
+<p><strong>10. Don&rsquo;t be cute</strong></p>
+
+<p>If names are too clever, they will be memorable only to people who share the
+author’s sense of humor, and only as long as these people remember the joke.</p>
+
+<p>Don’t tell little culture-dependent jokes like eatMyShorts() to mean abort().</p>
+
+<p><strong>11. Pick one work per concept</strong>
+Pick one word for one abstract concept and stick with it.</p>
+
+<p>It’s confusing to have a controller and a manager and a driver in the same
+code base. What is the essential difference between a DeviceManager and a ProtocolController?</p>
+
+<p><strong>11. Use solution domain names</strong>
+It&rsquo;s OK and preferable to use names from computer science and programming domains.
+ex.
+In transctionObserver</p>
+
+<p>the word observer means a great deal to person who knows the observer pattern.</p>
+
+<p><strong>12. Use problem domain name</strong>
+The code that has more to do with problem domain concepts should have names drawn from the problem domain.
+ex..</p>
+
+<pre><code>int mriRecord
+</code></pre>
+
+<p>In a healthcare app will give a great deal of context than just</p>
+
+<pre><code>int record
+</code></pre>
+
+<p>.</p>
+
+<p>**13. Add meaningful context **
+Enclose names in well named functions, classes, namespaces, etc.
+ex.</p>
+
+<pre><code>String state;
+</code></pre>
+
+<p>In a class called FiniteStateMachine will mean different that in a class called Address.</p>
+
+<p><strong>14. Don’t Add Gratuitous Context</strong>
+In an imaginary application called “Gas Station Deluxe,” it is a bad idea to prefix every class with GSD.
+Frankly, you are working against your tools. You type G and press the completion
+key and are rewarded with a mile-long list of every class in the system. Is that
+wise? Why make it hard for the IDE to help you?</p>
+
+<p>This was part one of a 16 part series on the book _Clean Code by Robert C. Martin, where e_ach post covers a gist of a single chapter.</p>
+
+<p>Thanks!</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

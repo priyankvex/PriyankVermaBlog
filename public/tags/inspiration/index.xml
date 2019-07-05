@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>inspiration on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/inspiration/</link>
+    <description>Recent content in inspiration on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Mar 2018 11:32:12 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/inspiration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Practical Problem Solving Framework: Inspired By The Toyota Way</title>
+      <link>https://example.org/2018/03/25/practical-problem-solving-framework-inspired-by-the-toyota-way/</link>
+      <pubDate>Sun, 25 Mar 2018 11:32:12 +0000</pubDate>
+      
+      <guid>https://example.org/2018/03/25/practical-problem-solving-framework-inspired-by-the-toyota-way/</guid>
+      <description>We all will agree to a certain point that having a system/process for anything reduces chances of errors.
+As an engineer or someone people look forward to propose solutions to problems it&amp;rsquo;s beneficial to have a framework in place to solve problems effectively.
+Recently I was reading _**The Toyota Way, **_and it suggested a framework to _Practical Problem Solving. _It almost felt trivial that this sort of framework would be invaluable to software engineers too (in fact for everyone).</description>
+    </item>
+    
+    <item>
+      <title>2018, New Year: Let&#39;s Set The Rhythm For What Lies Ahead</title>
+      <link>https://example.org/2018/01/01/2018-new-year-lets-set-the-rhythm-for-what-lies-ahead/</link>
+      <pubDate>Sun, 31 Dec 2017 19:35:19 +0000</pubDate>
+      
+      <guid>https://example.org/2018/01/01/2018-new-year-lets-set-the-rhythm-for-what-lies-ahead/</guid>
+      <description>Here are the 9 things I would love to incorporate into my life as I set myself to see the sun of 2018.
+1. Stop chasing the long dream, start conquering the micro-goals: Start cultivating a passionate dedication to the pursuit of short-term goals, being micro ambitious. Putting my head down and work with pride, whatever is the job in the hand. If we see too far in front of us, we won&amp;rsquo;t see shiny thing right in front of us.</description>
+    </item>
+    
+  </channel>
+</rss>

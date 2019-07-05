@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gary on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/gary/</link>
+    <description>Recent content in gary on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Dec 2015 09:28:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/gary/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Edx : Digital Branding and Engagement Course Overview And Experience</title>
+      <link>https://example.org/2015/12/19/edx-digital-branding-and-engagement-course-overview-and-experience/</link>
+      <pubDate>Sat, 19 Dec 2015 09:28:00 +0000</pubDate>
+      
+      <guid>https://example.org/2015/12/19/edx-digital-branding-and-engagement-course-overview-and-experience/</guid>
+      <description>People Respond to Effort Lately I have been following Gary Vaynerchuck, an entrepreneur and serial investor. He also owns a social media marketing company Vayner Media. Listening to his podcasts and keynotes is an eye opener on how digital media marketing is reshaping the advertising world.
+So I took a course on Edx Digital Branding and Engagement finally know the digital marketing in and out.
+The course was 4 weeks long and delivers perfect contextual content.</description>
+    </item>
+    
+  </channel>
+</rss>

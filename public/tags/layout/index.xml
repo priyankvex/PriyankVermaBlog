@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>layout on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/layout/</link>
+    <description>Recent content in layout on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Dec 2015 14:56:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/layout/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Practice Shapes : Android App To Learn Shapes</title>
+      <link>https://example.org/2015/12/28/practice-shapes-android-app-to-learn-shapes/</link>
+      <pubDate>Mon, 28 Dec 2015 14:56:00 +0000</pubDate>
+      
+      <guid>https://example.org/2015/12/28/practice-shapes-android-app-to-learn-shapes/</guid>
+      <description>Only way to learn something is to learn it by yourself. Recently I have been playing with Canvas in android and it has been fun! :D
+As they say knowledge is knowing tomato is a fruit. Wisdom is not putting it in vegetable basket. And best way to persist new gained &amp;ldquo;wisdom&amp;rdquo; is to put it in use.
+Practice Shapes is a fun app both for kids and grown-up kids (Yes.</description>
+    </item>
+    
+    <item>
+      <title>STAR WARS ENCYCLOPEDIA: A layout implementation using HTML5 and CSS3</title>
+      <link>https://example.org/2014/05/08/star-wars-encyclopedia-a-layout-implementation-using-html5-and-css3/</link>
+      <pubDate>Thu, 08 May 2014 19:46:04 +0000</pubDate>
+      
+      <guid>https://example.org/2014/05/08/star-wars-encyclopedia-a-layout-implementation-using-html5-and-css3/</guid>
+      <description>STAR WARS Encyclopedia Hi, there. Before we go further, if you are a STAR WARS fan like me you are going to love this one. This time i would love to share my another layout creation using HTML5 and CSS3 only. And the most interesting part, this effort was dedicated to STAR WARS.
+The Wire Frame [caption id=&amp;ldquo;attachment_46&amp;rdquo; align=&amp;ldquo;aligncenter&amp;rdquo; width=&amp;ldquo;132&amp;rdquo;] Wire frame of the web page.[/caption]
+After creating the aire frame, the next step was to make things really come to life in the photoshop.</description>
+    </item>
+    
+  </channel>
+</rss>

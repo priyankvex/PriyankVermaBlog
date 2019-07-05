@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>How to detect emails, phone numbers, web URLs, hashtags in Android TextView? : SmartTextView library &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>How to detect emails, phone numbers, web URLs, hashtags in Android TextView? : SmartTextView library</h1>
+  <time datetime=2016-08-17T12:53:19Z class="post-date">Wed, Aug 17, 2016</time>
+  
+
+<h1 id="smart-text-view">Smart Text View</h1>
+
+<p><strong><a href="https://github.com/priyankvex/SmartTextView/">Star On GitHub</a> <a href="https://github.com/priyankvex">Follow On GitHub</a></strong></p>
+
+<p>Many applications in android use TextView that detects and highlight various string patterns like emails, phone numbers, web URLs and even hashtags.</p>
+
+<p>This functionality is very common and and is used extensively and frequently in many app. Thus to ease the process of adding this functionality I have authored an Android library <strong>SmartTextView.</strong></p>
+
+<p><strong>Find and Star it on GitHub</strong> : <em><a href="https://github.com/priyankvex/SmartTextView">https://github.com/priyankvex/SmartTextView</a></em></p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2016/08/smart_text_view_small.png" alt="smart_text_view_small" /></p>
+
+<h1 id="features">Features</h1>
+
+<pre><code>  * Detect emails, mobile numbers, URLs
+  * Detect #hash_tags and @mentions
+  * Use default intents or set custom callbacks.
+  * Set different colors for each pattern.
+</code></pre>
+
+<h1 id="usage">Usage</h1>
+
+<pre><code>compile &lt;span class=&quot;pl-s&quot;&gt;&lt;span class=&quot;pl-pds&quot;&gt;'&lt;/span&gt;com.priyankvex:smarttextview:1.0.1&lt;span class=&quot;pl-pds&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+</code></pre>
+
+<p>In layout xml file</p>
+
+<pre><code>  &lt;&lt;span class=&quot;pl-ent&quot;&gt;com&lt;/span&gt;.wordpress.priyankvex.smarttextview.SmartTextView
+    &lt;span class=&quot;pl-e&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;pl-e&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;pl-e&quot;&gt;layout_width&lt;/span&gt;=&lt;span class=&quot;pl-s&quot;&gt;&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;match_parent&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;pl-e&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;pl-e&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;pl-e&quot;&gt;layout_height&lt;/span&gt;=&lt;span class=&quot;pl-s&quot;&gt;&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;wrap_content&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;pl-e&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;pl-e&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;pl-e&quot;&gt;textSize&lt;/span&gt;=&lt;span class=&quot;pl-s&quot;&gt;&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;9pt&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;pl-e&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;pl-e&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;pl-e&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;pl-s&quot;&gt;&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;@+id/textView&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;
+    /&gt;
+</code></pre>
+
+<p>In java Activity or Fragment</p>
+
+<pre><code>mSmartTextView &lt;span class=&quot;pl-k&quot;&gt;=&lt;/span&gt; (&lt;span class=&quot;pl-smi&quot;&gt;SmartTextView&lt;/span&gt;) findViewById(&lt;span class=&quot;pl-smi&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;id&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;textView);
+    mSmartTextView&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;setEmailColorCode(&lt;span class=&quot;pl-s&quot;&gt;&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;#3cb371&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;);
+    mSmartTextView&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;setPhoneNumberColorCode(&lt;span class=&quot;pl-s&quot;&gt;&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;#ff33aa&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;);
+    mSmartTextView&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;setHashTagColorCode(&lt;span class=&quot;pl-s&quot;&gt;&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;#f37735&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;);
+    mSmartTextView&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;setUrlColorCode(&lt;span class=&quot;pl-s&quot;&gt;&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;#ffc425&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;);
+    mSmartTextView&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;setMentionColorCode(&lt;span class=&quot;pl-s&quot;&gt;&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;#57b884&lt;span class=&quot;pl-pds&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;);
+    mSmartTextView&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;setDetectMentions(&lt;span class=&quot;pl-c1&quot;&gt;true&lt;/span&gt;);
+    mSmartTextView&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;setDetectHashTags(&lt;span class=&quot;pl-c1&quot;&gt;true&lt;/span&gt;);
+    mSmartTextView&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;setText(sampleText);
+    mSmartTextView&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;setSmartTextCallback(&lt;span class=&quot;pl-v&quot;&gt;this&lt;/span&gt;);
+</code></pre>
+
+<p>To use custom callbacks</p>
+
+<pre><code>implements &lt;span class=&quot;pl-smi&quot;&gt;SmartTextCallback&lt;/span&gt;
+</code></pre>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

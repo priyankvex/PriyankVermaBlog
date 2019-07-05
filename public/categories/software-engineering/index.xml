@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Engineering on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/categories/software-engineering/</link>
+    <description>Recent content in Software Engineering on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Jun 2019 13:29:07 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/categories/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dependency Injection: Taming the modules that make up our software.</title>
+      <link>https://example.org/2019/06/25/dependency-injection-taming-the-modules-that-make-up-our-software/</link>
+      <pubDate>Tue, 25 Jun 2019 13:29:07 +0000</pubDate>
+      
+      <guid>https://example.org/2019/06/25/dependency-injection-taming-the-modules-that-make-up-our-software/</guid>
+      <description>Introduction All software projects, (even relatively smaller ones) are the result of aggregation of several components and modules. As these software projects grow and evolve, the way we connect these components becomes a win or lose factor.
+I believe, that the way we orchestrate these components decides if the software will evolve as fast as the business needs it to, or gets tangled in its own complexity and slows the business down.</description>
+    </item>
+    
+    <item>
+      <title>A Tale on Concatenated Indexes: Master Roshi and Goku&#39;s fireside chat</title>
+      <link>https://example.org/2019/05/19/a-tale-on-concatenated-indexes-master-roshi-and-gokus-fireside-chat/</link>
+      <pubDate>Sun, 19 May 2019 08:46:06 +0000</pubDate>
+      
+      <guid>https://example.org/2019/05/19/a-tale-on-concatenated-indexes-master-roshi-and-gokus-fireside-chat/</guid>
+      <description>Indexes make our queries run as fast as a cheetah!
+Right Practice. Right Results
+This post is part of newsletter that I run &amp;ldquo;Scamming the Coding Interview&amp;rdquo;, which is geared towards continuous practice on concepts to ace the engineering interviews.
+[
+Subscribe
+](https://scammingthecodinginterview.com)
+Once upon a time there was a master named Roshi whose relational database used to work like a blowing wind.
+Reads used to be so fast that it reminded people of thunder strike.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to LSM Trees: May the logs be with you</title>
+      <link>https://example.org/2019/04/28/introduction-to-lsm-trees-may-the-logs-be-with-you/</link>
+      <pubDate>Sun, 28 Apr 2019 10:40:27 +0000</pubDate>
+      
+      <guid>https://example.org/2019/04/28/introduction-to-lsm-trees-may-the-logs-be-with-you/</guid>
+      <description>LSM Trees overview
+  This post is a part of a newsletter that I run: “Scamming The Coding Interview“, which is geared towards helping people ACE their coding interviews. We send a coding question on weekdays along with a system design article like this one on weekends. Do subscribe If you find this article valuable.
+Introduction What will be the simplest implementation of a database that we can think of?</description>
+    </item>
+    
+    <item>
+      <title>Architecting for Scale by Lee Atchison: Reading Experience</title>
+      <link>https://example.org/2019/03/07/architecting-for-scale-by-lee-atchison-reading-experience/</link>
+      <pubDate>Thu, 07 Mar 2019 15:54:40 +0000</pubDate>
+      
+      <guid>https://example.org/2019/03/07/architecting-for-scale-by-lee-atchison-reading-experience/</guid>
+      <description>I recently read the book Architecting for Scale by Lee Atchison. The book contains a high-level overview of the major concepts that revolve around the topic of building highly-available and scalable apps.
+I felt the book to be more suited as a light read for people already familiar with these concepts rather than being an informative book for the new readers.
+The book divided into 5 parts mainly:
+1. Availability</description>
+    </item>
+    
+    <item>
+      <title>How To Objectively Reason About Systems: Correctness Properties Of A System</title>
+      <link>https://example.org/2019/01/06/how-to-objectively-reason-about-systems-correctness-properties-of-a-system/</link>
+      <pubDate>Sun, 06 Jan 2019 15:54:40 +0000</pubDate>
+      
+      <guid>https://example.org/2019/01/06/how-to-objectively-reason-about-systems-correctness-properties-of-a-system/</guid>
+      <description>This post is a part of a newsletter that I run: &amp;ldquo;Scamming The Coding Interview&amp;rdquo;, which is geared towards helping people ACE their coding interviews. We send a coding question on weekdays along with a system design article like this one on weekends. Do subscribe If you find this article valuable.
+When a new system is to be designed, the first and the most important step is to generally get the expectations from the system to be crystal clear.</description>
+    </item>
+    
+    <item>
+      <title>Basics of Database Partitioning and Partition Strategies</title>
+      <link>https://example.org/2018/12/30/basics-of-database-partitioning-and-partition-strategies/</link>
+      <pubDate>Sun, 30 Dec 2018 16:50:55 +0000</pubDate>
+      
+      <guid>https://example.org/2018/12/30/basics-of-database-partitioning-and-partition-strategies/</guid>
+      <description>You are a part of a startup which has recently scaled to reach a huge number of users. This means that the increased number of users are going to generate a huge amount of data that you have to store and manage.
+It soon becomes evident that managing a huge dataset is a major hurdle to achieve query efficiency and it might make sense to break the database down into smaller and much more manageable chunks, just like good old low scale days.</description>
+    </item>
+    
+    <item>
+      <title>Tackling Lost Updates Problem In Database Using Stricter Transaction  Isolation Level</title>
+      <link>https://example.org/2018/10/20/tackling-lost-updates-problem-in-database-using-better-isolation-level/</link>
+      <pubDate>Sat, 20 Oct 2018 11:40:19 +0000</pubDate>
+      
+      <guid>https://example.org/2018/10/20/tackling-lost-updates-problem-in-database-using-better-isolation-level/</guid>
+      <description>** Introduction**
+Databases are made for scale and are a highly concurrent system. Thus it is normal for them to expect multiple concurrent connections.
+Also, in most situations, we&amp;rsquo;ll want our database to be the source of truth and always contain consistent data.
+There are many concurrency related phenomena that can occur in a database when multiple transactions try to access/modify the same block of data. Ex dirty reads, dirty writes etc.</description>
+    </item>
+    
+    <item>
+      <title>Practical Design Patterns Part 1: The Command Pattern</title>
+      <link>https://example.org/2018/09/17/practical-design-patterns-part-1-the-command-pattern/</link>
+      <pubDate>Mon, 17 Sep 2018 07:51:56 +0000</pubDate>
+      
+      <guid>https://example.org/2018/09/17/practical-design-patterns-part-1-the-command-pattern/</guid>
+      <description>** Introduction**
+Most software these days support undoing/redoing actions. For example, text editors support undoing what we have written, file managers support undoing file creation/deletion etc. It&amp;rsquo;s a good UX practice to make software forgiving and allow users to undo their actions.
+I always wondered how was this implemented? On a critical analysis, it seems as if the object on which the actions are taking place receives them from somewhere else, like a _command.</description>
+    </item>
+    
+    <item>
+      <title>A plea for lean software: 6 Lessons I learned to help keep software simple</title>
+      <link>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</link>
+      <pubDate>Sun, 02 Sep 2018 17:42:58 +0000</pubDate>
+      
+      <guid>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</guid>
+      <description>Preface Recently, I was browsing the codebase of my company and saw that it has three versions of dashboards for an analytics page in it. I am pretty sure that customers don&amp;rsquo;t need that. This sparked something in my naive brain and I started exploring the internet for related ideas. That&amp;rsquo;s when I found this age-old paper, A Plea for Lean Software.
+This post is largely influenced by ideas presented in the paper that resonated with me.</description>
+    </item>
+    
+    <item>
+      <title>Acceptance Tests: The Best Medium of Communication Between Stakeholders (if done right)</title>
+      <link>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</link>
+      <pubDate>Sun, 05 Aug 2018 18:41:18 +0000</pubDate>
+      
+      <guid>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</guid>
+      <description>It&amp;rsquo;s a nice pleasant morning, and you have just entered the office. You greet your friends and grab a cup of coffee. You check your email and there is a new story assigned to you.
+&amp;ldquo;As a customer, I get my usage logs backed up&amp;rdquo;
+This is where is fun begins.
+Communicating Requirements A product engineer&amp;rsquo;s job is to have effective and clear communication as much as it is to write code.</description>
+    </item>
+    
+    <item>
+      <title>Creating Outbound Call Warm Transfer Using Twilio In Python and Django</title>
+      <link>https://example.org/2018/06/03/creating-outbound-call-warm-transfer-using-twilio-in-python-and-django/</link>
+      <pubDate>Sun, 03 Jun 2018 13:14:07 +0000</pubDate>
+      
+      <guid>https://example.org/2018/06/03/creating-outbound-call-warm-transfer-using-twilio-in-python-and-django/</guid>
+      <description>Have you ever been connected to a call where it was transferred to a third person for further assistance? Well, that&amp;rsquo;s call transferring.
+Warm transfer of calls, in contrast to cold transfer, doesn&amp;rsquo;t disconnect the call in between and thus gives the customers a more seamless experience.
+Recently at work, I was building a system to convert regular calls to a warm transfer if needed. And in this post, I&amp;rsquo;ll be sharing what I learned while building the warm transfer system.</description>
+    </item>
+    
+    <item>
+      <title>Tracking Metrics to Surface and Solve Problems: Metric Tracking Practices I&#39;ve Learned So Far</title>
+      <link>https://example.org/2018/05/21/tracking-metrics-to-surface-and-solve-problems-metric-tracking-practices-ive-learned-so-far/</link>
+      <pubDate>Sun, 20 May 2018 20:11:59 +0000</pubDate>
+      
+      <guid>https://example.org/2018/05/21/tracking-metrics-to-surface-and-solve-problems-metric-tracking-practices-ive-learned-so-far/</guid>
+      <description>It is a nice pleasant evening, you are sipping coffee and reviewing your code one final time, just so that you can gather enough confidence to hit the deploy button.
+But a fact of life as a software engineer is that things can go wrong. Small changes may result in unexpected outcomes, including outages, errors or negatively impacting customers.
+And when problems occur, either we can do random checks and validations that may or may not solve the problem or we can have a disciplined problem-solving approach that relies on data rather than intuitions.</description>
+    </item>
+    
+    <item>
+      <title>Philosophy Behind The Offensive Programming</title>
+      <link>https://example.org/2017/07/08/philosophy-behind-the-offensive-programming/</link>
+      <pubDate>Fri, 07 Jul 2017 19:30:08 +0000</pubDate>
+      
+      <guid>https://example.org/2017/07/08/philosophy-behind-the-offensive-programming/</guid>
+      <description>Recently I was listening to a podcast and there was this really smart guy Piwai talking about something that instantly captivated by attention. That was the coining of the term Offensive Programming.
+What is offensive programming?
+Well, you can find the literature on Wikipedia and also I am not the best person to explain that. So check that out please. But fundamentally, _offensive programming _refers to a style of programming that is exact opposite of the more famous counter-part the defensive programming.</description>
+    </item>
+    
+  </channel>
+</rss>

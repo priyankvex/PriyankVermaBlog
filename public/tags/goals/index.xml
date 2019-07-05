@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>goals on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/goals/</link>
+    <description>Recent content in goals on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Dec 2017 19:35:19 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/goals/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2018, New Year: Let&#39;s Set The Rhythm For What Lies Ahead</title>
+      <link>https://example.org/2018/01/01/2018-new-year-lets-set-the-rhythm-for-what-lies-ahead/</link>
+      <pubDate>Sun, 31 Dec 2017 19:35:19 +0000</pubDate>
+      
+      <guid>https://example.org/2018/01/01/2018-new-year-lets-set-the-rhythm-for-what-lies-ahead/</guid>
+      <description>Here are the 9 things I would love to incorporate into my life as I set myself to see the sun of 2018.
+1. Stop chasing the long dream, start conquering the micro-goals: Start cultivating a passionate dedication to the pursuit of short-term goals, being micro ambitious. Putting my head down and work with pride, whatever is the job in the hand. If we see too far in front of us, we won&amp;rsquo;t see shiny thing right in front of us.</description>
+    </item>
+    
+  </channel>
+</rss>

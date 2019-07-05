@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Making GCM client in Android and Application server in Ruby on Rails &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Making GCM client in Android and Application server in Ruby on Rails</h1>
+  <time datetime=2015-09-11T19:17:16Z class="post-date">Fri, Sep 11, 2015</time>
+  <p>It is always fun to play with new APIs and tools. GCM is not something I was getting my hands on for the first time but it changed completely since last time I did a project using this.</p>
+
+<p>But the good news is it has changed for good. New service classes makes it easier to write GCM clients for Android, GCM default configuration makes writing test servers and apps to play with very less tedious. In fact my first reaction was <em>**this is GCM reincarnated. **</em></p>
+
+<p>[caption id=&ldquo;attachment_163&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;640&rdquo;]<a href="https://priyankvex.files.wordpress.com/2015/09/gcm_stack.png"><img src="https://priyankvex.files.wordpress.com/2015/09/gcm_stack.png" alt="GCM Client and App server" />
+</a> GCM Client and App server[/caption]</p>
+
+<p><strong>New API : New Party!</strong></p>
+
+<p>You can have a look at the source code here :</p>
+
+<p><a href="https://github.com/priyankvex/GCM-Android-Client-and-Rails-Server">https://github.com/priyankvex/GCM-Android-Client-and-Rails-Server</a></p>
+
+<p>To create Android client I stuck with sample provided in the docs. Sweet and simple to implement. Just little tweaks done to make it fit my needs.</p>
+
+<p>For creating application server i.e the 3rd party server required by the GCM stack, it used Ruby on Rails. In that specifically I used &ldquo;<em><strong>gcm</strong></em>&rdquo; <em><strong>gem</strong></em>.</p>
+
+<p>Again not a very complex server but good enough to get a hold of things.</p>
+
+<p>**Server features : **</p>
+
+<pre><code>  1. Save incoming device tokens (registration ids).
+  2. Web form to send message to all devices registered.
+  3. Send welcome notification when device is registered.
+</code></pre>
+
+<p><strong>Client features (Android App) :</strong></p>
+
+<pre><code>  1. Get GCM token for the device.
+  2. Send token to applications server.
+  3. Show notification when message is pushed from server.
+</code></pre>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

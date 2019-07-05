@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>estimates on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/estimates/</link>
+    <description>Recent content in estimates on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Oct 2017 17:24:51 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/estimates/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Estimation  Peril:  How To Estimate  Software Projects Effectively(or How Not To Lie)</title>
+      <link>https://example.org/2017/10/15/estimation-peril-how-to-estimate-software-projects-effectivelyor-how-not-to-lie/</link>
+      <pubDate>Sun, 15 Oct 2017 17:24:51 +0000</pubDate>
+      
+      <guid>https://example.org/2017/10/15/estimation-peril-how-to-estimate-software-projects-effectivelyor-how-not-to-lie/</guid>
+      <description>Consider, you are a rockstar engineer and you are given a task by your favorite person, your project manager, to show some new fields in the dashboard.
+As usual, you are asked to estimate it as soon as possible. You think that well, seems like a quickie and you are tempted to estimate it a day. But you, being burnt before, decided to look at the fields that are to be added carefully.</description>
+    </item>
+    
+  </channel>
+</rss>

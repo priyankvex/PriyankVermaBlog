@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>canvas on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/canvas/</link>
+    <description>Recent content in canvas on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Jul 2016 09:57:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/canvas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IIMBx: EP101x DO Your Venture : Course Experience on edX</title>
+      <link>https://example.org/2016/07/26/iimbx-ep101x-do-your-venture-course-experience-on-edx/</link>
+      <pubDate>Tue, 26 Jul 2016 09:57:18 +0000</pubDate>
+      
+      <guid>https://example.org/2016/07/26/iimbx-ep101x-do-your-venture-course-experience-on-edx/</guid>
+      <description>The best way to win is to show grit and bid on your strengths and intuitions. I have been trying to start my own company now for quite a some time. This course came into my mail box by edX, title looked captivating and thus I decided to take it.
+It was a light course. Not much effort needed other that just watching the videos and doing some assignments.
+The course was focused on making people get off with their venture from the idea phase to execution phase.</description>
+    </item>
+    
+    <item>
+      <title>Practice Shapes : Android App To Learn Shapes</title>
+      <link>https://example.org/2015/12/28/practice-shapes-android-app-to-learn-shapes/</link>
+      <pubDate>Mon, 28 Dec 2015 14:56:00 +0000</pubDate>
+      
+      <guid>https://example.org/2015/12/28/practice-shapes-android-app-to-learn-shapes/</guid>
+      <description>Only way to learn something is to learn it by yourself. Recently I have been playing with Canvas in android and it has been fun! :D
+As they say knowledge is knowing tomato is a fruit. Wisdom is not putting it in vegetable basket. And best way to persist new gained &amp;ldquo;wisdom&amp;rdquo; is to put it in use.
+Practice Shapes is a fun app both for kids and grown-up kids (Yes.</description>
+    </item>
+    
+    <item>
+      <title>Paint App in Android</title>
+      <link>https://example.org/2015/09/06/paint-app-in-android/</link>
+      <pubDate>Sun, 06 Sep 2015 10:14:04 +0000</pubDate>
+      
+      <guid>https://example.org/2015/09/06/paint-app-in-android/</guid>
+      <description>Recently I was learning about Canvas and Custom views in Android and to put the theory in practice I made a pretty simple **Paint App. **
+Source code of the app can be found https://github.com/priyankvex/Paint-App-Android.
+[caption id=&amp;ldquo;attachment_159&amp;rdquo; align=&amp;ldquo;aligncenter&amp;rdquo; width=&amp;ldquo;480&amp;rdquo;] Screenshot of the app[/caption]
+The App is pretty simple with features 1. Create Drawings (Obvious one :P). 2. Select different brush sizes. 3. Eraser with different sizes. 4. Color pallet. 5. Save drawings in Gallery.</description>
+    </item>
+    
+  </channel>
+</rss>

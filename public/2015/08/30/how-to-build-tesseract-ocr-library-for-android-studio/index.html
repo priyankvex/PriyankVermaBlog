@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>How to build Tesseract OCR library for Android Studio? &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>How to build Tesseract OCR library for Android Studio?</h1>
+  <time datetime=2015-08-30T10:07:28Z class="post-date">Sun, Aug 30, 2015</time>
+  <p><a href="https://github.com/priyankvex/Easy-Ocr-Scanner-Android">Star On GitHub</a></p>
+
+<p>If you ever tried to create an OCR app for Android you must have stumbled upon the OCR library by Google Tesseract. And then the problems began.</p>
+
+<p>To use the library in your project you first need to build it. But building the library to be compatible with gradle, which is the new build system for Android projects is little not so easily stated anywhere in the library manual.</p>
+
+<p>When I tried to build the library, it took me freaking 9 hours to figure all the how tos?</p>
+
+<p>So, here I am helping you to save your precious hours. (Don&rsquo;t waste these watching late night infomercials for god&rsquo;s sake! ).</p>
+
+<p><strong>Here we go.</strong></p>
+
+<p>**Step 1 : **</p>
+
+<p>The first step. Download the NDK. That is used to build the library.</p>
+
+<p>Download it from <a href="https://developer.android.com/ndk/downloads/index.html">here</a>. It is around 300+ MB so keep your net plan nourished.</p>
+
+<p>**Step 2 : **</p>
+
+<p>Better way to go is to use  a fork of Tesseract, Tess-Two. Tess-Two can be found on <a href="https://github.com/rmtheis/tess-two">GitHub</a>.</p>
+
+<p>Execute following commands to build the library Tess-Two using NDK.</p>
+
+<pre><code>&lt;code&gt;
+git clone git://github.com/rmtheis/tess-two tess
+cd tess
+cd tess-two
+ndk-build
+android update project --path .
+ant release
+&lt;/code&gt;
+</code></pre>
+
+<p>We can live without building eyes-two for this time.</p>
+
+<p>Building will take few minutes. After you have successfully built tess-two, give yourself a little treat. You are almost done.</p>
+
+<p><strong>Step 3 :</strong></p>
+
+<p>Now you are ready to use the library in your Android project.</p>
+
+<p>Copy the tess-two folder (tess/tess-two), in the main folder of the application project.</p>
+
+<p>Suppose name of your application is &ldquo;MyApp&rdquo; copy the folder at &ldquo;MyApp/&rdquo;.</p>
+
+<p><strong>Step 4 :</strong></p>
+
+<p>Now its time to play the trick. The library was build using ANT. But Android projects use Gradle these days. Interesting&hellip;</p>
+
+<p>We need to add a &ldquo;build.gradle&rdquo; file at location &ldquo;tess-two/&rdquo;.</p>
+
+<p>The build file can be found <a href="https://github.com/priyankvex/Easy-Ocr-Scanner-Android/blob/master/easy_ocr_library/libs/tess-two/build.gradle">here</a>.</p>
+
+<p>Then include following line in project.settings file.</p>
+
+<pre><code>&lt;code&gt;include ':tess-two'&lt;/code&gt;
+</code></pre>
+
+<p>**Step 5 : **</p>
+
+<p>Build the project and you are just one step away from being done.</p>
+
+<p>**Step 6 : **</p>
+
+<p>The most important step. After completing steps 1-5, <em>**throw your hands up in the air! **</em>:D :D You are now done!</p>
+
+<p>Ready to harness the power of OCR.</p>
+
+<p><a href="https://buttons.github.io/buttons.js">https://buttons.github.io/buttons.js</a></p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>calculator on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/calculator/</link>
+    <description>Recent content in calculator on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Jun 2014 19:35:10 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/calculator/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android Application for a basic Calculator.</title>
+      <link>https://example.org/2014/06/04/android-application-for-a-basic-calculator/</link>
+      <pubDate>Wed, 04 Jun 2014 19:35:10 +0000</pubDate>
+      
+      <guid>https://example.org/2014/06/04/android-application-for-a-basic-calculator/</guid>
+      <description>Hi there,
+This time would like to share my new project &amp;lsquo; A basic calculator built for the android platform.&amp;rsquo;
+Creating android apps always seemed cool to me . Able to start learning to create one is even cooler.
+This project uses simple things like XML layouts, Activities using java, Intents, OnclickListeners and some more basic concepts of java and android.
+Below are the screenshots of the app running in both real android device and AVD.</description>
+    </item>
+    
+    <item>
+      <title>A Basic Calculator using Swing and JAVA(TM).</title>
+      <link>https://example.org/2014/05/22/a-basic-calculator-using-swing-and-javatm/</link>
+      <pubDate>Thu, 22 May 2014 17:34:12 +0000</pubDate>
+      
+      <guid>https://example.org/2014/05/22/a-basic-calculator-using-swing-and-javatm/</guid>
+      <description>Hi,there . This time i would like to share my new work. This a basic four function calculator made using java and Swing. The GUI created is with the help of&amp;hellip;.you guessed it right SWING.
+
+Java simple calculator
+ A four-function calculator with the following functions: Addition – adds two numbers Subtraction – subtracts number two from number one Multiplication – Multiplies two numbers Division – divides number two into number one</description>
+    </item>
+    
+  </channel>
+</rss>

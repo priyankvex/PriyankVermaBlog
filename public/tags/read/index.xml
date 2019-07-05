@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>read on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/read/</link>
+    <description>Recent content in read on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Oct 2018 11:40:19 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/read/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tackling Lost Updates Problem In Database Using Stricter Transaction  Isolation Level</title>
+      <link>https://example.org/2018/10/20/tackling-lost-updates-problem-in-database-using-better-isolation-level/</link>
+      <pubDate>Sat, 20 Oct 2018 11:40:19 +0000</pubDate>
+      
+      <guid>https://example.org/2018/10/20/tackling-lost-updates-problem-in-database-using-better-isolation-level/</guid>
+      <description>** Introduction**
+Databases are made for scale and are a highly concurrent system. Thus it is normal for them to expect multiple concurrent connections.
+Also, in most situations, we&amp;rsquo;ll want our database to be the source of truth and always contain consistent data.
+There are many concurrency related phenomena that can occur in a database when multiple transactions try to access/modify the same block of data. Ex dirty reads, dirty writes etc.</description>
+    </item>
+    
+    <item>
+      <title>6 Lessons On Work Ethic I Learned In One Year Of Professional Career</title>
+      <link>https://example.org/2018/07/21/6-lessons-on-work-ethic-i-learned-in-one-year-of-professional-career/</link>
+      <pubDate>Sat, 21 Jul 2018 18:17:06 +0000</pubDate>
+      
+      <guid>https://example.org/2018/07/21/6-lessons-on-work-ethic-i-learned-in-one-year-of-professional-career/</guid>
+      <description>Time flies. Recently I had completed one year as a full-time employee at my current employer **Squad. **A year has passed, and I decided it was time to revisit instances, memories, and experiences and to recollect what I had learned as a professional in this past year.
+It was also a wake-up call to reassess and redirect the ship named professional career to make sure it doesn&amp;rsquo;t get stuck in a whirlpool.</description>
+    </item>
+    
+  </channel>
+</rss>

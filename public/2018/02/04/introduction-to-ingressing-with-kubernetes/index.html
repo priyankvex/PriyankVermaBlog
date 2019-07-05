@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Introduction to Ingressing With Kubernetes &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Introduction to Ingressing With Kubernetes</h1>
+  <time datetime=2018-02-04T14:51:22Z class="post-date">Sun, Feb 4, 2018</time>
+  
+
+<p>Single responsibility is a magical notion. Whatever it touches, it makes it more manageable and efficient.</p>
+
+<p>With _Kubernetes, _we have the power to spawn many services. As many of them as we would like. But how inbounds requests are routed among these services?</p>
+
+<p><strong>_Ingressing _</strong>is a powerful way to decouple routing rules with core application logic.</p>
+
+<p>According to <em>kubernetes,</em></p>
+
+<blockquote>Ingress is a collection of rules that allow inbound connections to reach to reach cluster services.</blockquote>
+
+<h2 id="overview">Overview</h2>
+
+<p>In this post, we&rsquo;ll deploy a couple of services in the kubernetes cluster and then define an ingress to route the requests to one of them according to the rules.</p>
+
+<p>By the end of this post, we&rsquo;ll have a basic understanding of <strong>_ingressing _</strong> and a _**working demo **_to showcase its power.</p>
+
+<h2 id="more-on-ingress">More On Ingress</h2>
+
+<p>To allow inbound connections to reach cluster services, ingress configures a layer 7 load balancer and provides the following:</p>
+
+<pre><code>  1. TLS.
+  2. Path-based routing.
+  3. Name-based virtual routing.
+  4. Custom Rules
+</code></pre>
+
+<p>With ingress, connections can&rsquo;t reach our services directly. Instead, they reach the ingress endpoint and then are routed to a service based on rules.</p>
+
+<p>With this in mind, let&rsquo;s move forward to a working example.</p>
+
+<h2 id="step-1-spawn-first-service-and-deployment">Step 1: Spawn first service and deployment</h2>
+
+<p>We&rsquo;ll be creating two services and deployments, named _**cats <strong>_and _</strong>dogs.**_</p>
+
+<p>In this step, we&rsquo;ll be spawning our first service.</p>
+
+<p><a href="https://gist.github.com/priyankvex/d2b69f0417d7f4321f2d00f34621946b">https://gist.github.com/priyankvex/d2b69f0417d7f4321f2d00f34621946b</a></p>
+
+<p>Above is the .<em>yaml</em> file for our _cats-deployment. _Run the following command to create the <em>cats-deployment.</em></p>
+
+<pre><code>kubectl create -f cats-deployment.yaml --validate=false
+</code></pre>
+
+<p>Now, we&rsquo;ll create our <em>cats-service.</em></p>
+
+<p><a href="https://gist.github.com/priyankvex/cb1a9328127de44a6de483584643fcf0">https://gist.github.com/priyankvex/cb1a9328127de44a6de483584643fcf0</a></p>
+
+<p>Run the following command to create our <em>cats-service.</em></p>
+
+<pre><code>kubectl create -f cats-service.yaml --validate=false
+</code></pre>
+
+<p>As you can see in the deployment file, we are also specifying a volume associated with the container named _<strong>/home/docker/cat_volume.</strong>_</p>
+
+<p>Run the following commands after starting your minikube VM to host a file at that volume&rsquo;s path.</p>
+
+<pre><code>minikube ssh
+mkdir cat_volume
+echo &quot;&lt;h1&gt;cat service content&lt;/h1&gt;&quot; &gt; &quot;index.html&quot;
+</code></pre>
+
+<p>Tada! We have our first service and deployment up and running.</p>
+
+<h2 id="step-2-create-the-second-service-and-deployment">Step 2: Create the second service and deployment</h2>
+
+<p>We are going to name this one <em>dogs.</em></p>
+
+<p>Following the steps given, above create the deployment and service for our faithful friends <em>dogs.</em></p>
+
+<p>Here are the YAML files.</p>
+
+<p><a href="https://gist.github.com/priyankvex/d49696ba9b349d94bf3638251d8388a7">https://gist.github.com/priyankvex/d49696ba9b349d94bf3638251d8388a7</a></p>
+
+<p><a href="https://gist.github.com/priyankvex/20b506c3db9d5ae19c4cb5972113d991">https://gist.github.com/priyankvex/20b506c3db9d5ae19c4cb5972113d991</a></p>
+
+<h2 id="step-3-hit-the-endpoints-of-our-services-to-see-the-content-we-just-hosted-on-them">Step 3: Hit the endpoints of our services to see the content we just hosted on them.</h2>
+
+<p>Run the following command to get port numbers for the services.</p>
+
+<pre><code>kubectl get services
+</code></pre>
+
+<p>This will list all the services running the in kubernetes cluster along with their post numbers.</p>
+
+<p>We should see something like this.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2018/02/kube_services.png" alt="kube_services" /></p>
+
+<p>Get the port numbers and hit the browser to reach the pages of the two services we just hosted.</p>
+
+<p>Use the following command to get base IP of the minikube VM</p>
+
+<pre><code>minikube ip
+</code></pre>
+
+<p>Here is how our two services _cats _and _dogs _are looking.</p>
+
+<p>[gallery ids=&ldquo;1043,1044&rdquo; type=&ldquo;rectangular&rdquo;]</p>
+
+<h2 id="step-4-create-the-ingress-for-our-services">Step 4: Create the ingress for our services.</h2>
+
+<p>Following is the YAML file that we&rsquo;ll use to create the ingress.</p>
+
+<p><a href="https://gist.github.com/priyankvex/05aa1b9d75436803d9f44ef9643c7dc6">https://gist.github.com/priyankvex/05aa1b9d75436803d9f44ef9643c7dc6</a></p>
+
+<p>First, we need to start the ingress controller.</p>
+
+<pre><code>minikube addons enable ingress
+</code></pre>
+
+<p>With the following command, create the ingress.</p>
+
+<pre><code>kubectl create -f pets-ingress.yaml --validate=false
+</code></pre>
+
+<p>As we can see in the YAML file, we are doing name-based virtual routing between cats.myweb.com and dogs.myweb.com, routing them to our cats and dogs service respectively.</p>
+
+<p>For the sake of our demo to work, we&rsquo;ll have to add these hosts in our /etc/hosts file.</p>
+
+<p>Add the following line in your /etc/hosts file.</p>
+
+<pre><code>192.168.99.100   cats.myweb.com dogs.myweb.com
+</code></pre>
+
+<h2 id="step-5-hit-the-paths-to-see-the-ingress-controller-in-action">Step 5: Hit the paths to see the ingress controller in action!</h2>
+
+<p><img src="https://priyankvex.files.wordpress.com/2018/02/dogs_2.png" alt="dogs_2" />
+<img src="https://priyankvex.files.wordpress.com/2018/02/cats_2.png" alt="cats_2" /></p>
+
+<p>Congrats! Our ingress is working as expected and routing the names to their services like a routing ninja!</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>In this post, we got to know basics of ingressing and created a working demo to get the feel of its power.</p>
+
+<p>There is a lot that ingress can do, let&rsquo;s all keep exploring untill we fully learn how to harness its power.</p>
+
+<h1 id="that-s-all-folks">That’s all, folks!</h1>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

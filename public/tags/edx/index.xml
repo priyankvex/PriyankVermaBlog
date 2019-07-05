@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>edx on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/edx/</link>
+    <description>Recent content in edx on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Feb 2018 14:51:22 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/edx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to Ingressing With Kubernetes</title>
+      <link>https://example.org/2018/02/04/introduction-to-ingressing-with-kubernetes/</link>
+      <pubDate>Sun, 04 Feb 2018 14:51:22 +0000</pubDate>
+      
+      <guid>https://example.org/2018/02/04/introduction-to-ingressing-with-kubernetes/</guid>
+      <description>Single responsibility is a magical notion. Whatever it touches, it makes it more manageable and efficient.
+With _Kubernetes, _we have the power to spawn many services. As many of them as we would like. But how inbounds requests are routed among these services?
+_Ingressing _is a powerful way to decouple routing rules with core application logic.
+According to kubernetes,
+Ingress is a collection of rules that allow inbound connections to reach to reach cluster services.</description>
+    </item>
+    
+    <item>
+      <title>IIMBx: EP101x DO Your Venture : Course Experience on edX</title>
+      <link>https://example.org/2016/07/26/iimbx-ep101x-do-your-venture-course-experience-on-edx/</link>
+      <pubDate>Tue, 26 Jul 2016 09:57:18 +0000</pubDate>
+      
+      <guid>https://example.org/2016/07/26/iimbx-ep101x-do-your-venture-course-experience-on-edx/</guid>
+      <description>The best way to win is to show grit and bid on your strengths and intuitions. I have been trying to start my own company now for quite a some time. This course came into my mail box by edX, title looked captivating and thus I decided to take it.
+It was a light course. Not much effort needed other that just watching the videos and doing some assignments.
+The course was focused on making people get off with their venture from the idea phase to execution phase.</description>
+    </item>
+    
+    <item>
+      <title>UBCx: Marketing1x Introduction to Marketing : Course Experience</title>
+      <link>https://example.org/2016/02/26/ubcx-marketing1x-introduction-to-marketing-course-experience/</link>
+      <pubDate>Fri, 26 Feb 2016 17:22:47 +0000</pubDate>
+      
+      <guid>https://example.org/2016/02/26/ubcx-marketing1x-introduction-to-marketing-course-experience/</guid>
+      <description>Marketing is no longer about the stuff that you make, but about the stories that you tell.
+In today&amp;rsquo;s world everyone in some way or another is trying to market themselves to the world. This becomes even more prominent if you are trying to attract customers to earn your living.
+_Preping _to become an entrepreneur, I decided to take this course to get the proper understanding of how the mind of a marketer works.</description>
+    </item>
+    
+    <item>
+      <title>Edx : Digital Branding and Engagement Course Overview And Experience</title>
+      <link>https://example.org/2015/12/19/edx-digital-branding-and-engagement-course-overview-and-experience/</link>
+      <pubDate>Sat, 19 Dec 2015 09:28:00 +0000</pubDate>
+      
+      <guid>https://example.org/2015/12/19/edx-digital-branding-and-engagement-course-overview-and-experience/</guid>
+      <description>People Respond to Effort Lately I have been following Gary Vaynerchuck, an entrepreneur and serial investor. He also owns a social media marketing company Vayner Media. Listening to his podcasts and keynotes is an eye opener on how digital media marketing is reshaping the advertising world.
+So I took a course on Edx Digital Branding and Engagement finally know the digital marketing in and out.
+The course was 4 weeks long and delivers perfect contextual content.</description>
+    </item>
+    
+    <item>
+      <title>MIT 11.133x : Implementation and Evaluation of Educational Technology – Week 3 Sum Up</title>
+      <link>https://example.org/2015/08/23/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-3-sum-up/</link>
+      <pubDate>Sun, 23 Aug 2015 18:15:48 +0000</pubDate>
+      
+      <guid>https://example.org/2015/08/23/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-3-sum-up/</guid>
+      <description>What does it take to implement a educational technology? You have the idea that can supposedly change the world of ed tech and learning, but how to implement it?
+Throughout the course, in the past 3 weeks I was constantly having my idea of creating an ed tech. With each passing week the course taught me something new which can be used to carve the idea even better.
+By the end of 3 weeks I was having a very clear vision of what area of learning I have to target in my ed tech implementation, but again no technical knowledge was there on how to shape up the implementation wire-frame.</description>
+    </item>
+    
+    <item>
+      <title>MIT 11.133x : Implementation and Evaluation of Educational Technology – Week 2 Sum Up</title>
+      <link>https://example.org/2015/08/04/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-2-sum-up/</link>
+      <pubDate>Tue, 04 Aug 2015 17:21:25 +0000</pubDate>
+      
+      <guid>https://example.org/2015/08/04/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-2-sum-up/</guid>
+      <description>Here is it end of week 2 of 11.133x. And we are back with the sum up.
+This week was about many aspects that one should deal with while implementing an education technology, like deciding education technology framework, how to analyse a ed tech, technology buying process etc.
+This week started with TPACK. What is TPACK and why does it matter?
+TPACK is a framework which combines 3 knowledge. These are technological knowledge, content knowledge and pedagogical knowledge.</description>
+    </item>
+    
+    <item>
+      <title>MIT 11.133x : Implementation and Evaluation of Educational Technology – Week 1 Sum Up</title>
+      <link>https://example.org/2015/07/26/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-1-sum-up/</link>
+      <pubDate>Sun, 26 Jul 2015 18:51:48 +0000</pubDate>
+      
+      <guid>https://example.org/2015/07/26/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-1-sum-up/</guid>
+      <description>Here is it. End of week 1 of the course 11.133x.
+This week was a little more focused on educational technology. It covered various vital topics like :
+ 1. Stakeholders in ed tech. 2. Evaluation and assessment. 3. What makes a good ed tech? 4. Future of teaching. 5. Where to start with ed tech? 6. Concept of SAMR.  **Stakeholders in Ed Tech : **
+Stakeholders in ed tech are the ones who are going to be affected by the ed tech the most.</description>
+    </item>
+    
+    <item>
+      <title>MIT 11.133x  : Implementation and Evaluation of Educational Technology - Week 0 Sum Up</title>
+      <link>https://example.org/2015/07/19/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-0-sum-up/</link>
+      <pubDate>Sun, 19 Jul 2015 05:15:22 +0000</pubDate>
+      
+      <guid>https://example.org/2015/07/19/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-0-sum-up/</guid>
+      <description>This week I started with another MOOC by Edx &amp;ldquo;Implementation and Evaluation of Educational Technology&amp;rdquo;. It is a 5 weeks course going from week 0 to week 4.
+So here I will blog about my experiences with the course, each week.
+WEEK 0
+There was not much in the course in week 0. You can guess that by week number.
+Week started with introduction to forums and edx platform and how we are supposed to proceed with the course.</description>
+    </item>
+    
+    <item>
+      <title>6.00.1x: Introduction to Computer Science and Programming Using Python : The Experience</title>
+      <link>https://example.org/2014/09/20/6-00-1x-introduction-to-computer-science-and-programming-using-python-the-experience/</link>
+      <pubDate>Sat, 20 Sep 2014 03:09:50 +0000</pubDate>
+      
+      <guid>https://example.org/2014/09/20/6-00-1x-introduction-to-computer-science-and-programming-using-python-the-experience/</guid>
+      <description>Hi, guys. I am a very active participant of MOOC. In my previous post I shared my experience with LFS101x : Introduction to linux .And this time I am back with a new course.
+It was summer of 2014, I was having my semester break. And 6.00.1x was on my enrollment list on edx. I was really excited to get started with it.
+As this course says, it is meant for people with little to no programming experience, I was there having some programming experience but quiet a novice to python.</description>
+    </item>
+    
+    <item>
+      <title>LFS101x : Introduction to Linux on edX</title>
+      <link>https://example.org/2014/08/16/lfs101x-introduction-to-linux-on-edx/</link>
+      <pubDate>Sat, 16 Aug 2014 10:13:09 +0000</pubDate>
+      
+      <guid>https://example.org/2014/08/16/lfs101x-introduction-to-linux-on-edx/</guid>
+      <description>It was this summer when I saw this course LFS101x being offered on edX by The Linux Foundation. Both the terms Linux and edX excited me . So I decided to take this course.
+My experience with prior online courses I have taken few online courses on edX and coursera . In both the cases I loved the excitement and knowledge they provide. They were also fun learning and thus worked well for me.</description>
+    </item>
+    
+  </channel>
+</rss>

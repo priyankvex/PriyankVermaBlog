@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Architecting for Scale by Lee Atchison: Reading Experience &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Architecting for Scale by Lee Atchison: Reading Experience</h1>
+  <time datetime=2019-03-07T15:54:40Z class="post-date">Thu, Mar 7, 2019</time>
+  
+
+<p>I recently read the book <strong>Architecting for Scale by Lee Atchison.</strong> The book contains a high-level overview of the major concepts that revolve around the topic of building highly-available and scalable apps.<br />
+I felt the book to be more suited as a light read for people already familiar with these concepts rather than being an informative book for the new readers.</p>
+
+<p><img src="https://www.safaribooksonline.com/library/cover/9781491943380/360h/" alt="" /></p>
+
+<p>The book divided into 5 parts mainly:<br />
+1. Availability<br />
+2. Risk Management<br />
+3. Services and Microservices<br />
+4. Scaling Applications<br />
+5. Cloud Services</p>
+
+<p>Let&rsquo;s quickly summarise each part along with some good points mentioned in the book.</p>
+
+<h2 id="part-1-availability"><strong>Part 1: Availability</strong></h2>
+
+<p>This part introduces to the notion of &ldquo;availability&rdquo; and related aspects like what causes an application to loose availability and what are the major focus areas related to availability of an application.</p>
+
+<p><strong>Availability vs Reliability:</strong><br />
+Availability of a system is its ability to stay operational when it&rsquo;s needed to perform operations.<br />
+Reliability of a system is its ability to perform operations has they are intended without making mistakes.</p>
+
+<p><strong>What causes poor availability?</strong><br />
+The book lists some of the most common reasons which generally compromise the availability of a system:<br />
+1. Resource exhaustion<br />
+2. Unplanned load changes<br />
+3. Increased number of moving parts<br />
+4. Outside dependencies<br />
+5. Technical debt</p>
+
+<p><strong>5 focuses on improving availability</strong><br />
+The book also lists 5 best practices that we can focus on to improve the availability of a system.</p>
+
+<ol>
+<li><p>Build with failure in mind:<br />
+Your applications will fail. Design the systems in such a way that they handle errors and are robust. A similar idea was discussed in one of my previous posts.</p></li>
+
+<li><p>Always think about scaling:<br />
+While designing the systems always keep an eye on parts of the system that can become bottleneck with scale. Ex, will the DB be able to keep simultaneous connections, can the static content be served via a CDN to reduce the load on app servers.</p></li>
+
+<li><p>Mitigate the risk:<br />
+There is always a risk that your system will fail in one way or the other. There is a risk of system fault, bug, corruption etc. Systems should be designed in a way that the risk is mitigated.<br />
+A brilliant example was, say the search service of an online store  is down, one way to mitigate the damage will be to show the most popular items and a coupon code for the inconvenience rather than showing an error page to the customer.</p></li>
+
+<li><p>Monitor availability:<br />
+Keep alerts and tracking in place to surface the problems with the app.</p></li>
+
+<li><p>Respond to availability issues in predictable ways:<br />
+Have standard procedures (hopefully automated) , to respond to the known availability issues.</p></li>
+</ol>
+
+<p>The book also stresses on the point that we should always automate all the processes that touch our production systems. Manual errors are bound to happen and humans pressing the wrong button should not be the reason for your app being down.</p>
+
+<p>Part 2: Risk Management</p>
+
+<p>This part was geared towards risks that are present in a system and ways to handle and mitigate them.</p>
+
+<p><strong>What&rsquo;s a risk?</strong><br />
+All systems have risk in them and it&rsquo;s impossible to eradicate every possible risk out there.<br />
+There is a risk that a server will crash, or database will be corrupted or the newly deployed service fail.</p>
+
+<p><strong>Managing risk</strong><br />
+1. Identify the risk:<br />
+Identify and list all the risks and prioritise them.<br />
+2. Remove worst offenders:<br />
+Find the biggest risks and remove them.<br />
+3. Mitigate:<br />
+For the majority of the risks that you cannot remove, have a mitigation plan in place.<br />
+4. Review regularly:<br />
+Keep reviewing this periodically.</p>
+
+<p><strong>Classifying the risks:</strong><br />
+The book suggests that the risks can be classified into following 4 groups and can be dealt with accordingly:<br />
+1. Low likelihood, low severity.<br />
+These can be safely ignored.</p>
+
+<ol>
+<li><p>Low likelihood, high-severity.<br />
+Though we might never need this, but we must have a mitigation plan in place. Example, what happens if the message broker that we use crashes?</p></li>
+
+<li><p>High likelihood, low severity:<br />
+We generally need to work on improving the likelihood of the risk here. Example, of the custom font service is down frequently, we might consider switching the CDN.</p></li>
+
+<li><p>High likelihood, high severity:<br />
+These are the ones that must be removed from the system.</p></li>
+</ol>
+
+<p><strong>Building systems with reduces risk:</strong><br />
+The book mentions few techniques that we can employ to reduce the risks in our systems.</p>
+
+<ol>
+<li><p>Redundancy:<br />
+Design the application in such a way that we have redundancy and tasks can be retired asynchronously. Having idempotent interfaces helps in a big way here.</p></li>
+
+<li><p>Independence:<br />
+Make sure that the components are independent from each other and there is not mutual point of failure.</p></li>
+
+<li><p>Security:<br />
+Keep an eye on bad actors that might try to cause harm to the system. Example, DoS attack or database corruption.</p></li>
+
+<li><p>Simple:<br />
+The more complex the system becomes, the more hidden risks it&rsquo;ll develop. A similar idea is discusses in one of my previous posts.</p></li>
+
+<li><p>Self-repair:<br />
+Design systems in such a way that it can self-heal itself in case of errors. It can be as complex as having a kubernetes cluster that respwans missing pods to something as simple as a queue that keeps track of failed tasks so that they can retried automatically after some time.</p></li>
+</ol>
+
+<h2 id="part-3-services-and-microservices">Part 3: Services and Microservices</h2>
+
+<p>A service is a distinct enclosed system that provides business functionality is support of building one or more larger products.<br />
+We all start with a monolith app architecture as it&rsquo;s easier to get started with and also faster to move with, but with scale we might want to venture into the world of a &ldquo;service based architecture&rdquo;</p>
+
+<p>The book states the following <strong>benefits that come with a &ldquo;service-based architecture&rdquo;</strong>:</p>
+
+<ol>
+<li><p>Scaling decisions:<br />
+Scaling decision for each service can be made at a more granular level.</p></li>
+
+<li><p>Team assignment and focus:<br />
+Teams can focus on particular services and have confidence over how their changes will impact the larger system.</p></li>
+
+<li><p>Complexity localisation:<br />
+Services can be think of as black boxes and thus complexities can be contained within them. Compartmentalising the complexity within teams that have the expertise with that service helps us manage them effectively.</p></li>
+
+<li><p>Testing:<br />
+Each service can be effectively testing in isolation.</p></li>
+</ol>
+
+<p><strong>What should be a service?</strong><br />
+Services can be slightly large units or they can be very tiny components of the system , AKA <em><strong>microservices</strong>.</em></p>
+
+<p>The book points to the following guidelines for dividing the services:</p>
+
+<ol>
+<li><p>Specific business requirements<br />
+In some cases there are very specific business requirements that dictate the service boundary. Example, compliance, payment processing, restricting access.</p></li>
+
+<li><p>Distinct and separable team ownership:<br />
+Services can be divided to give separable, distinct and smaller ownership to specialised teams.</p></li>
+
+<li><p>Naturally separable data:<br />
+Can a service and it&rsquo;s data and state be separated out from the rest of the system?</p></li>
+
+<li><p>Shared capabilities:<br />
+Is the service being used by two or more other services?</p></li>
+</ol>
+
+<p>As we try to live with a service-based architecture, we also face different type of failures. The book also mentions handling service failures.</p>
+
+<p><strong>Best practices of service failures:</strong><br />
+1. Have predictable response to failures:<br />
+Instead of returning garbage responses, always return proper failure codes from the services in case of a failure.</p>
+
+<ol>
+<li><p>Fail as early as possible:<br />
+If a service encounters an error, then we should try to fail as early as possible.</p></li>
+
+<li><p>Graceful degradation:<br />
+If a service that we depend on fails, we should try to gracefully degrade only the part of the functionalities that depend on that failed service.</p></li>
+</ol>
+
+<h2 id="part-4-scaling-applications">Part 4: Scaling Applications</h2>
+
+<p><strong>Service Tiers</strong><br />
+A service tier is basically just a label that&rsquo;s attached to a service to indicate how critical the service is to the business operations.</p>
+
+<ol>
+<li><p>Tier 1 services:<br />
+These are the most critical services and their failure will directly cause damage to the company.<br />
+Example, login service, order accepting service, payment processing service.</p></li>
+
+<li><p>Tier 2 services:<br />
+Failures of these services will degrade the user experience considerably but are less critical than the tier 1 services.<br />
+Example, search service, live reporting service.</p></li>
+
+<li><p>Tier 3 services:<br />
+Failures of these will cause minor or unnoticeable  impact.<br />
+Example, recommendations service, daily newsletter service</p></li>
+
+<li><p>Tier 4 services:<br />
+Failure of these services for a short time is often tolerable.<br />
+Example, weekly reporting service, email marketing service.</p></li>
+</ol>
+
+<p>Using the service tier that we are working with we should design the responsiveness and liveliness of the service. We should also set-up and measure appropriate service level agreements for the same.</p>
+
+<h2 id="part-5-cloud-services">Part 5: Cloud Services</h2>
+
+<p>This part was a very light read for someone who already has some experience working with any cloud provider.<br />
+It gives an overview over the architecture AWS and different cloud computing options available these days like managed cloud and micro-computing like AWS Lambda.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Overall this was a rather light read that might help you breeze through the major concepts that are involved when designing applications for scale and will also add some terms to your vocabulary.<br />
+This book is not a definitive guide on any of the topics and thus cannot be used for guidance on any particular implementation.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

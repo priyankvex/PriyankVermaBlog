@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>course on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/course/</link>
+    <description>Recent content in course on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Aug 2018 18:41:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/course/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Acceptance Tests: The Best Medium of Communication Between Stakeholders (if done right)</title>
+      <link>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</link>
+      <pubDate>Sun, 05 Aug 2018 18:41:18 +0000</pubDate>
+      
+      <guid>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</guid>
+      <description>It&amp;rsquo;s a nice pleasant morning, and you have just entered the office. You greet your friends and grab a cup of coffee. You check your email and there is a new story assigned to you.
+&amp;ldquo;As a customer, I get my usage logs backed up&amp;rdquo;
+This is where is fun begins.
+Communicating Requirements A product engineer&amp;rsquo;s job is to have effective and clear communication as much as it is to write code.</description>
+    </item>
+    
+    <item>
+      <title>6 Lessons On Work Ethic I Learned In One Year Of Professional Career</title>
+      <link>https://example.org/2018/07/21/6-lessons-on-work-ethic-i-learned-in-one-year-of-professional-career/</link>
+      <pubDate>Sat, 21 Jul 2018 18:17:06 +0000</pubDate>
+      
+      <guid>https://example.org/2018/07/21/6-lessons-on-work-ethic-i-learned-in-one-year-of-professional-career/</guid>
+      <description>Time flies. Recently I had completed one year as a full-time employee at my current employer **Squad. **A year has passed, and I decided it was time to revisit instances, memories, and experiences and to recollect what I had learned as a professional in this past year.
+It was also a wake-up call to reassess and redirect the ship named professional career to make sure it doesn&amp;rsquo;t get stuck in a whirlpool.</description>
+    </item>
+    
+    <item>
+      <title>IIMBx: EP101x DO Your Venture : Course Experience on edX</title>
+      <link>https://example.org/2016/07/26/iimbx-ep101x-do-your-venture-course-experience-on-edx/</link>
+      <pubDate>Tue, 26 Jul 2016 09:57:18 +0000</pubDate>
+      
+      <guid>https://example.org/2016/07/26/iimbx-ep101x-do-your-venture-course-experience-on-edx/</guid>
+      <description>The best way to win is to show grit and bid on your strengths and intuitions. I have been trying to start my own company now for quite a some time. This course came into my mail box by edX, title looked captivating and thus I decided to take it.
+It was a light course. Not much effort needed other that just watching the videos and doing some assignments.
+The course was focused on making people get off with their venture from the idea phase to execution phase.</description>
+    </item>
+    
+  </channel>
+</rss>

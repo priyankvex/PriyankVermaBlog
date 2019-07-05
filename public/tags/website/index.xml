@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>website on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/website/</link>
+    <description>Recent content in website on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Aug 2016 12:53:19 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to detect emails, phone numbers, web URLs, hashtags in Android TextView? : SmartTextView library</title>
+      <link>https://example.org/2016/08/17/how-to-detect-emails-phone-numbers-web-urls-hashtags-in-android-textview-smarttextview-library/</link>
+      <pubDate>Wed, 17 Aug 2016 12:53:19 +0000</pubDate>
+      
+      <guid>https://example.org/2016/08/17/how-to-detect-emails-phone-numbers-web-urls-hashtags-in-android-textview-smarttextview-library/</guid>
+      <description>Smart Text View Star On GitHub Follow On GitHub
+Many applications in android use TextView that detects and highlight various string patterns like emails, phone numbers, web URLs and even hashtags.
+This functionality is very common and and is used extensively and frequently in many app. Thus to ease the process of adding this functionality I have authored an Android library SmartTextView.
+Find and Star it on GitHub : https://github.</description>
+    </item>
+    
+  </channel>
+</rss>

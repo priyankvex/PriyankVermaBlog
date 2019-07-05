@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>business on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/business/</link>
+    <description>Recent content in business on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Aug 2018 18:41:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/business/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Acceptance Tests: The Best Medium of Communication Between Stakeholders (if done right)</title>
+      <link>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</link>
+      <pubDate>Sun, 05 Aug 2018 18:41:18 +0000</pubDate>
+      
+      <guid>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</guid>
+      <description>It&amp;rsquo;s a nice pleasant morning, and you have just entered the office. You greet your friends and grab a cup of coffee. You check your email and there is a new story assigned to you.
+&amp;ldquo;As a customer, I get my usage logs backed up&amp;rdquo;
+This is where is fun begins.
+Communicating Requirements A product engineer&amp;rsquo;s job is to have effective and clear communication as much as it is to write code.</description>
+    </item>
+    
+    <item>
+      <title>Tracking Metrics to Surface and Solve Problems: Metric Tracking Practices I&#39;ve Learned So Far</title>
+      <link>https://example.org/2018/05/21/tracking-metrics-to-surface-and-solve-problems-metric-tracking-practices-ive-learned-so-far/</link>
+      <pubDate>Sun, 20 May 2018 20:11:59 +0000</pubDate>
+      
+      <guid>https://example.org/2018/05/21/tracking-metrics-to-surface-and-solve-problems-metric-tracking-practices-ive-learned-so-far/</guid>
+      <description>It is a nice pleasant evening, you are sipping coffee and reviewing your code one final time, just so that you can gather enough confidence to hit the deploy button.
+But a fact of life as a software engineer is that things can go wrong. Small changes may result in unexpected outcomes, including outages, errors or negatively impacting customers.
+And when problems occur, either we can do random checks and validations that may or may not solve the problem or we can have a disciplined problem-solving approach that relies on data rather than intuitions.</description>
+    </item>
+    
+    <item>
+      <title>Organization Archetypes And The Concept Of Market-Oriented &#34;Solver Teams&#34;</title>
+      <link>https://example.org/2018/05/05/organization-archetypes-and-the-concept-of-market-oriented-solver-teams/</link>
+      <pubDate>Sat, 05 May 2018 15:56:15 +0000</pubDate>
+      
+      <guid>https://example.org/2018/05/05/organization-archetypes-and-the-concept-of-market-oriented-solver-teams/</guid>
+      <description>Organizations which designs systems are constrained to produce designs which are copies of the communication structure of the organization.
+In other words, how we organize our teams has a powerful effect on the software we produce, as well as our resulting architectural and production outcomes.
+Thus, in order to get a fast flow of work from Development to Operations, with high quality, great customer outcomes and fast speed of delivery, we must organize our teams to bring the team structure to our advantage.</description>
+    </item>
+    
+    <item>
+      <title>Devops and The Principle Of Flow</title>
+      <link>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</link>
+      <pubDate>Sun, 29 Apr 2018 17:01:20 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</guid>
+      <description>In the technology value stream, work typically flows from Development to Operations, steps consisting of functional areas between our business and our customers.
+As stated in the lean principles developed by Toyota, we should optimize to get a single-piece fast and smooth flow for our releases.
+We increase flow by:
+ 1. Making work visible, 2. Reducing batch sizes and intervals of work 3. Building in the quality, preventing defects from being passed to downstream work centers.</description>
+    </item>
+    
+    <item>
+      <title>Practical Problem Solving Framework: Inspired By The Toyota Way</title>
+      <link>https://example.org/2018/03/25/practical-problem-solving-framework-inspired-by-the-toyota-way/</link>
+      <pubDate>Sun, 25 Mar 2018 11:32:12 +0000</pubDate>
+      
+      <guid>https://example.org/2018/03/25/practical-problem-solving-framework-inspired-by-the-toyota-way/</guid>
+      <description>We all will agree to a certain point that having a system/process for anything reduces chances of errors.
+As an engineer or someone people look forward to propose solutions to problems it&amp;rsquo;s beneficial to have a framework in place to solve problems effectively.
+Recently I was reading _**The Toyota Way, **_and it suggested a framework to _Practical Problem Solving. _It almost felt trivial that this sort of framework would be invaluable to software engineers too (in fact for everyone).</description>
+    </item>
+    
+    <item>
+      <title>Estimation  Peril:  How To Estimate  Software Projects Effectively(or How Not To Lie)</title>
+      <link>https://example.org/2017/10/15/estimation-peril-how-to-estimate-software-projects-effectivelyor-how-not-to-lie/</link>
+      <pubDate>Sun, 15 Oct 2017 17:24:51 +0000</pubDate>
+      
+      <guid>https://example.org/2017/10/15/estimation-peril-how-to-estimate-software-projects-effectivelyor-how-not-to-lie/</guid>
+      <description>Consider, you are a rockstar engineer and you are given a task by your favorite person, your project manager, to show some new fields in the dashboard.
+As usual, you are asked to estimate it as soon as possible. You think that well, seems like a quickie and you are tempted to estimate it a day. But you, being burnt before, decided to look at the fields that are to be added carefully.</description>
+    </item>
+    
+    <item>
+      <title>E-Summit ’17 IIT Bombay — Experience</title>
+      <link>https://example.org/2017/02/03/e-summit-17-iit-bombay%e2%80%8a-%e2%80%8aexperience/</link>
+      <pubDate>Fri, 03 Feb 2017 17:16:01 +0000</pubDate>
+      
+      <guid>https://example.org/2017/02/03/e-summit-17-iit-bombay%e2%80%8a-%e2%80%8aexperience/</guid>
+      <description>E-Summit is the flagship entrepreneurship event organized by IITB. The two-day annual summit promises to be an amazing meeting ground for industry experts, business leaders, investors and entrepreneurs and of course, students, many of whom are aspiring entrepreneurs.
+I attended this event in its 2017 edition and had mixed feelings on how the whole thing turned out holistically. There were some good parts and some not so good parts, but as a whole the event was worth attending.</description>
+    </item>
+    
+    <item>
+      <title>The Blue Ocean Strategy : How To Create Uncontested Market Space and Make the Competition Irrelevant</title>
+      <link>https://example.org/2017/01/15/the-blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant/</link>
+      <pubDate>Sun, 15 Jan 2017 10:49:59 +0000</pubDate>
+      
+      <guid>https://example.org/2017/01/15/the-blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant/</guid>
+      <description>When Henry Ford made cheap, reliable cars people said, ‘Nah, what’s wrong with a horse?’ That was a huge bet he made, and it worked. The whole idea of _The Blue Ocean Strategy _is to create uncontested market spaces that creates new demands and make the competition irrelevant.
+The book describes _Red Oceans _as known market places that have bloody competition among businesses trying to win customers. Here there is a fixed existing demand of which every company wants a share.</description>
+    </item>
+    
+    <item>
+      <title>Zen and the Art of Motorcycle Maintenance : Reading Experience</title>
+      <link>https://example.org/2016/12/25/zen-and-the-art-of-motorcycle-maintenance-reading-experience/</link>
+      <pubDate>Sun, 25 Dec 2016 11:13:06 +0000</pubDate>
+      
+      <guid>https://example.org/2016/12/25/zen-and-the-art-of-motorcycle-maintenance-reading-experience/</guid>
+      <description>The Japanese motorcycle maintenance guide says “ Assembly of Japanese bicycle requires great piece of mind”. There is a thing about everything you build, including bikes. If you build it with non-serene mind, then you build your problems into it.
+The book takes you on a cross country bike journey that will teach you mind opening lessons that leave lasting impressions on your mind. Your mind will simple refuse to contract itself to older stage.</description>
+    </item>
+    
+    <item>
+      <title>Business In Boxers 3 : The Psychological Roller Coaster</title>
+      <link>https://example.org/2016/06/30/business-in-boxers-3-the-psychological-roller-coaster/</link>
+      <pubDate>Thu, 30 Jun 2016 18:58:30 +0000</pubDate>
+      
+      <guid>https://example.org/2016/06/30/business-in-boxers-3-the-psychological-roller-coaster/</guid>
+      <description>One of my favorite things about instrumental music is that the listener is encouraged to use his or her imagination. I have been a huge Owl City and Adam Young fan since forever. Lately he is releasing sets of instrumental music called as Adam Young Scores inspired by incidents that made a lasting impression on the world. Reading about all those incidents has made a lasting impression on my mind for sure, our small failures and success doesn&amp;rsquo;t even matter to the world, we have got to make it large.</description>
+    </item>
+    
+    <item>
+      <title>Business in Boxers 2 : The Rainbow Shelf</title>
+      <link>https://example.org/2016/05/30/business-in-boxers-2-the-rainbow-shelf/</link>
+      <pubDate>Mon, 30 May 2016 20:12:39 +0000</pubDate>
+      
+      <guid>https://example.org/2016/05/30/business-in-boxers-2-the-rainbow-shelf/</guid>
+      <description>As a 16-17 year old you try to figure out what you want to do with your life and then you just imagine yourself doing that. I am a kind of person who imagines stuff very vividly. Few years down the time river here I am, trying to work as hard as I can in the scorching summer heat on something that I always wanted to do.
+Second month working on the startup I always wanted to do.</description>
+    </item>
+    
+    <item>
+      <title>Business in Boxers : 1 Month Into Running a StartUp</title>
+      <link>https://example.org/2016/03/22/business-in-boxers-1-month-into-running-a-startup/</link>
+      <pubDate>Tue, 22 Mar 2016 20:49:58 +0000</pubDate>
+      
+      <guid>https://example.org/2016/03/22/business-in-boxers-1-month-into-running-a-startup/</guid>
+      <description>**Why the Series? **
+(Inspired by book : Business In Blue Jeans)
+Hi! This is Priyank. This series is about me pen downing my start-up ride. Don&amp;rsquo;t know if it&amp;rsquo;s fast or slow, all I really know is I&amp;rsquo;m gonna enjoy the ride.
+Why the name?
+Boxers is what you&amp;rsquo;ll find me almost every time in and business is what&amp;rsquo;s always in my mind and thus the name &amp;ldquo;Business In Boxers&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

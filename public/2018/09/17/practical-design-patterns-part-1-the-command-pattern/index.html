@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Practical Design Patterns Part 1: The Command Pattern &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Practical Design Patterns Part 1: The Command Pattern</h1>
+  <time datetime=2018-09-17T07:51:56Z class="post-date">Mon, Sep 17, 2018</time>
+  
+
+<h2 id="nature-3616194-960-720-https-priyankvex-files-wordpress-com-2018-09-nature-3616194-960-720-jpg"><img src="https://priyankvex.files.wordpress.com/2018/09/nature-3616194_960_720.jpg" alt="nature-3616194_960_720" /></h2>
+
+<h2 id="toc_1">**</h2>
+
+<p>Introduction**</p>
+
+<p>Most software these days support undoing/redoing actions. For example, text editors support undoing what we have written, file managers support undoing file creation/deletion etc. It&rsquo;s a good UX practice to make software forgiving and allow users to undo their actions.</p>
+
+<p>I always wondered how was this implemented?  On a critical analysis, it seems as if the object on which the actions are taking place receives them from somewhere else, like a _command. _The object that invokes the actions, the object on which the actions are performed and the actions themselves are <em>decoupled.</em> This is exactly why the Command Pattern exists.</p>
+
+<h2 id="toc_2">**</h2>
+
+<p>The Command Pattern**</p>
+
+<p>The Command Pattern is a behavioral design pattern, i.e it tries to simplify communication among objects and improve flexibility, in which an operation is encapsulated with all the information it needs to perform the action in an object.</p>
+
+<p>What the above statement simply means is that we create a class that represents an operation and its instance holds all the data and methods that are needed to perform the action.</p>
+
+<h2 id="advantages-of-the-command-pattern"><strong>Advantages of The Command Pattern</strong></h2>
+
+<pre><code>  1. The Invoker and the actions can be decoupled. The invoker doesn't need to know how the operations are implemented.
+  2. It is easy to change an operation and add new operations.
+  3. Multiple commands can be grouped together to execute them in order. (This is especially helpful in designing systems that support multi-level _undo_.)
+</code></pre>
+
+<h2 id="toc_4">**</h2>
+
+<p>Implementation and Usage**</p>
+
+<p>We are going to implement a simple home control system that supports a certain set of actions that the user can perform and an undo feature to allow a user to undo her actions.</p>
+
+<p>Overview of the system looks as follows:</p>
+
+<pre><code>  1. Home is the class on which the actions are performed.
+  2. SmartRemote is the class that allows performing actions on the Home.
+  3. FanOnCommand, FanoffCommand, FanSlowCommand, FanFastCommand are 4 commands that are supported.
+  4. A user can undo her actions.
+</code></pre>
+
+<p>Following is the implementation of the system explained above and showcases the power of the command pattern.</p>
+
+<p>The example is complex enough to properly showcase the functionality and advantages of the design pattern.</p>
+
+<p><a href="https://gist.github.com/priyankvex/d594872a222fbc50b72105f4d7b3c038">https://gist.github.com/priyankvex/d594872a222fbc50b72105f4d7b3c038</a></p>
+
+<p>Conclusion</p>
+
+<p>The Command Pattern is a behavioral design pattern that allows encapsulating actions in an object that has all the information available with it to perform the action.</p>
+
+<p>This makes it a good candidate to implement systems that have GUI driven actions, transactional behaviors, multi-level undo etc.</p>
+
+<p>Practical Design Patterns is an attempt to cover the most common design patterns with strong and practical explanation and implementation. Stay tuned for the next post in the series.</p>
+
+<h1 id="that-s-all-folks">That’s all, folks!</h1>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>build on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/build/</link>
+    <description>Recent content in build on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Aug 2015 10:07:28 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/build/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to build Tesseract OCR library for Android Studio?</title>
+      <link>https://example.org/2015/08/30/how-to-build-tesseract-ocr-library-for-android-studio/</link>
+      <pubDate>Sun, 30 Aug 2015 10:07:28 +0000</pubDate>
+      
+      <guid>https://example.org/2015/08/30/how-to-build-tesseract-ocr-library-for-android-studio/</guid>
+      <description>Star On GitHub
+If you ever tried to create an OCR app for Android you must have stumbled upon the OCR library by Google Tesseract. And then the problems began.
+To use the library in your project you first need to build it. But building the library to be compatible with gradle, which is the new build system for Android projects is little not so easily stated anywhere in the library manual.</description>
+    </item>
+    
+  </channel>
+</rss>

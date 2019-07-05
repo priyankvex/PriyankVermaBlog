@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>passionate on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/passionate/</link>
+    <description>Recent content in passionate on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Jul 2015 17:36:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/passionate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Passionate Programmer : Reading Experience</title>
+      <link>https://example.org/2015/07/22/the-passionate-programmer-reading-experience/</link>
+      <pubDate>Wed, 22 Jul 2015 17:36:30 +0000</pubDate>
+      
+      <guid>https://example.org/2015/07/22/the-passionate-programmer-reading-experience/</guid>
+      <description>Here we go for the 3rd time. My 3rd book for 2015&amp;rsquo;s 10 book reading challenge is _The Passionate Programmer. _
+I picked this book from pragmatic programmer book shelf. All books listed there are awesome and are a must read. Anyways continuing with this book, it was an awesome reading experience. It was one of those books you wish to never end.
+The author covers many aspects of what constitutes a not good but a great software developing career.</description>
+    </item>
+    
+  </channel>
+</rss>

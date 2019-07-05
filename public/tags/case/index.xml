@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>case on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/case/</link>
+    <description>Recent content in case on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Aug 2018 18:41:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/case/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Acceptance Tests: The Best Medium of Communication Between Stakeholders (if done right)</title>
+      <link>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</link>
+      <pubDate>Sun, 05 Aug 2018 18:41:18 +0000</pubDate>
+      
+      <guid>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</guid>
+      <description>It&amp;rsquo;s a nice pleasant morning, and you have just entered the office. You greet your friends and grab a cup of coffee. You check your email and there is a new story assigned to you.
+&amp;ldquo;As a customer, I get my usage logs backed up&amp;rdquo;
+This is where is fun begins.
+Communicating Requirements A product engineer&amp;rsquo;s job is to have effective and clear communication as much as it is to write code.</description>
+    </item>
+    
+    <item>
+      <title>Devops and The Principle Of Flow</title>
+      <link>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</link>
+      <pubDate>Sun, 29 Apr 2018 17:01:20 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</guid>
+      <description>In the technology value stream, work typically flows from Development to Operations, steps consisting of functional areas between our business and our customers.
+As stated in the lean principles developed by Toyota, we should optimize to get a single-piece fast and smooth flow for our releases.
+We increase flow by:
+ 1. Making work visible, 2. Reducing batch sizes and intervals of work 3. Building in the quality, preventing defects from being passed to downstream work centers.</description>
+    </item>
+    
+    <item>
+      <title>What to do? An android app made to guide people what to do in various scenarios.</title>
+      <link>https://example.org/2014/06/27/what-to-do-an-android-app-made-to-guide-people-what-to-do-in-various-scenarios/</link>
+      <pubDate>Fri, 27 Jun 2014 08:02:36 +0000</pubDate>
+      
+      <guid>https://example.org/2014/06/27/what-to-do-an-android-app-made-to-guide-people-what-to-do-in-various-scenarios/</guid>
+      <description>Click Here to download  _NOTE : _This app has been signed with default debug key
+We all face various scenarios in our life . Some are life threatening while some are just awkward moments . In each case it is kinda vital to do the write things at the write time . This app has been made to help you do the same with the help researched content and quick links provided within the app.</description>
+    </item>
+    
+  </channel>
+</rss>

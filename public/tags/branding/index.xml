@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>branding on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/branding/</link>
+    <description>Recent content in branding on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Mar 2016 20:49:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/branding/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Business in Boxers : 1 Month Into Running a StartUp</title>
+      <link>https://example.org/2016/03/22/business-in-boxers-1-month-into-running-a-startup/</link>
+      <pubDate>Tue, 22 Mar 2016 20:49:58 +0000</pubDate>
+      
+      <guid>https://example.org/2016/03/22/business-in-boxers-1-month-into-running-a-startup/</guid>
+      <description>**Why the Series? **
+(Inspired by book : Business In Blue Jeans)
+Hi! This is Priyank. This series is about me pen downing my start-up ride. Don&amp;rsquo;t know if it&amp;rsquo;s fast or slow, all I really know is I&amp;rsquo;m gonna enjoy the ride.
+Why the name?
+Boxers is what you&amp;rsquo;ll find me almost every time in and business is what&amp;rsquo;s always in my mind and thus the name &amp;ldquo;Business In Boxers&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>UBCx: Marketing1x Introduction to Marketing : Course Experience</title>
+      <link>https://example.org/2016/02/26/ubcx-marketing1x-introduction-to-marketing-course-experience/</link>
+      <pubDate>Fri, 26 Feb 2016 17:22:47 +0000</pubDate>
+      
+      <guid>https://example.org/2016/02/26/ubcx-marketing1x-introduction-to-marketing-course-experience/</guid>
+      <description>Marketing is no longer about the stuff that you make, but about the stories that you tell.
+In today&amp;rsquo;s world everyone in some way or another is trying to market themselves to the world. This becomes even more prominent if you are trying to attract customers to earn your living.
+_Preping _to become an entrepreneur, I decided to take this course to get the proper understanding of how the mind of a marketer works.</description>
+    </item>
+    
+    <item>
+      <title>Edx : Digital Branding and Engagement Course Overview And Experience</title>
+      <link>https://example.org/2015/12/19/edx-digital-branding-and-engagement-course-overview-and-experience/</link>
+      <pubDate>Sat, 19 Dec 2015 09:28:00 +0000</pubDate>
+      
+      <guid>https://example.org/2015/12/19/edx-digital-branding-and-engagement-course-overview-and-experience/</guid>
+      <description>People Respond to Effort Lately I have been following Gary Vaynerchuck, an entrepreneur and serial investor. He also owns a social media marketing company Vayner Media. Listening to his podcasts and keynotes is an eye opener on how digital media marketing is reshaping the advertising world.
+So I took a course on Edx Digital Branding and Engagement finally know the digital marketing in and out.
+The course was 4 weeks long and delivers perfect contextual content.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Store on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/store/</link>
+    <description>Recent content in Store on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Jun 2016 15:24:50 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/store/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Marketing Your Retail Store in the Internet Age by Bob Negen  : Reading Experience</title>
+      <link>https://example.org/2016/06/21/marketing-your-retail-store-in-the-internet-age-by-bob-negen-reading-experience/</link>
+      <pubDate>Tue, 21 Jun 2016 15:24:50 +0000</pubDate>
+      
+      <guid>https://example.org/2016/06/21/marketing-your-retail-store-in-the-internet-age-by-bob-negen-reading-experience/</guid>
+      <description>This was the book that I knew prior to reading it that it won&amp;rsquo;t be too interesting and might even feel too slow. I searched it on the internet and picked it to read to get a perspective of a retail seller. As me and my team are trying to start a company that will work very closely with retail stores and their owners I thought this book will provide some value.</description>
+    </item>
+    
+  </channel>
+</rss>

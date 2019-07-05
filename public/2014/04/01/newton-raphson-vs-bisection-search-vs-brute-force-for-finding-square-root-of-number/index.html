@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Newton-Raphson vs Bisection Search vs Brute force for finding square root of  number. &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Newton-Raphson vs Bisection Search vs Brute force for finding square root of  number.</h1>
+  <time datetime=2014-04-01T06:28:36Z class="post-date">Tue, Apr 1, 2014</time>
+  
+
+<p><strong>Computers</strong> are meant to compute things. Finding square root is a very basic algorithm which can be coded in basically 3 ways :
+All 3 ways are based on the <strong>_Guess and check method _</strong> A.K.A <strong><em>Exhaustive Enumeration</em></strong>.
+_ &gt;1. Brute force method :_</p>
+
+<p>__ In this method we test all the possible values and test them .</p>
+
+<p>_2. Bisection Search : _</p>
+
+<p>By cutting the problem into the half after every iteration. This is much more effective then brute force method which we will see later in this post.</p>
+
+<p><em>3. Newton-Raphson method :</em></p>
+
+<p>This method is based on the formula given by sir newton that if, g is a guess of a root of polynomial then,
+**g= g - g(x)/g&rsquo;(x) **
+is a better guess.</p>
+
+<h3 id="we-will-be-using-phython-to-code-the-algorithms-because-it-is-most-easy-to-understand">We will be using phython to code the algorithms because it is most easy to understand.</h3>
+
+<h2 id="brute-force-method">Brute force method</h2>
+
+<p>[caption id=&ldquo;attachment_17&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;300&rdquo;]<a href="http://priyankvex.files.wordpress.com/2014/04/bisection.png"><img src="http://priyankvex.files.wordpress.com/2014/04/bisection.png?w=300" alt="brute force" />
+</a> Algorithm of brute force method to find square root.[/caption]</p>
+
+<p>The pic shows the algorithm of brute force method and also counts the steps taken to find the square root.
+Output of the above code is :</p>
+
+<p>[caption id=&ldquo;attachment_18&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;300&rdquo;]<a href="http://priyankvex.files.wordpress.com/2014/04/pic1.png"><img src="http://priyankvex.files.wordpress.com/2014/04/pic1.png?w=300" alt="Output of Brute force method " />
+</a> The pic shows the output of brute force method to find the square root of 255.<br />
+Look at the number of steps.[/caption]</p>
+
+<p>As you can see the square root of 255 was approximated to 15.9685 , which is pretty close but the guesses made by the computer were 159685, which is pretty large.
+This is the drawback of this method.</p>
+
+<h2 id="bisection-search-method">Bisection Search method :</h2>
+
+<p>Algorithm of bisection search method is shown in the pic, which also shows the number of steps.</p>
+
+<p>[caption id=&ldquo;attachment_19&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;300&rdquo;]<a href="http://priyankvex.files.wordpress.com/2014/04/pic2.png"><img src="http://priyankvex.files.wordpress.com/2014/04/pic2.png?w=300" alt="Bisection Method" />
+</a> Bisection method to find the square root of a number.[/caption]</p>
+
+<p>The output of the above code is given below.</p>
+
+<p>[caption id=&ldquo;attachment_20&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;300&rdquo;]<a href="http://priyankvex.files.wordpress.com/2014/04/pic3.png"><img src="http://priyankvex.files.wordpress.com/2014/04/pic3.png?w=300" alt="Output of bisection Search." />
+</a> Output of bisection search . Look at the number of steps.[/caption]</p>
+
+<p>So, this also approximated the answer pretty well. But look at the number of steps, just 12. Compare this to the previous result.
+Surely, this method is much better and faster but we can get much better results using the next method.</p>
+
+<h2 id="newton-raphson-method">Newton-Raphson method :</h2>
+
+<p>The algorithm of this method is shown in the pic, along with the number of guesses made by the computer.</p>
+
+<p>[caption id=&ldquo;attachment_21&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;300&rdquo;]<a href="http://priyankvex.files.wordpress.com/2014/04/pic4.png"><img src="http://priyankvex.files.wordpress.com/2014/04/pic4.png?w=300" alt="Newton raphson method " />
+</a> Algorithm of newton raphson method.[/caption]</p>
+
+<p>The output of the above method is given below. Look at the number of guesses taken and the accuracy of the result.</p>
+
+<p>[caption id=&ldquo;attachment_22&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;300&rdquo;]<a href="http://priyankvex.files.wordpress.com/2014/04/pic5.png"><img src="http://priyankvex.files.wordpress.com/2014/04/pic5.png?w=300" alt="Output of newton Raphson method" />
+</a> Ouptut of newton Raphson method. look at the number of guesses made by the computer.[/caption]</p>
+
+<p>As this method is clearly the fastest of all. And took only 6 steps to guess the pretty accurate value.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

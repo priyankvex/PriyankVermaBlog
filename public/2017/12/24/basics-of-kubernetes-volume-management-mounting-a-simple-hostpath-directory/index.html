@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Basics Of Kubernetes Volume Management :  Mounting a simple hostPath directory &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Basics Of Kubernetes Volume Management :  Mounting a simple hostPath directory</h1>
+  <time datetime=2017-12-23T20:02:04Z class="post-date">Sat, Dec 23, 2017</time>
+  <p><img src="https://priyankvex.files.wordpress.com/2017/11/kubernetes.jpg" alt="kubernetes" /></p>
+
+<p>Kubernetes is a system for automating deployment, scaling, and management for containerized applications.</p>
+
+<p>As we know, containers, which create the Pods, are ephemeral in nature. All data stored inside a container is deleted if the container crashes. However, <strong>kubelet</strong> will restart it with a clean state, which means that it will not have any of the old data.</p>
+
+<p>To overcome this problem, Kubernetes uses <a href="https://kubernetes.io/docs/concepts/storage/volumes/">Volumes</a>. A Volume is essentially a directory backed by a storage medium.</p>
+
+<p><strong>Volume Type :</strong></p>
+
+<p>A volume that is mounted to a pod can be seen as a directory. Each directory is backed by a directory type.</p>
+
+<p>Kubernetes provides many directory types like emptyDir, hostPath, secret, nfs etc.</p>
+
+<p>You can read more about kubernetes volume  <a href="https://kubernetes.io/docs/concepts/storage/volumes/">here</a>.</p>
+
+<p>In this blog we are going to use the volume type hostPath.</p>
+
+<p><strong>hostPath Volume Type</strong></p>
+
+<p>With hostPath volume type, we can share a directory from the host to a pod. So, even if the pod dies, the data is persisted as the directory is present at the host machine.</p>
+
+<p>**Demo Time : **</p>
+
+<p>Fun time! The best way to get our head around volumes is to quickly try an working example.</p>
+
+<p><strong>Step 1 : Make sure the minikube VM is running with the kubernetes cluster</strong></p>
+
+<p>As we are using minikube to run our kubernetes cluster, let&rsquo;s first ensure that our minikube VM is up and running.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/12/minikube_starting.png" alt="minikube_starting" /></p>
+
+<p><strong>Step 2 : Create the directory we want to mount in the host</strong></p>
+
+<p>In this case, out minikube is the VM which is acting as host for our kubernetes cluster.</p>
+
+<p>Let&rsquo;s SSH into the minikube and create the directory and file that we need.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/12/minikube_ssh_creating_index_page.png" alt="minikube_ssh_creating_index_page" /></p>
+
+<p>As we can see, we did following things in this step :</p>
+
+<pre><code>  1. We ssh'ed in the minikube VM.
+  2. Create the my_vol directory that we'll need to share with pod.
+  3. Create the file index.html in the my-vol directory.
+  4. Got the path of the directory.
+</code></pre>
+
+<p><strong>Step 3: Create the deployment specifying the volume that we want to mount</strong></p>
+
+<p>** <img src="https://priyankvex.files.wordpress.com/2017/12/deployment_yaml.png" alt="deployment_yaml" />
+**</p>
+
+<p>Given above is the what our deployment file looks like.</p>
+
+<p>Let&rsquo;s type that content by hand so that we pay heed to each and every property of the file.</p>
+
+<p>Note that the path that mount path in the container is the place where nginx looks for the html page by default.</p>
+
+<p>So, basically what&rsquo;s happening is, we are telling the container that your &ldquo;/use/share/nginx/html&rdquo; path is mapped to the &ldquo;/home/docker/my-vol&rdquo; path in the host machine,</p>
+
+<p>Once that file has been saved, use the following command to create the deployment.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/12/deployment_created.png" alt="deployment_created" /></p>
+
+<p><strong>Step 4: Create the service yaml file and start the service:</strong></p>
+
+<p>Once our deployment is up, we need a service to tie it all together.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/12/service_yaml.png" alt="service_yaml" /></p>
+
+<p>Once the service file is created. Create the service by the command given below.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/12/start_service.png" alt="start_service" /></p>
+
+<p><strong>Step 5: Head over to the IP of the minikube and post number of the service to view the web page</strong></p>
+
+<p>We can use the command</p>
+
+<p><code>kubectl get my-nginx-web-service</code></p>
+
+<p>to get the post number</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2017/12/web_page.png" alt="web_page" /></p>
+
+<p>And there we go! We can see our own page read from our mounted volume, running inside a container in a kubernetes cluster!</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

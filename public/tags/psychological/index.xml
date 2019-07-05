@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>psychological on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/psychological/</link>
+    <description>Recent content in psychological on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jun 2016 18:58:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/psychological/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Business In Boxers 3 : The Psychological Roller Coaster</title>
+      <link>https://example.org/2016/06/30/business-in-boxers-3-the-psychological-roller-coaster/</link>
+      <pubDate>Thu, 30 Jun 2016 18:58:30 +0000</pubDate>
+      
+      <guid>https://example.org/2016/06/30/business-in-boxers-3-the-psychological-roller-coaster/</guid>
+      <description>One of my favorite things about instrumental music is that the listener is encouraged to use his or her imagination. I have been a huge Owl City and Adam Young fan since forever. Lately he is releasing sets of instrumental music called as Adam Young Scores inspired by incidents that made a lasting impression on the world. Reading about all those incidents has made a lasting impression on my mind for sure, our small failures and success doesn&amp;rsquo;t even matter to the world, we have got to make it large.</description>
+    </item>
+    
+  </channel>
+</rss>

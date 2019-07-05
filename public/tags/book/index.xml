@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Book on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/book/</link>
+    <description>Recent content in Book on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Mar 2019 15:54:40 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Architecting for Scale by Lee Atchison: Reading Experience</title>
+      <link>https://example.org/2019/03/07/architecting-for-scale-by-lee-atchison-reading-experience/</link>
+      <pubDate>Thu, 07 Mar 2019 15:54:40 +0000</pubDate>
+      
+      <guid>https://example.org/2019/03/07/architecting-for-scale-by-lee-atchison-reading-experience/</guid>
+      <description>I recently read the book Architecting for Scale by Lee Atchison. The book contains a high-level overview of the major concepts that revolve around the topic of building highly-available and scalable apps.
+I felt the book to be more suited as a light read for people already familiar with these concepts rather than being an informative book for the new readers.
+The book divided into 5 parts mainly:
+1. Availability</description>
+    </item>
+    
+    <item>
+      <title>6 Lessons On Work Ethic I Learned In One Year Of Professional Career</title>
+      <link>https://example.org/2018/07/21/6-lessons-on-work-ethic-i-learned-in-one-year-of-professional-career/</link>
+      <pubDate>Sat, 21 Jul 2018 18:17:06 +0000</pubDate>
+      
+      <guid>https://example.org/2018/07/21/6-lessons-on-work-ethic-i-learned-in-one-year-of-professional-career/</guid>
+      <description>Time flies. Recently I had completed one year as a full-time employee at my current employer **Squad. **A year has passed, and I decided it was time to revisit instances, memories, and experiences and to recollect what I had learned as a professional in this past year.
+It was also a wake-up call to reassess and redirect the ship named professional career to make sure it doesn&amp;rsquo;t get stuck in a whirlpool.</description>
+    </item>
+    
+    <item>
+      <title>The Alchemist : Reading Experience</title>
+      <link>https://example.org/2017/05/22/the-alchemist-reading-experience/</link>
+      <pubDate>Mon, 22 May 2017 18:28:09 +0000</pubDate>
+      
+      <guid>https://example.org/2017/05/22/the-alchemist-reading-experience/</guid>
+      <description>Reading **The Alchemist **was like getting up at dawn and seeing the sun rise, while the whole world slept.
+The Alchemist doesn&amp;rsquo;t teach you anything, but you can learn a million things from it.
+&amp;ldquo;Lead will play its role until the world has no further need for the lead, and then the lead will have to turn itself into gold.&amp;rdquo;
+My 6th book of the year was **The Alchemist **by Paulo Coelho.</description>
+    </item>
+    
+    <item>
+      <title>Mastery By Robert Greene : Reading Experience</title>
+      <link>https://example.org/2017/04/07/mastery-by-robert-greene-reading-experience/</link>
+      <pubDate>Thu, 06 Apr 2017 20:39:38 +0000</pubDate>
+      
+      <guid>https://example.org/2017/04/07/mastery-by-robert-greene-reading-experience/</guid>
+      <description>“The problem with all students, he said, is that they inevitably stop somewhere. They hear an idea and they hold on to it until it becomes dead; they want to flatter themselves that they know the truth. But true Zen never stops, never congeals into such truths. That is why everyone must constantly be pushed to the abyss, starting over and feeling their utter worthlessness as a student. Without suffering and doubts, the mind will come to rest on clichés and stay there, until the spirit dies as well.</description>
+    </item>
+    
+    <item>
+      <title>Marketing Your Retail Store in the Internet Age by Bob Negen  : Reading Experience</title>
+      <link>https://example.org/2016/06/21/marketing-your-retail-store-in-the-internet-age-by-bob-negen-reading-experience/</link>
+      <pubDate>Tue, 21 Jun 2016 15:24:50 +0000</pubDate>
+      
+      <guid>https://example.org/2016/06/21/marketing-your-retail-store-in-the-internet-age-by-bob-negen-reading-experience/</guid>
+      <description>This was the book that I knew prior to reading it that it won&amp;rsquo;t be too interesting and might even feel too slow. I searched it on the internet and picked it to read to get a perspective of a retail seller. As me and my team are trying to start a company that will work very closely with retail stores and their owners I thought this book will provide some value.</description>
+    </item>
+    
+    <item>
+      <title>The Lean Startup : Reading Experience</title>
+      <link>https://example.org/2016/03/28/the-lean-startup-reading-experience/</link>
+      <pubDate>Mon, 28 Mar 2016 21:06:43 +0000</pubDate>
+      
+      <guid>https://example.org/2016/03/28/the-lean-startup-reading-experience/</guid>
+      <description>My 3rd book of the year was The Lean Startup by Eric Ries. I first got to know about the existence of this book during a keynote video of Gary Vaynerchuk where it was up for display. Finally got the time to read it.
+The book focuses on how the lean manufacturing using in Toyota can be used in startups as well. And it makes sense! The case studies to new terms defined all help you shape your mind to run your startup in a lean manner.</description>
+    </item>
+    
+    <item>
+      <title>Business in Boxers : 1 Month Into Running a StartUp</title>
+      <link>https://example.org/2016/03/22/business-in-boxers-1-month-into-running-a-startup/</link>
+      <pubDate>Tue, 22 Mar 2016 20:49:58 +0000</pubDate>
+      
+      <guid>https://example.org/2016/03/22/business-in-boxers-1-month-into-running-a-startup/</guid>
+      <description>**Why the Series? **
+(Inspired by book : Business In Blue Jeans)
+Hi! This is Priyank. This series is about me pen downing my start-up ride. Don&amp;rsquo;t know if it&amp;rsquo;s fast or slow, all I really know is I&amp;rsquo;m gonna enjoy the ride.
+Why the name?
+Boxers is what you&amp;rsquo;ll find me almost every time in and business is what&amp;rsquo;s always in my mind and thus the name &amp;ldquo;Business In Boxers&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Contagious : Why Things Catch On : Reading Experience</title>
+      <link>https://example.org/2016/02/07/contagious-why-things-catch-on-reading-experience/</link>
+      <pubDate>Sun, 07 Feb 2016 18:29:09 +0000</pubDate>
+      
+      <guid>https://example.org/2016/02/07/contagious-why-things-catch-on-reading-experience/</guid>
+      <description>We all have heard of the hilarious _Panda Cheese _commercial in which a panda screws everyone who says no to panda products. People loved the ad so much that the brand enjoyed world wide recognition. On the other hand commercials by GoldenPalace.com was a complete miss, it just failed to persist their brand name in customer&amp;rsquo;s mind by _Fool in the pool _marketing stunt.
+So, what makes things popular? Why do people talk about certain products and ideas more than others?</description>
+    </item>
+    
+    <item>
+      <title>Losing My Virginity By Richard Branson -  Reading Experience</title>
+      <link>https://example.org/2016/01/19/losing-my-virginity-by-richard-branson-reading-experience/</link>
+      <pubDate>Tue, 19 Jan 2016 17:10:37 +0000</pubDate>
+      
+      <guid>https://example.org/2016/01/19/losing-my-virginity-by-richard-branson-reading-experience/</guid>
+      <description>**Oh, screw it, let&#39;s do it.** That&amp;rsquo;s the philosophy of Richard Branson that has allowed him to start ventures in markets that no one dared to enter and even considered ludicrous to try.
+Losing my virginity is the most unusual biography you will ever get to read. It looks like you are reading a biography of not a global entrepreneur but an adventurist.
+This is the story of how Richard Branson started his entrepreneur journey by starting the Student magazine and strolled his way to opening more than 400 companies under the Virgin brand.</description>
+    </item>
+    
+    <item>
+      <title>Rafa  : Reading Experience</title>
+      <link>https://example.org/2015/09/05/rafa-reading-experience/</link>
+      <pubDate>Sat, 05 Sep 2015 13:44:23 +0000</pubDate>
+      
+      <guid>https://example.org/2015/09/05/rafa-reading-experience/</guid>
+      <description>Here it is. 4th book of the year Rafa by Rafael Nadal and John Carlin.
+Being arguably the biggest Rafa fan on this planet this book was in my reading bucket list from a long time. Finally got the opportunity to read this.
+This is great in both sense, it gives you a more closer look into the life of your idol and at the same time shows you what does it take to be a champion?</description>
+    </item>
+    
+  </channel>
+</rss>

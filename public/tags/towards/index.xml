@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>towards on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/towards/</link>
+    <description>Recent content in towards on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Aug 2018 18:41:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/towards/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Acceptance Tests: The Best Medium of Communication Between Stakeholders (if done right)</title>
+      <link>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</link>
+      <pubDate>Sun, 05 Aug 2018 18:41:18 +0000</pubDate>
+      
+      <guid>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</guid>
+      <description>It&amp;rsquo;s a nice pleasant morning, and you have just entered the office. You greet your friends and grab a cup of coffee. You check your email and there is a new story assigned to you.
+&amp;ldquo;As a customer, I get my usage logs backed up&amp;rdquo;
+This is where is fun begins.
+Communicating Requirements A product engineer&amp;rsquo;s job is to have effective and clear communication as much as it is to write code.</description>
+    </item>
+    
+    <item>
+      <title>7 Tips On Making Your Engineering Workflow Faster</title>
+      <link>https://example.org/2018/04/23/7-tips-on-making-your-engineering-workflow-faster/</link>
+      <pubDate>Sun, 22 Apr 2018 19:55:28 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/23/7-tips-on-making-your-engineering-workflow-faster/</guid>
+      <description>One of the most important thing that I like about pair programming with other awesome engineers is you get to see their workflows. How they get things done? How they get find and make their way around tools, terminal, and editors?
+After witnessing and getting awestruck by many such experiences I realized that having an effective workflow can increase your day to productivity many folds.
+The next step was to take action, and while doing so, I have compiled few tips to make your engineering flow faster too.</description>
+    </item>
+    
+  </channel>
+</rss>

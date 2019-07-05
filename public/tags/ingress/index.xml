@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ingress on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/ingress/</link>
+    <description>Recent content in ingress on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Feb 2018 14:51:22 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/ingress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to Ingressing With Kubernetes</title>
+      <link>https://example.org/2018/02/04/introduction-to-ingressing-with-kubernetes/</link>
+      <pubDate>Sun, 04 Feb 2018 14:51:22 +0000</pubDate>
+      
+      <guid>https://example.org/2018/02/04/introduction-to-ingressing-with-kubernetes/</guid>
+      <description>Single responsibility is a magical notion. Whatever it touches, it makes it more manageable and efficient.
+With _Kubernetes, _we have the power to spawn many services. As many of them as we would like. But how inbounds requests are routed among these services?
+_Ingressing _is a powerful way to decouple routing rules with core application logic.
+According to kubernetes,
+Ingress is a collection of rules that allow inbound connections to reach to reach cluster services.</description>
+    </item>
+    
+  </channel>
+</rss>

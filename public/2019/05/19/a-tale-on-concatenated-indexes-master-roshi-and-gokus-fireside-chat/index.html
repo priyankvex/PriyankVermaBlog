@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>A Tale on Concatenated Indexes: Master Roshi and Goku&#39;s fireside chat &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>A Tale on Concatenated Indexes: Master Roshi and Goku&#39;s fireside chat</h1>
+  <time datetime=2019-05-19T08:46:06Z class="post-date">Sun, May 19, 2019</time>
+  
+
+<p><img src="https://priyankvex.files.wordpress.com/2019/05/cheetah-running.ngsversion.1396530527499.jpg" alt="" />
+Indexes make our queries run as fast as a cheetah!</p>
+
+<p>Right Practice. Right Results</p>
+
+<p>This post is part of newsletter that I run <a href="https://scammingthecodinginterview.com">&ldquo;Scamming the Coding Interview&rdquo;</a>, which is geared towards continuous practice on concepts to ace the engineering interviews.</p>
+
+<p>[</p>
+
+<p>Subscribe</p>
+
+<p>](<a href="https://scammingthecodinginterview.com">https://scammingthecodinginterview.com</a>)</p>
+
+<p>Once upon a time there was a master named Roshi whose relational database used to work like a blowing wind.</p>
+
+<p>Reads used to be so fast that it reminded people of thunder strike. One day his disciple Goku got hold of him and asked, my database is smaller than yours, then why my queries are slower. What&rsquo;s it that you know and I don&rsquo;t?</p>
+
+<p><em>To which Master Roshi replied:</em></p>
+
+<blockquote>Databases are really good to put data, not so much when it comes to reading it back. As database sizes start to grow, and queries start to take what seems like ages, you need to harness the power of "Concatenated Indexes".
+> 
+> </blockquote>
+
+<p>When queries are slow and you see a <code>&quot;SEQSCAN&quot;</code> in the explain analyze, you should know what needs to be done?</p>
+
+<blockquote>Use the index Goku!
+> 
+> </blockquote>
+
+<p><strong>Concatenated indexes</strong> gives you the power to create indexes according to the access patterns of your application. Thus it&rsquo;s really important that we understand the data access patterns that our application will employ to create effective concatenated indexes.</p>
+
+<p>Goku was amused! He knew he needed to understand all about concatenated indexes to leverage them to its fullest.<br />
+Goku asked the master, how does concatenated indexes work and how can I leverage them too?</p>
+
+<h1 id="what-are-concatenated-indexes">What are concatenated indexes?</h1>
+
+<p><em>Master Roshi started sharing his wisdom acquired by maintaining large scale production databases:</em></p>
+
+<p>The indexes that the database automatically creates consist of single key-value pair. This is not sufficient if we need to query multiple-columns. The most common type of multi-column index is called a &ldquo;Concatenated Index&rdquo;, which combines several keys into one by simply appending columns to one another.</p>
+
+<p>This also means that the <strong>order of columns</strong> in a multi-column index is really important to ensure that they are used to their fullest.</p>
+
+<p>A concatenated index is just a <strong>B-Tree index</strong> which keeps the data in a sorted list. The database considers each column according to its position in the index definition to sort the index entries. The first column is the primary sort criteria, and only if the first column as the same value the second column is used to sort the entries and so on.</p>
+
+<p><em>Seeing that Goku was listening closely, Master Roshi gave an easy example:</em></p>
+
+<p>It&rsquo;s same as we search for an entry in a phone book by last name and then first name.<br />
+It should be noted that first name alone won&rsquo;t be useful in searching in the index, but last name alone can still give results using the index.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2019/05/sketch1558208191992.png" alt="" />
+Manuscripts of Master Roshi: Names arranged using last name and first name index.</p>
+
+<p><em>Goku knew the master was on to something, so he followed up…</em></p>
+
+<h1 id="how-do-concatenated-indexes-work">How do concatenated indexes work?</h1>
+
+<p><em>Master Roshi continued…</em></p>
+
+<p>Concatenated indexes are generally implemented using a B-Tree, where key is made up of columns in order as define in the index.</p>
+
+<pre><code>CREATE INDEX idx_people_names ON people (last_name, first_name);
+</code></pre>
+
+<p>Here&rsquo;s how a node in the B-Tree index looks like the postgres.</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2019/05/index-tuple-data1.png" alt="" />
+How a B-Tree index node looks like.</p>
+
+<p><strong>IndexTupleData:</strong> Contains pointer to either the next Node or to the data in the disk.<br />
+<strong>Bitmap:</strong> Stores if any of the index attributes are Null to save sapce.<br />
+<strong>Value:</strong> Contains the actual value of the column</p>
+
+<p>Here&rsquo;s how a B-Tree index will look like for index made on last name and first name.</p>
+
+<p><img src="https://lh3.googleusercontent.com/0Nm1NFQovWqwQ6yvDfNQDtUYSibjcfVwCDImiiSQPNpmOjWxtqON_yDP3dfQLIN5xfmaYZfqueDQxKKaV93NuowI7eNi6LHn4E_xON_GwC1aXHkjMOiJ8pGNElApZRKdKLXUYrgX7YQ9IdzcluQOjqU7NoGw8Zs_ecX0QfWBwaYXWJEPdiaZJ2HBtDh2KYfx7A4BfDfG6Wcf30IBZ8vE_iC-8rFkEorc3vSsowRqAgqyCvRNKXK9K2nnhb0C2n2FK0OyR3uz61mXyb2Ep5vS3-qf-AQMD4vYZC5JQHTy8j11lhIeOiwy_XruRmKTR2K88WG3ByQiENPHgYsuxct7lH5xwMqmJ_h6FeiMpGyQhspSgsI7YmBf3D34A17wfdU5ywIhDLmAoAIqs1VBSRdAeERE0z2zsbHAYKzvfhEMBaAOCtdXzJxxtmGvnV6NTe4WMT1uz8_9nXENYGC9Q8FkFyStaMTqi0a2ASiYIs5jWyLyxRv5xMiC5CFl8or1zJaoUsJq2PKQJr70yXQ3DfZUuzKRKFfx_mPRVqhlTZRrMPUyOdMLx8oZ58-4kavdUUAGkQyUxFJN_nakmx-2XjqpkUL4uXcxvMXb9bNfywf1glLbvwL8whMILjD1dHfr9pCtr_o1LNwoxc8thzeVpJZdSeocl5z8D9ni=w1085-h640-no" alt="" />
+Master Roshi&rsquo;s manuscript showing the B-Tree for a last name and first name index.</p>
+
+<p><em>Seeing the most fruitful tree ever, Goku asked the master to help him with an example search query.</em></p>
+
+<h1 id="how-search-queries-are-served-using-concatenated-indexes">How search queries are served using concatenated indexes:</h1>
+
+<p>Master Roshi continued:<br />
+Suppose we want to search for the name John Wick in the concatenated B-Tree index, here&rsquo;s how the searching will proceed.</p>
+
+<ol>
+<li>We use the last name to get to the nodes that contain that last name.  2. After that first name is used to furthur find the target node.</li>
+</ol>
+
+<p>It seems clear now, why the order of columns in the index definition is important.</p>
+
+<h1 id="how-to-harness-the-power-of-concatenated-indexes">How to harness the power of concatenated indexes?</h1>
+
+<p>Master Roshi finally wanted to leave Goku with some more lessons to effectively employ concatenated indexes in his DB.</p>
+
+<ol>
+<li>Check which queries are frequent and take time in the database.  2. Use explain analyze to study the query plan.  3. This will help you understand the DB access patterns in your application.  4. Pay special attention to the column order when creating concatenated indexes so that they can be reused.<br />
+In a concatenated index, the first column can be searched for using the same index, the first two columns can be searched for using the same index etc<br /></li>
+</ol>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Goku was enlightened with the new knowledge that was indexed on him. Master Roshi was happy seeing that Goku applied the principles he taught him to make his read queries blazing fast and IOPS in control.<br />
+Goku knew that now he&rsquo;ll be able to handle large databases without pre-mature partitioning.</p>
+
+<p>Right Practice. Right Results</p>
+
+<p>This post is part of newsletter that I run <a href="https://scammingthecodinginterview.com">&ldquo;Scamming the Coding Interview&rdquo;</a>, which is geared towards continuous practice on concepts to ace the engineering interviews.</p>
+
+<p>[</p>
+
+<p>Subscribe</p>
+
+<p>](<a href="https://scammingthecodinginterview.com">https://scammingthecodinginterview.com</a>)</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

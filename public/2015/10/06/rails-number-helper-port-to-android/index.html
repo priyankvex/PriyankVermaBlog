@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rails Number Helper Port to Android &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Rails Number Helper Port to Android</h1>
+  <time datetime=2015-10-06T14:06:02Z class="post-date">Tue, Oct 6, 2015</time>
+  <p>A polyglot developer will understand, there is always something you like about one language and you wish was available for another language too.</p>
+
+<p>So, recently I started learning rails and found _number_helper _API very cool and fun to use. It gives you easy API to convert numbers into many formats like _number_to_human _which will convert 20000 to _20 Thousands _or number_to_human_size that will convert 1024 to 1 KB.</p>
+
+<p>That was it I wanted this stuff for Android too. It just makes processing numbers to fit the UI needs so damn easy.</p>
+
+<p>Here is my attempt to port this rails module to Android.</p>
+
+<p>Here is the source code :</p>
+
+<p><a href="https://github.com/priyankvex/Rails-Number-Helper-For-Android">https://github.com/priyankvex/Rails-Number-Helper-For-Android</a></p>
+
+<p>**Usage : **</p>
+
+<p>Just copy the module _number_helper _in your application folder and include module dependency.</p>
+
+<p>**Examples : **</p>
+
+<pre><code>&lt;code&gt;
+    // Number to human converter
+    NumberToHumanConverterBuilder builder2 = new NumberToHumanConverterBuilder(123456);
+    NumberToHumanConverter converter2 = builder2.build();
+    try {
+        String humanNumber = converter2.convert();
+        // OUTPUT : 123.456 Thousands
+        Log.d(Config.TAG, humanNumber);
+    } catch (InvalidSeparatorException | InvalidDelimiterException
+        | InvalidPrecisionException e) {
+        e.printStackTrace();
+    }
+&lt;/code&gt;
+</code></pre>
+
+<p>Examples can be found here.
+<a href="https://github.com/priyankvex/Rails-Number-Helper-For-Android/blob/master/app/src/main/java/com/wordpress/priyankvex/numberhelperdemo/MainActivity.java">https://github.com/priyankvex/Rails-Number-Helper-For-Android/blob/master/app/src/main/java/com/wordpress/priyankvex/numberhelperdemo/MainActivity.java</a></p>
+
+<p>**Features : **</p>
+
+<pre><code>  * Easy to use API.
+  * High utility for UI needs.
+  * Small in size.
+  * Custom exceptions to fit the needs of Android.
+</code></pre>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

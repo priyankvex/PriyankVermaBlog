@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>system on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/system/</link>
+    <description>Recent content in system on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Apr 2019 10:40:27 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/system/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to LSM Trees: May the logs be with you</title>
+      <link>https://example.org/2019/04/28/introduction-to-lsm-trees-may-the-logs-be-with-you/</link>
+      <pubDate>Sun, 28 Apr 2019 10:40:27 +0000</pubDate>
+      
+      <guid>https://example.org/2019/04/28/introduction-to-lsm-trees-may-the-logs-be-with-you/</guid>
+      <description>LSM Trees overview
+  This post is a part of a newsletter that I run: “Scamming The Coding Interview“, which is geared towards helping people ACE their coding interviews. We send a coding question on weekdays along with a system design article like this one on weekends. Do subscribe If you find this article valuable.
+Introduction What will be the simplest implementation of a database that we can think of?</description>
+    </item>
+    
+    <item>
+      <title>How To Objectively Reason About Systems: Correctness Properties Of A System</title>
+      <link>https://example.org/2019/01/06/how-to-objectively-reason-about-systems-correctness-properties-of-a-system/</link>
+      <pubDate>Sun, 06 Jan 2019 15:54:40 +0000</pubDate>
+      
+      <guid>https://example.org/2019/01/06/how-to-objectively-reason-about-systems-correctness-properties-of-a-system/</guid>
+      <description>This post is a part of a newsletter that I run: &amp;ldquo;Scamming The Coding Interview&amp;rdquo;, which is geared towards helping people ACE their coding interviews. We send a coding question on weekdays along with a system design article like this one on weekends. Do subscribe If you find this article valuable.
+When a new system is to be designed, the first and the most important step is to generally get the expectations from the system to be crystal clear.</description>
+    </item>
+    
+    <item>
+      <title>A plea for lean software: 6 Lessons I learned to help keep software simple</title>
+      <link>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</link>
+      <pubDate>Sun, 02 Sep 2018 17:42:58 +0000</pubDate>
+      
+      <guid>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</guid>
+      <description>Preface Recently, I was browsing the codebase of my company and saw that it has three versions of dashboards for an analytics page in it. I am pretty sure that customers don&amp;rsquo;t need that. This sparked something in my naive brain and I started exploring the internet for related ideas. That&amp;rsquo;s when I found this age-old paper, A Plea for Lean Software.
+This post is largely influenced by ideas presented in the paper that resonated with me.</description>
+    </item>
+    
+    <item>
+      <title>Acceptance Tests: The Best Medium of Communication Between Stakeholders (if done right)</title>
+      <link>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</link>
+      <pubDate>Sun, 05 Aug 2018 18:41:18 +0000</pubDate>
+      
+      <guid>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</guid>
+      <description>It&amp;rsquo;s a nice pleasant morning, and you have just entered the office. You greet your friends and grab a cup of coffee. You check your email and there is a new story assigned to you.
+&amp;ldquo;As a customer, I get my usage logs backed up&amp;rdquo;
+This is where is fun begins.
+Communicating Requirements A product engineer&amp;rsquo;s job is to have effective and clear communication as much as it is to write code.</description>
+    </item>
+    
+    <item>
+      <title>Devops and The Principle Of Flow</title>
+      <link>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</link>
+      <pubDate>Sun, 29 Apr 2018 17:01:20 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</guid>
+      <description>In the technology value stream, work typically flows from Development to Operations, steps consisting of functional areas between our business and our customers.
+As stated in the lean principles developed by Toyota, we should optimize to get a single-piece fast and smooth flow for our releases.
+We increase flow by:
+ 1. Making work visible, 2. Reducing batch sizes and intervals of work 3. Building in the quality, preventing defects from being passed to downstream work centers.</description>
+    </item>
+    
+    <item>
+      <title>8 System Design Principles I learned After Doing It Wrong More than 50 Times!</title>
+      <link>https://example.org/2018/03/11/8-system-design-principles-i-learned-after-doing-it-wrong-more-than-50-times/</link>
+      <pubDate>Sun, 11 Mar 2018 07:16:00 +0000</pubDate>
+      
+      <guid>https://example.org/2018/03/11/8-system-design-principles-i-learned-after-doing-it-wrong-more-than-50-times/</guid>
+      <description>At Squad, we strive to build awesome products to solve customer(internal and external) needs. As a product engineer, paramount part of your job is to design and build products. Dig deep into the root cause of the problems, design solutions and implement them as the end product.
+Over the course of my journey so far, here are the 8 system and product design principles that I&amp;rsquo;ve learned from other awesome people at Squad, from feedback and simply doing it not right enough multiple times.</description>
+    </item>
+    
+    <item>
+      <title>Clean Code Chapter 1&amp;2: Clean Code &amp; Meaningful names</title>
+      <link>https://example.org/2017/08/05/clean-code-chapter-12-clean-code-meaningful-names/</link>
+      <pubDate>Sat, 05 Aug 2017 08:21:28 +0000</pubDate>
+      
+      <guid>https://example.org/2017/08/05/clean-code-chapter-12-clean-code-meaningful-names/</guid>
+      <description>I have started reading the book _Clean Code by Robert C. Martin, _which is considered to be a industry standard for writing maintainable and elegant code.
+Because this book is such a heavy read, and each chapter is full of content and a knowledge bank in itself, for personal reference I&amp;rsquo;ve decided to summarise each chapter in a set of blog posts.
+Chapter 1 : Clean Code This was more like chapter 0.</description>
+    </item>
+    
+  </channel>
+</rss>

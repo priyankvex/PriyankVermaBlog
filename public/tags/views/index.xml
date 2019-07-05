@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>views on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/views/</link>
+    <description>Recent content in views on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Dec 2016 11:13:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/views/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Zen and the Art of Motorcycle Maintenance : Reading Experience</title>
+      <link>https://example.org/2016/12/25/zen-and-the-art-of-motorcycle-maintenance-reading-experience/</link>
+      <pubDate>Sun, 25 Dec 2016 11:13:06 +0000</pubDate>
+      
+      <guid>https://example.org/2016/12/25/zen-and-the-art-of-motorcycle-maintenance-reading-experience/</guid>
+      <description>The Japanese motorcycle maintenance guide says “ Assembly of Japanese bicycle requires great piece of mind”. There is a thing about everything you build, including bikes. If you build it with non-serene mind, then you build your problems into it.
+The book takes you on a cross country bike journey that will teach you mind opening lessons that leave lasting impressions on your mind. Your mind will simple refuse to contract itself to older stage.</description>
+    </item>
+    
+  </channel>
+</rss>

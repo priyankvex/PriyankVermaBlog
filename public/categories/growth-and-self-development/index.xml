@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Growth and Self-Development on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/categories/growth-and-self-development/</link>
+    <description>Recent content in Growth and Self-Development on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Jul 2018 18:17:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/categories/growth-and-self-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>6 Lessons On Work Ethic I Learned In One Year Of Professional Career</title>
+      <link>https://example.org/2018/07/21/6-lessons-on-work-ethic-i-learned-in-one-year-of-professional-career/</link>
+      <pubDate>Sat, 21 Jul 2018 18:17:06 +0000</pubDate>
+      
+      <guid>https://example.org/2018/07/21/6-lessons-on-work-ethic-i-learned-in-one-year-of-professional-career/</guid>
+      <description>Time flies. Recently I had completed one year as a full-time employee at my current employer **Squad. **A year has passed, and I decided it was time to revisit instances, memories, and experiences and to recollect what I had learned as a professional in this past year.
+It was also a wake-up call to reassess and redirect the ship named professional career to make sure it doesn&amp;rsquo;t get stuck in a whirlpool.</description>
+    </item>
+    
+    <item>
+      <title>Strive to learn : 8 Ways to optimize for learning at work as a software engineer</title>
+      <link>https://example.org/2018/04/07/strive-to-learn-8-ways-to-optimize-for-learning-at-work-as-software-engineer/</link>
+      <pubDate>Sat, 07 Apr 2018 15:30:58 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/07/strive-to-learn-8-ways-to-optimize-for-learning-at-work-as-software-engineer/</guid>
+      <description>A large open space with amazing ergonomic chairs where people discuss and execute upon disrupting ideas. It&amp;rsquo;s right next to company&amp;rsquo;s game room where you unwind after a hard work day. Here is we as engineers, get to work on products that our customers love and we love delivering that delight by continuous delivery (or something else :P).
+Yet the most prominent thing that excites and should excite an effective engineer is the opportunity for learning at work.</description>
+    </item>
+    
+    <item>
+      <title>2018, New Year: Let&#39;s Set The Rhythm For What Lies Ahead</title>
+      <link>https://example.org/2018/01/01/2018-new-year-lets-set-the-rhythm-for-what-lies-ahead/</link>
+      <pubDate>Sun, 31 Dec 2017 19:35:19 +0000</pubDate>
+      
+      <guid>https://example.org/2018/01/01/2018-new-year-lets-set-the-rhythm-for-what-lies-ahead/</guid>
+      <description>Here are the 9 things I would love to incorporate into my life as I set myself to see the sun of 2018.
+1. Stop chasing the long dream, start conquering the micro-goals: Start cultivating a passionate dedication to the pursuit of short-term goals, being micro ambitious. Putting my head down and work with pride, whatever is the job in the hand. If we see too far in front of us, we won&amp;rsquo;t see shiny thing right in front of us.</description>
+    </item>
+    
+    <item>
+      <title>E-Summit ’17 IIT Bombay — Experience</title>
+      <link>https://example.org/2017/02/03/e-summit-17-iit-bombay%e2%80%8a-%e2%80%8aexperience/</link>
+      <pubDate>Fri, 03 Feb 2017 17:16:01 +0000</pubDate>
+      
+      <guid>https://example.org/2017/02/03/e-summit-17-iit-bombay%e2%80%8a-%e2%80%8aexperience/</guid>
+      <description>E-Summit is the flagship entrepreneurship event organized by IITB. The two-day annual summit promises to be an amazing meeting ground for industry experts, business leaders, investors and entrepreneurs and of course, students, many of whom are aspiring entrepreneurs.
+I attended this event in its 2017 edition and had mixed feelings on how the whole thing turned out holistically. There were some good parts and some not so good parts, but as a whole the event was worth attending.</description>
+    </item>
+    
+    <item>
+      <title>10 Things I want to do before I graduate.</title>
+      <link>https://example.org/2014/10/01/10-things-i-want-to-do-before-i-graduate/</link>
+      <pubDate>Wed, 01 Oct 2014 18:21:20 +0000</pubDate>
+      
+      <guid>https://example.org/2014/10/01/10-things-i-want-to-do-before-i-graduate/</guid>
+      <description>I am almost half an engineer by this time. Two and a half year and I will be a graduate. Sounds like fun. So I guess this is the best time to reveal 10 things I want to do before I die . Oh! sorry, before I graduate.
+1. Google Summer Of Code Okay. First one should not be a surprise for computer students. Gsoc is like a dream for almost every computer engineering student.</description>
+    </item>
+    
+  </channel>
+</rss>

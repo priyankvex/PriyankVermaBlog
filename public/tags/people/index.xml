@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>people on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/people/</link>
+    <description>Recent content in people on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Sep 2018 17:42:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/people/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A plea for lean software: 6 Lessons I learned to help keep software simple</title>
+      <link>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</link>
+      <pubDate>Sun, 02 Sep 2018 17:42:58 +0000</pubDate>
+      
+      <guid>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</guid>
+      <description>Preface Recently, I was browsing the codebase of my company and saw that it has three versions of dashboards for an analytics page in it. I am pretty sure that customers don&amp;rsquo;t need that. This sparked something in my naive brain and I started exploring the internet for related ideas. That&amp;rsquo;s when I found this age-old paper, A Plea for Lean Software.
+This post is largely influenced by ideas presented in the paper that resonated with me.</description>
+    </item>
+    
+    <item>
+      <title>E-Summit ’17 IIT Bombay — Experience</title>
+      <link>https://example.org/2017/02/03/e-summit-17-iit-bombay%e2%80%8a-%e2%80%8aexperience/</link>
+      <pubDate>Fri, 03 Feb 2017 17:16:01 +0000</pubDate>
+      
+      <guid>https://example.org/2017/02/03/e-summit-17-iit-bombay%e2%80%8a-%e2%80%8aexperience/</guid>
+      <description>E-Summit is the flagship entrepreneurship event organized by IITB. The two-day annual summit promises to be an amazing meeting ground for industry experts, business leaders, investors and entrepreneurs and of course, students, many of whom are aspiring entrepreneurs.
+I attended this event in its 2017 edition and had mixed feelings on how the whole thing turned out holistically. There were some good parts and some not so good parts, but as a whole the event was worth attending.</description>
+    </item>
+    
+    <item>
+      <title>The Blue Ocean Strategy : How To Create Uncontested Market Space and Make the Competition Irrelevant</title>
+      <link>https://example.org/2017/01/15/the-blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant/</link>
+      <pubDate>Sun, 15 Jan 2017 10:49:59 +0000</pubDate>
+      
+      <guid>https://example.org/2017/01/15/the-blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant/</guid>
+      <description>When Henry Ford made cheap, reliable cars people said, ‘Nah, what’s wrong with a horse?’ That was a huge bet he made, and it worked. The whole idea of _The Blue Ocean Strategy _is to create uncontested market spaces that creates new demands and make the competition irrelevant.
+The book describes _Red Oceans _as known market places that have bloody competition among businesses trying to win customers. Here there is a fixed existing demand of which every company wants a share.</description>
+    </item>
+    
+    <item>
+      <title>How to Win Friends and Influence People : Reading Experience and Summary</title>
+      <link>https://example.org/2016/07/19/how-to-win-friends-and-influence-people-reading-experience-and-summary/</link>
+      <pubDate>Mon, 18 Jul 2016 19:20:54 +0000</pubDate>
+      
+      <guid>https://example.org/2016/07/19/how-to-win-friends-and-influence-people-reading-experience-and-summary/</guid>
+      <description>_How to win friends and influence people _is an all time classic book. I got to know about this book from the _Goodreads _recommendations and instantly decided to read this one. It starts stating that leadership is 15% technical skills and 85% skill to manage human relations. This sentence alone suffices the need of this book.
+What you can get out of the book?
+ * Gives you new ways to carry on meaningful conversations.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>How To Objectively Reason About Systems: Correctness Properties Of A System &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>How To Objectively Reason About Systems: Correctness Properties Of A System</h1>
+  <time datetime=2019-01-06T15:54:40Z class="post-date">Sun, Jan 6, 2019</time>
+  <p><img src="https://www.tcmworld.org/wp-content/uploads/2018/05/tree-in-forest_balance.jpg" alt="" /></p>
+
+<p><em>This post is a part of a newsletter that I run: &ldquo;<a href="http://scammingthecodinginterview.com">Scamming The Coding Interview</a>&rdquo;, which is geared towards helping people <strong>ACE</strong> their coding interviews. We send a coding question on weekdays along with a system design article like this one on weekends. Do subscribe If you find this article valuable.</em></p>
+
+<p>When a new system is to be designed, the first and the most important step is to generally get the expectations from the system to be crystal clear.<br />
+Getting this step done correctly lays the foundation for every design iteration that we make and makes sure that the system will deliver to its expectations.<br />
+But how do we go about reasoning objectively, what is the system expected to do, or in other terms what guarantees it must make?</p>
+
+<p><a href="https://intravert.co/serve/e2130d1460.72.js">https://intravert.co/serve/e2130d1460.72.js</a></p>
+
+<p>Correctness of a system</p>
+
+<p>To reason about the correctness of a system, we can try listing its <em><strong>properties</strong></em>.<br />
+For example, a URL shortener system will have the following properties:</p>
+
+<ol>
+<li><p>Uniqueness:<br />
+Each URL is given a unique shortened URL.</p></li>
+
+<li><p>Availability of generating shortened URL:<br />
+If any node is up which can serve the request, every request to generate the shortened URL must be fulfilled within a reasonable time.</p></li>
+
+<li><p>Correct original URL is returned for the shortened URL:<br />
+For any shortened URL, the correct original URL is returned.</p></li>
+
+<li><p>Availability of getting the original URL:<br />
+If any node is up which can serve the request, every request to get the original URL must return the original URL within a reasonable time.</p></li>
+</ol>
+
+<p>A system can be analyzed for correctness if it adheres to the properties that are expected from it.<br />
+But can we be more incisive when defining properties of a system too?</p>
+
+<p>Safety and Liveness</p>
+
+<p>Borrowed from the distributed systems concepts, properties of a system can be distinguished between two kinds of properties:</p>
+
+<ul>
+<li>Safety Properties  * Liveness properties</li>
+</ul>
+
+<p>In the above example, getting a unique shortened URL for a URL is a safety guarantee, whereas getting a shortened URL for a URL in a reasonable time is a liveness guarantee.</p>
+
+<p><strong>Safety Guarantee</strong><br />
+They can be informally defined as &ldquo;nothing bad happens&rdquo;.<br />
+More formally, if a safety property is violated, we can point to a particular point in time when it was broken.<br />
+Once a safety guarantee has been broken, the damage has been done to the system and we cannot undo it.</p>
+
+<p>Ex, in the example above, we cannot afford our system to generate duplicate shortened URL of 2 different original URL.</p>
+
+<p><strong>Liveness Guarantee</strong><br />
+Liveness property is defined as &ldquo;eventually something good happens&rdquo;.<br />
+It may not hold true at some point in time, but it can be restored, (ex, by giving a shortened URL back for a given URL).</p>
+
+<p>An advantage of distinguishing between safety and liveness properties is that it helps in dealing with various system models and reason about the correctness of the system.</p>
+
+<p>Safety guarantees must hold true and cannot be broken even in the case of faults like node crashes, network failures. The system must ensure that it never does anything wrong.</p>
+
+<p>However, liveness guarantees can have some caveats. We could say that the system should return a response only if more than 1/3rd of the nodes are up.</p>
+
+<p>Conclusion</p>
+
+<p>While designing systems, it&rsquo;s always a very important first step to write down all the properties that the system is expected to guarantee.<br />
+We can then classify each of those properties under either a safety guarantee or liveness guarantee.<br />
+A system must be designed in such a way that the safety guarantees always hold true, even in the case of faults. Liveness guarantees must be served with the best effort.<br />
+This gives us a slightly objective way to reason about the correctness of the systems.</p>
+
+<p><em>This post is a part of a newsletter that I run: &ldquo;<a href="http://scammingthecodinginterview.com">Scamming The Coding Interview</a>&rdquo;, which is geared towards helping people <strong>ACE</strong> their coding interviews. We send a coding question on weekdays along with a system design article like this one on weekends. Do subscribe If you find this article valuable.</em></p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

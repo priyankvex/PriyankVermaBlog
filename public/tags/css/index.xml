@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/css/</link>
+    <description>Recent content in css on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Oct 2017 17:24:51 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Estimation  Peril:  How To Estimate  Software Projects Effectively(or How Not To Lie)</title>
+      <link>https://example.org/2017/10/15/estimation-peril-how-to-estimate-software-projects-effectivelyor-how-not-to-lie/</link>
+      <pubDate>Sun, 15 Oct 2017 17:24:51 +0000</pubDate>
+      
+      <guid>https://example.org/2017/10/15/estimation-peril-how-to-estimate-software-projects-effectivelyor-how-not-to-lie/</guid>
+      <description>Consider, you are a rockstar engineer and you are given a task by your favorite person, your project manager, to show some new fields in the dashboard.
+As usual, you are asked to estimate it as soon as possible. You think that well, seems like a quickie and you are tempted to estimate it a day. But you, being burnt before, decided to look at the fields that are to be added carefully.</description>
+    </item>
+    
+    <item>
+      <title>STAR WARS ENCYCLOPEDIA: A layout implementation using HTML5 and CSS3</title>
+      <link>https://example.org/2014/05/08/star-wars-encyclopedia-a-layout-implementation-using-html5-and-css3/</link>
+      <pubDate>Thu, 08 May 2014 19:46:04 +0000</pubDate>
+      
+      <guid>https://example.org/2014/05/08/star-wars-encyclopedia-a-layout-implementation-using-html5-and-css3/</guid>
+      <description>STAR WARS Encyclopedia Hi, there. Before we go further, if you are a STAR WARS fan like me you are going to love this one. This time i would love to share my another layout creation using HTML5 and CSS3 only. And the most interesting part, this effort was dedicated to STAR WARS.
+The Wire Frame [caption id=&amp;ldquo;attachment_46&amp;rdquo; align=&amp;ldquo;aligncenter&amp;rdquo; width=&amp;ldquo;132&amp;rdquo;] Wire frame of the web page.[/caption]
+After creating the aire frame, the next step was to make things really come to life in the photoshop.</description>
+    </item>
+    
+  </channel>
+</rss>

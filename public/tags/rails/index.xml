@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rails on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/rails/</link>
+    <description>Recent content in rails on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Oct 2015 14:06:02 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/rails/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rails Number Helper Port to Android</title>
+      <link>https://example.org/2015/10/06/rails-number-helper-port-to-android/</link>
+      <pubDate>Tue, 06 Oct 2015 14:06:02 +0000</pubDate>
+      
+      <guid>https://example.org/2015/10/06/rails-number-helper-port-to-android/</guid>
+      <description>A polyglot developer will understand, there is always something you like about one language and you wish was available for another language too.
+So, recently I started learning rails and found _number_helper _API very cool and fun to use. It gives you easy API to convert numbers into many formats like _number_to_human _which will convert 20000 to _20 Thousands _or number_to_human_size that will convert 1024 to 1 KB.
+That was it I wanted this stuff for Android too.</description>
+    </item>
+    
+    <item>
+      <title>Making GCM client in Android and Application server in Ruby on Rails</title>
+      <link>https://example.org/2015/09/11/making-gcm-client-in-android-and-application-server-in-ruby-on-rails/</link>
+      <pubDate>Fri, 11 Sep 2015 19:17:16 +0000</pubDate>
+      
+      <guid>https://example.org/2015/09/11/making-gcm-client-in-android-and-application-server-in-ruby-on-rails/</guid>
+      <description>It is always fun to play with new APIs and tools. GCM is not something I was getting my hands on for the first time but it changed completely since last time I did a project using this.
+But the good news is it has changed for good. New service classes makes it easier to write GCM clients for Android, GCM default configuration makes writing test servers and apps to play with very less tedious.</description>
+    </item>
+    
+  </channel>
+</rss>

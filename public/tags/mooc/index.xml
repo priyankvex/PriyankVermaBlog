@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mooc on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/mooc/</link>
+    <description>Recent content in mooc on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Jan 2017 18:43:36 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/mooc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning How To Learn : Course Experience</title>
+      <link>https://example.org/2017/01/06/learning-how-to-learn-course-experience/</link>
+      <pubDate>Thu, 05 Jan 2017 18:43:36 +0000</pubDate>
+      
+      <guid>https://example.org/2017/01/06/learning-how-to-learn-course-experience/</guid>
+      <description>The human brain has 100 billion neurons, each neuron connected to 10 thousand other neurons. Sitting on your shoulders is the most complicated object in the known universe.
+What is learning? Well basically, forming and consolidation neural patterns.
+Recently I took the course “Learning How to Learn” on Coursera. I really wanted to figure out the best way to enhance my learning. And this course has been really helpful. It provides you with the right tools and tips to construct your own learning schedule.</description>
+    </item>
+    
+    <item>
+      <title>Edx : Digital Branding and Engagement Course Overview And Experience</title>
+      <link>https://example.org/2015/12/19/edx-digital-branding-and-engagement-course-overview-and-experience/</link>
+      <pubDate>Sat, 19 Dec 2015 09:28:00 +0000</pubDate>
+      
+      <guid>https://example.org/2015/12/19/edx-digital-branding-and-engagement-course-overview-and-experience/</guid>
+      <description>People Respond to Effort Lately I have been following Gary Vaynerchuck, an entrepreneur and serial investor. He also owns a social media marketing company Vayner Media. Listening to his podcasts and keynotes is an eye opener on how digital media marketing is reshaping the advertising world.
+So I took a course on Edx Digital Branding and Engagement finally know the digital marketing in and out.
+The course was 4 weeks long and delivers perfect contextual content.</description>
+    </item>
+    
+    <item>
+      <title>MIT 11.133x : Implementation and Evaluation of Educational Technology – Week 3 Sum Up</title>
+      <link>https://example.org/2015/08/23/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-3-sum-up/</link>
+      <pubDate>Sun, 23 Aug 2015 18:15:48 +0000</pubDate>
+      
+      <guid>https://example.org/2015/08/23/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-3-sum-up/</guid>
+      <description>What does it take to implement a educational technology? You have the idea that can supposedly change the world of ed tech and learning, but how to implement it?
+Throughout the course, in the past 3 weeks I was constantly having my idea of creating an ed tech. With each passing week the course taught me something new which can be used to carve the idea even better.
+By the end of 3 weeks I was having a very clear vision of what area of learning I have to target in my ed tech implementation, but again no technical knowledge was there on how to shape up the implementation wire-frame.</description>
+    </item>
+    
+    <item>
+      <title>MIT 11.133x  : Implementation and Evaluation of Educational Technology - Week 0 Sum Up</title>
+      <link>https://example.org/2015/07/19/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-0-sum-up/</link>
+      <pubDate>Sun, 19 Jul 2015 05:15:22 +0000</pubDate>
+      
+      <guid>https://example.org/2015/07/19/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-0-sum-up/</guid>
+      <description>This week I started with another MOOC by Edx &amp;ldquo;Implementation and Evaluation of Educational Technology&amp;rdquo;. It is a 5 weeks course going from week 0 to week 4.
+So here I will blog about my experiences with the course, each week.
+WEEK 0
+There was not much in the course in week 0. You can guess that by week number.
+Week started with introduction to forums and edx platform and how we are supposed to proceed with the course.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>contagious on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/contagious/</link>
+    <description>Recent content in contagious on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Feb 2016 18:29:09 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/contagious/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Contagious : Why Things Catch On : Reading Experience</title>
+      <link>https://example.org/2016/02/07/contagious-why-things-catch-on-reading-experience/</link>
+      <pubDate>Sun, 07 Feb 2016 18:29:09 +0000</pubDate>
+      
+      <guid>https://example.org/2016/02/07/contagious-why-things-catch-on-reading-experience/</guid>
+      <description>We all have heard of the hilarious _Panda Cheese _commercial in which a panda screws everyone who says no to panda products. People loved the ad so much that the brand enjoyed world wide recognition. On the other hand commercials by GoldenPalace.com was a complete miss, it just failed to persist their brand name in customer&amp;rsquo;s mind by _Fool in the pool _marketing stunt.
+So, what makes things popular? Why do people talk about certain products and ideas more than others?</description>
+    </item>
+    
+  </channel>
+</rss>

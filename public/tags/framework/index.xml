@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>framework on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/framework/</link>
+    <description>Recent content in framework on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Aug 2018 18:41:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/framework/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Acceptance Tests: The Best Medium of Communication Between Stakeholders (if done right)</title>
+      <link>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</link>
+      <pubDate>Sun, 05 Aug 2018 18:41:18 +0000</pubDate>
+      
+      <guid>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</guid>
+      <description>It&amp;rsquo;s a nice pleasant morning, and you have just entered the office. You greet your friends and grab a cup of coffee. You check your email and there is a new story assigned to you.
+&amp;ldquo;As a customer, I get my usage logs backed up&amp;rdquo;
+This is where is fun begins.
+Communicating Requirements A product engineer&amp;rsquo;s job is to have effective and clear communication as much as it is to write code.</description>
+    </item>
+    
+    <item>
+      <title>Practical Problem Solving Framework: Inspired By The Toyota Way</title>
+      <link>https://example.org/2018/03/25/practical-problem-solving-framework-inspired-by-the-toyota-way/</link>
+      <pubDate>Sun, 25 Mar 2018 11:32:12 +0000</pubDate>
+      
+      <guid>https://example.org/2018/03/25/practical-problem-solving-framework-inspired-by-the-toyota-way/</guid>
+      <description>We all will agree to a certain point that having a system/process for anything reduces chances of errors.
+As an engineer or someone people look forward to propose solutions to problems it&amp;rsquo;s beneficial to have a framework in place to solve problems effectively.
+Recently I was reading _**The Toyota Way, **_and it suggested a framework to _Practical Problem Solving. _It almost felt trivial that this sort of framework would be invaluable to software engineers too (in fact for everyone).</description>
+    </item>
+    
+    <item>
+      <title>Contagious : Why Things Catch On : Reading Experience</title>
+      <link>https://example.org/2016/02/07/contagious-why-things-catch-on-reading-experience/</link>
+      <pubDate>Sun, 07 Feb 2016 18:29:09 +0000</pubDate>
+      
+      <guid>https://example.org/2016/02/07/contagious-why-things-catch-on-reading-experience/</guid>
+      <description>We all have heard of the hilarious _Panda Cheese _commercial in which a panda screws everyone who says no to panda products. People loved the ad so much that the brand enjoyed world wide recognition. On the other hand commercials by GoldenPalace.com was a complete miss, it just failed to persist their brand name in customer&amp;rsquo;s mind by _Fool in the pool _marketing stunt.
+So, what makes things popular? Why do people talk about certain products and ideas more than others?</description>
+    </item>
+    
+  </channel>
+</rss>

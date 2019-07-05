@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Philosophy Behind The Offensive Programming &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Philosophy Behind The Offensive Programming</h1>
+  <time datetime=2017-07-07T19:30:08Z class="post-date">Fri, Jul 7, 2017</time>
+  <p><img src="https://priyankvex.files.wordpress.com/2017/07/football-1149952_640.jpg" alt="football-1149952_640" /></p>
+
+<p>Recently I was listening to a podcast and there was this really smart guy Piwai talking about something that instantly captivated by attention. That was the coining of the term <strong>Offensive Programming.</strong></p>
+
+<p><strong>What is offensive programming?</strong></p>
+
+<p>Well, you can find the literature on  Wikipedia and also I am not the best person to explain that. So check that out please. But fundamentally, _offensive programming _refers to a style of programming that is exact opposite of the more famous counter-part <em>the defensive programming.</em></p>
+
+<p><em>Defensive programming</em> refers to coding style which adheres to dealing gracefully with conditions that should not happen.</p>
+
+<p>_Offensive programming _on the other hand, well just tells you to let the app crash. Don&rsquo;t try to recover, don&rsquo;t try to handle the exception, just log the stack trace and crash.</p>
+
+<p>The reason behind this is that in reality the problem can be much bigger and somewhere else in the code, as a side effect of you are getting this error in first place. This forces you to fix the problem at the source and will possibly result in a healthier code base.</p>
+
+<p><strong>When it makes sense to be offensive?</strong></p>
+
+<p>This was my exact concern while I was listening to this podcast. Thankfully, Piwai answered that himself. I also, talked about it with a really smart guy at the office and he also made the same remarks.</p>
+
+<p>So at Square (the company who do payments and author libraries) what they do is, they stick to a defensive style of programming  for interfaces and parts of code that deals with external interfaces and/or user interactions. Basically, something that is not in your control.</p>
+
+<p>But, for the internal interfaces, where the classes you wrote are going to interact with each other, you don&rsquo;t have to be that paranoid about that. This is where he (Piwai) said you should switch to the _offensive _approach. You have full control over the classes you wrote, and the expected behaviour is in your control. If it fails to do so, it&rsquo;s better to just crash and let the problem to be fixed at the source.</p>
+
+<p>That is the exact reason he said at Square, they make very liberal use of assertions in the code. Assertions are not forgiving at all.</p>
+
+<p><strong>Example Please!</strong></p>
+
+<p>I would attempt to point to examples here, one that the Piwai himself talked in very brief and the one that I&rsquo;ve encountered myself where I thought it made sense.</p>
+
+<p>In this example, say we are handling credit card objects. There is no point to internally validate the credit card object every time you deal with it.</p>
+
+<p>As soon as we get a credit card, we decorate it with a validated credit card. That&rsquo;s all the defensiveness we had to offer.</p>
+
+<p>Now internally, we go offensive and throw exceptions or assertions every time we encounter an invalidate credit card object.</p>
+
+<p>The code below is not perfect, but can give you an idea.</p>
+
+<pre><code>&lt;span style=&quot;color:#008800;font-weight:bold;&quot;&gt;class&lt;/span&gt; &lt;span style=&quot;color:#bb0066;font-weight:bold;&quot;&gt;ValidatedCreditCard&lt;/span&gt; &lt;span style=&quot;color:#008800;font-weight:bold;&quot;&gt;extends&lt;/span&gt; CreditCard&lt;span style=&quot;color:#333333;&quot;&gt;{&lt;/span&gt;
+
+    CreditCard creditCard&lt;span style=&quot;color:#333333;&quot;&gt;;&lt;/span&gt;
+
+    ValidatedCreditCard&lt;span style=&quot;color:#333333;&quot;&gt;(&lt;/span&gt;CreditCard creditCard&lt;span style=&quot;color:#333333;&quot;&gt;){&lt;/span&gt;
+      &lt;span style=&quot;color:#888888;&quot;&gt;// Handling external user interactions defensively.&lt;/span&gt;
+      &lt;span style=&quot;color:#008800;font-weight:bold;&quot;&gt;try&lt;/span&gt;&lt;span style=&quot;color:#333333;&quot;&gt;{&lt;/span&gt;
+    creditCard&lt;span style=&quot;color:#333333;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#0000cc;&quot;&gt;validate&lt;/span&gt;&lt;span style=&quot;color:#333333;&quot;&gt;();&lt;/span&gt;
+      &lt;span style=&quot;color:#333333;&quot;&gt;}&lt;/span&gt;
+      &lt;span style=&quot;color:#008800;font-weight:bold;&quot;&gt;catch&lt;/span&gt; &lt;span style=&quot;color:#333333;&quot;&gt;(&lt;/span&gt;CreditCardValidationError e&lt;span style=&quot;color:#333333;&quot;&gt;)&lt;/span&gt; &lt;span style=&quot;color:#333333;&quot;&gt;{&lt;/span&gt;
+    &lt;span style=&quot;color:#888888;&quot;&gt;// Handle and try to fix the error&lt;/span&gt;
+    tryToFixTheCardDetails&lt;span style=&quot;color:#333333;&quot;&gt;();&lt;/span&gt;
+      &lt;span style=&quot;color:#333333;&quot;&gt;}&lt;/span&gt;
+      &lt;span style=&quot;color:#008800;font-weight:bold;&quot;&gt;this&lt;/span&gt;&lt;span style=&quot;color:#333333;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#0000cc;&quot;&gt;creditCard&lt;/span&gt; &lt;span style=&quot;color:#333333;&quot;&gt;=&lt;/span&gt; creditCard&lt;span style=&quot;color:#333333;&quot;&gt;;&lt;/span&gt;
+    &lt;span style=&quot;color:#333333;&quot;&gt;}&lt;/span&gt;
+&lt;span style=&quot;color:#333333;&quot;&gt;}&lt;/span&gt;
+
+&lt;span style=&quot;color:#008800;font-weight:bold;&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color:#008800;font-weight:bold;&quot;&gt;static&lt;/span&gt; &lt;span style=&quot;color:#333399;font-weight:bold;&quot;&gt;void&lt;/span&gt; &lt;span style=&quot;color:#0066bb;font-weight:bold;&quot;&gt;main&lt;/span&gt;&lt;span style=&quot;color:#333333;&quot;&gt;(&lt;/span&gt;String&lt;span style=&quot;color:#333333;&quot;&gt;[]&lt;/span&gt; args&lt;span style=&quot;color:#333333;&quot;&gt;){&lt;/span&gt;
+
+    CreditCard c  &lt;span style=&quot;color:#333333;&quot;&gt;=&lt;/span&gt; getCreditCardFromUser&lt;span style=&quot;color:#333333;&quot;&gt;();&lt;/span&gt;
+    c &lt;span style=&quot;color:#333333;&quot;&gt;=&lt;/span&gt; ValidatedCreditCard&lt;span style=&quot;color:#333333;&quot;&gt;(&lt;/span&gt;c&lt;span style=&quot;color:#333333;&quot;&gt;);&lt;/span&gt;
+    &lt;span style=&quot;color:#888888;&quot;&gt;// Time to go offensive&lt;/span&gt;
+    &lt;span style=&quot;color:#888888;&quot;&gt;// ...&lt;/span&gt;
+    &lt;span style=&quot;color:#008800;font-weight:bold;&quot;&gt;if&lt;/span&gt; &lt;span style=&quot;color:#333333;&quot;&gt;(&lt;/span&gt;c &lt;span style=&quot;color:#333333;&quot;&gt;==&lt;/span&gt; &lt;span style=&quot;color:#008800;font-weight:bold;&quot;&gt;null&lt;/span&gt;&lt;span style=&quot;color:#333333;&quot;&gt;){&lt;/span&gt;
+      &lt;span style=&quot;color:#008800;font-weight:bold;&quot;&gt;throw&lt;/span&gt; &lt;span style=&quot;color:#008800;font-weight:bold;&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;color:#0066bb;font-weight:bold;&quot;&gt;CardInvalidException&lt;/span&gt;&lt;span style=&quot;color:#333333;&quot;&gt;();&lt;/span&gt;
+    &lt;span style=&quot;color:#333333;&quot;&gt;}&lt;/span&gt;
+&lt;span style=&quot;color:#333333;&quot;&gt;}&lt;/span&gt;
+</code></pre>
+
+<p>Another example I can think of is a much simpler one and more relatable.
+Suppose, we have a utility function that uploads a file to s3.
+It would make sense to follow offensive programming style and just throw an exception if somehow they file or the key reaching the function is None.</p>
+
+<pre><code>&lt;span style=&quot;color:#008800;font-weight:bold;&quot;&gt;def&lt;/span&gt; &lt;span style=&quot;color:#0066bb;font-weight:bold;&quot;&gt;upload_file_to_s3&lt;/span&gt;(&lt;span style=&quot;color:#007020;&quot;&gt;file&lt;/span&gt;, key):
+    &lt;span style=&quot;color:#008800;font-weight:bold;&quot;&gt;if&lt;/span&gt; &lt;span style=&quot;color:#007020;&quot;&gt;file&lt;/span&gt; &lt;span style=&quot;color:#000000;font-weight:bold;&quot;&gt;is&lt;/span&gt; &lt;span style=&quot;color:#007020;&quot;&gt;None&lt;/span&gt; &lt;span style=&quot;color:#000000;font-weight:bold;&quot;&gt;or&lt;/span&gt; key &lt;span style=&quot;color:#000000;font-weight:bold;&quot;&gt;is&lt;/span&gt; &lt;span style=&quot;color:#007020;&quot;&gt;None&lt;/span&gt;:
+    &lt;span style=&quot;color:#008800;font-weight:bold;&quot;&gt;raise&lt;/span&gt; &lt;span style=&quot;color:#ff0000;font-weight:bold;&quot;&gt;TypeError&lt;/span&gt;
+</code></pre>
+
+<p><strong>Few more tips from the podcast</strong></p>
+
+<p><strong>1. How to start with offensive programming?</strong></p>
+
+<p>Best way is to start putting assertions in the code, where you think is suitable. Yeah, we&rsquo;ll experience more crashes and that&rsquo;s awesome!</p>
+
+<p>Because now we know that we have a problem.</p>
+
+<p><strong>2.  We feel more confident about the code base:</strong></p>
+
+<p>We just know that, this method doesn&rsquo;t try to handle nulls, thus I can confidently say that it was not null or it would&rsquo;ve crashed.</p>
+
+<p><strong>3. Do incremental roll outs.</strong></p>
+
+<p>When you ship a code, roll it out like for 1% of users. We&rsquo;ll have a ton of crash reports, and that&rsquo;s good! I mean not for the 1% users but they are taking one for the team!</p>
+
+<p><strong>4. Crash at preventable errors and recover from expect-able errors :</strong></p>
+
+<p>Preventable errors are invalid arguments, NPEs etc. Go offensive on these.</p>
+
+<p>Expectable errors are like resource depletion, invalid user inputs etc.</p>
+
+<p>Try to recover from these.</p>
+
+<p>Overall, it was nice to listen to a guy who works at a company like Square talking about how they use _offensive programming _for a healthier code base. And if Square is doing something, we all can learn something from that!</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

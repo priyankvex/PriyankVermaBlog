@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>index on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/index/</link>
+    <description>Recent content in index on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 May 2019 08:46:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Tale on Concatenated Indexes: Master Roshi and Goku&#39;s fireside chat</title>
+      <link>https://example.org/2019/05/19/a-tale-on-concatenated-indexes-master-roshi-and-gokus-fireside-chat/</link>
+      <pubDate>Sun, 19 May 2019 08:46:06 +0000</pubDate>
+      
+      <guid>https://example.org/2019/05/19/a-tale-on-concatenated-indexes-master-roshi-and-gokus-fireside-chat/</guid>
+      <description>Indexes make our queries run as fast as a cheetah!
+Right Practice. Right Results
+This post is part of newsletter that I run &amp;ldquo;Scamming the Coding Interview&amp;rdquo;, which is geared towards continuous practice on concepts to ace the engineering interviews.
+[
+Subscribe
+](https://scammingthecodinginterview.com)
+Once upon a time there was a master named Roshi whose relational database used to work like a blowing wind.
+Reads used to be so fast that it reminded people of thunder strike.</description>
+    </item>
+    
+  </channel>
+</rss>

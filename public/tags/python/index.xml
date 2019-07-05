@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/python/</link>
+    <description>Recent content in Python on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Jun 2018 13:14:07 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating Outbound Call Warm Transfer Using Twilio In Python and Django</title>
+      <link>https://example.org/2018/06/03/creating-outbound-call-warm-transfer-using-twilio-in-python-and-django/</link>
+      <pubDate>Sun, 03 Jun 2018 13:14:07 +0000</pubDate>
+      
+      <guid>https://example.org/2018/06/03/creating-outbound-call-warm-transfer-using-twilio-in-python-and-django/</guid>
+      <description>Have you ever been connected to a call where it was transferred to a third person for further assistance? Well, that&amp;rsquo;s call transferring.
+Warm transfer of calls, in contrast to cold transfer, doesn&amp;rsquo;t disconnect the call in between and thus gives the customers a more seamless experience.
+Recently at work, I was building a system to convert regular calls to a warm transfer if needed. And in this post, I&amp;rsquo;ll be sharing what I learned while building the warm transfer system.</description>
+    </item>
+    
+    <item>
+      <title>Philosophy Behind The Offensive Programming</title>
+      <link>https://example.org/2017/07/08/philosophy-behind-the-offensive-programming/</link>
+      <pubDate>Fri, 07 Jul 2017 19:30:08 +0000</pubDate>
+      
+      <guid>https://example.org/2017/07/08/philosophy-behind-the-offensive-programming/</guid>
+      <description>Recently I was listening to a podcast and there was this really smart guy Piwai talking about something that instantly captivated by attention. That was the coining of the term Offensive Programming.
+What is offensive programming?
+Well, you can find the literature on Wikipedia and also I am not the best person to explain that. So check that out please. But fundamentally, _offensive programming _refers to a style of programming that is exact opposite of the more famous counter-part the defensive programming.</description>
+    </item>
+    
+    <item>
+      <title>6.00.1x: Introduction to Computer Science and Programming Using Python : The Experience</title>
+      <link>https://example.org/2014/09/20/6-00-1x-introduction-to-computer-science-and-programming-using-python-the-experience/</link>
+      <pubDate>Sat, 20 Sep 2014 03:09:50 +0000</pubDate>
+      
+      <guid>https://example.org/2014/09/20/6-00-1x-introduction-to-computer-science-and-programming-using-python-the-experience/</guid>
+      <description>Hi, guys. I am a very active participant of MOOC. In my previous post I shared my experience with LFS101x : Introduction to linux .And this time I am back with a new course.
+It was summer of 2014, I was having my semester break. And 6.00.1x was on my enrollment list on edx. I was really excited to get started with it.
+As this course says, it is meant for people with little to no programming experience, I was there having some programming experience but quiet a novice to python.</description>
+    </item>
+    
+  </channel>
+</rss>

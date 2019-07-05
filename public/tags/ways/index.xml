@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ways on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/ways/</link>
+    <description>Recent content in Ways on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Apr 2018 15:30:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/ways/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Strive to learn : 8 Ways to optimize for learning at work as a software engineer</title>
+      <link>https://example.org/2018/04/07/strive-to-learn-8-ways-to-optimize-for-learning-at-work-as-software-engineer/</link>
+      <pubDate>Sat, 07 Apr 2018 15:30:58 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/07/strive-to-learn-8-ways-to-optimize-for-learning-at-work-as-software-engineer/</guid>
+      <description>A large open space with amazing ergonomic chairs where people discuss and execute upon disrupting ideas. It&amp;rsquo;s right next to company&amp;rsquo;s game room where you unwind after a hard work day. Here is we as engineers, get to work on products that our customers love and we love delivering that delight by continuous delivery (or something else :P).
+Yet the most prominent thing that excites and should excite an effective engineer is the opportunity for learning at work.</description>
+    </item>
+    
+  </channel>
+</rss>

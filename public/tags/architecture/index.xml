@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>architecture on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/architecture/</link>
+    <description>Recent content in architecture on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Mar 2019 15:54:40 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Architecting for Scale by Lee Atchison: Reading Experience</title>
+      <link>https://example.org/2019/03/07/architecting-for-scale-by-lee-atchison-reading-experience/</link>
+      <pubDate>Thu, 07 Mar 2019 15:54:40 +0000</pubDate>
+      
+      <guid>https://example.org/2019/03/07/architecting-for-scale-by-lee-atchison-reading-experience/</guid>
+      <description>I recently read the book Architecting for Scale by Lee Atchison. The book contains a high-level overview of the major concepts that revolve around the topic of building highly-available and scalable apps.
+I felt the book to be more suited as a light read for people already familiar with these concepts rather than being an informative book for the new readers.
+The book divided into 5 parts mainly:
+1. Availability</description>
+    </item>
+    
+    <item>
+      <title>A plea for lean software: 6 Lessons I learned to help keep software simple</title>
+      <link>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</link>
+      <pubDate>Sun, 02 Sep 2018 17:42:58 +0000</pubDate>
+      
+      <guid>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</guid>
+      <description>Preface Recently, I was browsing the codebase of my company and saw that it has three versions of dashboards for an analytics page in it. I am pretty sure that customers don&amp;rsquo;t need that. This sparked something in my naive brain and I started exploring the internet for related ideas. That&amp;rsquo;s when I found this age-old paper, A Plea for Lean Software.
+This post is largely influenced by ideas presented in the paper that resonated with me.</description>
+    </item>
+    
+    <item>
+      <title>Organization Archetypes And The Concept Of Market-Oriented &#34;Solver Teams&#34;</title>
+      <link>https://example.org/2018/05/05/organization-archetypes-and-the-concept-of-market-oriented-solver-teams/</link>
+      <pubDate>Sat, 05 May 2018 15:56:15 +0000</pubDate>
+      
+      <guid>https://example.org/2018/05/05/organization-archetypes-and-the-concept-of-market-oriented-solver-teams/</guid>
+      <description>Organizations which designs systems are constrained to produce designs which are copies of the communication structure of the organization.
+In other words, how we organize our teams has a powerful effect on the software we produce, as well as our resulting architectural and production outcomes.
+Thus, in order to get a fast flow of work from Development to Operations, with high quality, great customer outcomes and fast speed of delivery, we must organize our teams to bring the team structure to our advantage.</description>
+    </item>
+    
+    <item>
+      <title>5 notes on MVP architecture pattern for Android</title>
+      <link>https://example.org/2016/12/19/5-notes-on-mvp-architecture-pattern-for-android/</link>
+      <pubDate>Mon, 19 Dec 2016 16:31:50 +0000</pubDate>
+      
+      <guid>https://example.org/2016/12/19/5-notes-on-mvp-architecture-pattern-for-android/</guid>
+      <description>Image credits Macoscope  MVP (Model View and Presenter) is an architectural pattern inspired by the popular MVC pattern.
+MVP addresses two main points :
+ 1. Make views as dumb as possible. The dumber the better. 2. Make each layer loosely coupled and easily testable in isolation.  I am using MVP in one of my production project and have used in some dem0 apps. Here are my 5 notes on using MVP for android.</description>
+    </item>
+    
+  </channel>
+</rss>

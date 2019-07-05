@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>technology on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/technology/</link>
+    <description>Recent content in technology on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Apr 2018 17:01:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Devops and The Principle Of Flow</title>
+      <link>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</link>
+      <pubDate>Sun, 29 Apr 2018 17:01:20 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</guid>
+      <description>In the technology value stream, work typically flows from Development to Operations, steps consisting of functional areas between our business and our customers.
+As stated in the lean principles developed by Toyota, we should optimize to get a single-piece fast and smooth flow for our releases.
+We increase flow by:
+ 1. Making work visible, 2. Reducing batch sizes and intervals of work 3. Building in the quality, preventing defects from being passed to downstream work centers.</description>
+    </item>
+    
+    <item>
+      <title>Strive to learn : 8 Ways to optimize for learning at work as a software engineer</title>
+      <link>https://example.org/2018/04/07/strive-to-learn-8-ways-to-optimize-for-learning-at-work-as-software-engineer/</link>
+      <pubDate>Sat, 07 Apr 2018 15:30:58 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/07/strive-to-learn-8-ways-to-optimize-for-learning-at-work-as-software-engineer/</guid>
+      <description>A large open space with amazing ergonomic chairs where people discuss and execute upon disrupting ideas. It&amp;rsquo;s right next to company&amp;rsquo;s game room where you unwind after a hard work day. Here is we as engineers, get to work on products that our customers love and we love delivering that delight by continuous delivery (or something else :P).
+Yet the most prominent thing that excites and should excite an effective engineer is the opportunity for learning at work.</description>
+    </item>
+    
+    <item>
+      <title>Practical Problem Solving Framework: Inspired By The Toyota Way</title>
+      <link>https://example.org/2018/03/25/practical-problem-solving-framework-inspired-by-the-toyota-way/</link>
+      <pubDate>Sun, 25 Mar 2018 11:32:12 +0000</pubDate>
+      
+      <guid>https://example.org/2018/03/25/practical-problem-solving-framework-inspired-by-the-toyota-way/</guid>
+      <description>We all will agree to a certain point that having a system/process for anything reduces chances of errors.
+As an engineer or someone people look forward to propose solutions to problems it&amp;rsquo;s beneficial to have a framework in place to solve problems effectively.
+Recently I was reading _**The Toyota Way, **_and it suggested a framework to _Practical Problem Solving. _It almost felt trivial that this sort of framework would be invaluable to software engineers too (in fact for everyone).</description>
+    </item>
+    
+    <item>
+      <title>8 System Design Principles I learned After Doing It Wrong More than 50 Times!</title>
+      <link>https://example.org/2018/03/11/8-system-design-principles-i-learned-after-doing-it-wrong-more-than-50-times/</link>
+      <pubDate>Sun, 11 Mar 2018 07:16:00 +0000</pubDate>
+      
+      <guid>https://example.org/2018/03/11/8-system-design-principles-i-learned-after-doing-it-wrong-more-than-50-times/</guid>
+      <description>At Squad, we strive to build awesome products to solve customer(internal and external) needs. As a product engineer, paramount part of your job is to design and build products. Dig deep into the root cause of the problems, design solutions and implement them as the end product.
+Over the course of my journey so far, here are the 8 system and product design principles that I&amp;rsquo;ve learned from other awesome people at Squad, from feedback and simply doing it not right enough multiple times.</description>
+    </item>
+    
+    <item>
+      <title>Deploying a nginx application using Kubernetes for Self-Healing and Scaling</title>
+      <link>https://example.org/2017/11/19/deploying-a-nginx-application-using-kubernetes-for-self-healing-and-scaling/</link>
+      <pubDate>Sun, 19 Nov 2017 15:50:50 +0000</pubDate>
+      
+      <guid>https://example.org/2017/11/19/deploying-a-nginx-application-using-kubernetes-for-self-healing-and-scaling/</guid>
+      <description>Kubernetes is an open source system for automating deployment, scaling and management of containerized applications. A more technical term for it is, container orchestrator which is used to manage large fleets of containers.
+Minikube is an all-in-one single node installation for trying out kubernetes on local machines. And the following post covers deploying a nginx application container using kubernetes in minikube.
+If you don&amp;rsquo;t have, then this link has it all to install minikube and kubectl (command line tool to access minikube) : Download and install minikube and kubectl</description>
+    </item>
+    
+    <item>
+      <title>Estimation  Peril:  How To Estimate  Software Projects Effectively(or How Not To Lie)</title>
+      <link>https://example.org/2017/10/15/estimation-peril-how-to-estimate-software-projects-effectivelyor-how-not-to-lie/</link>
+      <pubDate>Sun, 15 Oct 2017 17:24:51 +0000</pubDate>
+      
+      <guid>https://example.org/2017/10/15/estimation-peril-how-to-estimate-software-projects-effectivelyor-how-not-to-lie/</guid>
+      <description>Consider, you are a rockstar engineer and you are given a task by your favorite person, your project manager, to show some new fields in the dashboard.
+As usual, you are asked to estimate it as soon as possible. You think that well, seems like a quickie and you are tempted to estimate it a day. But you, being burnt before, decided to look at the fields that are to be added carefully.</description>
+    </item>
+    
+    <item>
+      <title>The Blue Ocean Strategy : How To Create Uncontested Market Space and Make the Competition Irrelevant</title>
+      <link>https://example.org/2017/01/15/the-blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant/</link>
+      <pubDate>Sun, 15 Jan 2017 10:49:59 +0000</pubDate>
+      
+      <guid>https://example.org/2017/01/15/the-blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant/</guid>
+      <description>When Henry Ford made cheap, reliable cars people said, ‘Nah, what’s wrong with a horse?’ That was a huge bet he made, and it worked. The whole idea of _The Blue Ocean Strategy _is to create uncontested market spaces that creates new demands and make the competition irrelevant.
+The book describes _Red Oceans _as known market places that have bloody competition among businesses trying to win customers. Here there is a fixed existing demand of which every company wants a share.</description>
+    </item>
+    
+    <item>
+      <title>Learning How To Learn : Course Experience</title>
+      <link>https://example.org/2017/01/06/learning-how-to-learn-course-experience/</link>
+      <pubDate>Thu, 05 Jan 2017 18:43:36 +0000</pubDate>
+      
+      <guid>https://example.org/2017/01/06/learning-how-to-learn-course-experience/</guid>
+      <description>The human brain has 100 billion neurons, each neuron connected to 10 thousand other neurons. Sitting on your shoulders is the most complicated object in the known universe.
+What is learning? Well basically, forming and consolidation neural patterns.
+Recently I took the course “Learning How to Learn” on Coursera. I really wanted to figure out the best way to enhance my learning. And this course has been really helpful. It provides you with the right tools and tips to construct your own learning schedule.</description>
+    </item>
+    
+    <item>
+      <title>5 notes on MVP architecture pattern for Android</title>
+      <link>https://example.org/2016/12/19/5-notes-on-mvp-architecture-pattern-for-android/</link>
+      <pubDate>Mon, 19 Dec 2016 16:31:50 +0000</pubDate>
+      
+      <guid>https://example.org/2016/12/19/5-notes-on-mvp-architecture-pattern-for-android/</guid>
+      <description>Image credits Macoscope  MVP (Model View and Presenter) is an architectural pattern inspired by the popular MVC pattern.
+MVP addresses two main points :
+ 1. Make views as dumb as possible. The dumber the better. 2. Make each layer loosely coupled and easily testable in isolation.  I am using MVP in one of my production project and have used in some dem0 apps. Here are my 5 notes on using MVP for android.</description>
+    </item>
+    
+    <item>
+      <title>Business In Boxers 3 : The Psychological Roller Coaster</title>
+      <link>https://example.org/2016/06/30/business-in-boxers-3-the-psychological-roller-coaster/</link>
+      <pubDate>Thu, 30 Jun 2016 18:58:30 +0000</pubDate>
+      
+      <guid>https://example.org/2016/06/30/business-in-boxers-3-the-psychological-roller-coaster/</guid>
+      <description>One of my favorite things about instrumental music is that the listener is encouraged to use his or her imagination. I have been a huge Owl City and Adam Young fan since forever. Lately he is releasing sets of instrumental music called as Adam Young Scores inspired by incidents that made a lasting impression on the world. Reading about all those incidents has made a lasting impression on my mind for sure, our small failures and success doesn&amp;rsquo;t even matter to the world, we have got to make it large.</description>
+    </item>
+    
+    <item>
+      <title>Business in Boxers : 1 Month Into Running a StartUp</title>
+      <link>https://example.org/2016/03/22/business-in-boxers-1-month-into-running-a-startup/</link>
+      <pubDate>Tue, 22 Mar 2016 20:49:58 +0000</pubDate>
+      
+      <guid>https://example.org/2016/03/22/business-in-boxers-1-month-into-running-a-startup/</guid>
+      <description>**Why the Series? **
+(Inspired by book : Business In Blue Jeans)
+Hi! This is Priyank. This series is about me pen downing my start-up ride. Don&amp;rsquo;t know if it&amp;rsquo;s fast or slow, all I really know is I&amp;rsquo;m gonna enjoy the ride.
+Why the name?
+Boxers is what you&amp;rsquo;ll find me almost every time in and business is what&amp;rsquo;s always in my mind and thus the name &amp;ldquo;Business In Boxers&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Practice Shapes : Android App To Learn Shapes</title>
+      <link>https://example.org/2015/12/28/practice-shapes-android-app-to-learn-shapes/</link>
+      <pubDate>Mon, 28 Dec 2015 14:56:00 +0000</pubDate>
+      
+      <guid>https://example.org/2015/12/28/practice-shapes-android-app-to-learn-shapes/</guid>
+      <description>Only way to learn something is to learn it by yourself. Recently I have been playing with Canvas in android and it has been fun! :D
+As they say knowledge is knowing tomato is a fruit. Wisdom is not putting it in vegetable basket. And best way to persist new gained &amp;ldquo;wisdom&amp;rdquo; is to put it in use.
+Practice Shapes is a fun app both for kids and grown-up kids (Yes.</description>
+    </item>
+    
+    <item>
+      <title>How Mobile Devices Can Change the Educational Technology and Education?</title>
+      <link>https://example.org/2015/10/20/how-mobile-devices-can-change-the-educational-technology-and-education/</link>
+      <pubDate>Tue, 20 Oct 2015 18:02:32 +0000</pubDate>
+      
+      <guid>https://example.org/2015/10/20/how-mobile-devices-can-change-the-educational-technology-and-education/</guid>
+      <description>Educational technology is growing rapidly and thus is catching everyone&amp;rsquo;s attention. At the same time mobile devices are part of are lives from a long time now. Students and teachers are increasingly embracing tablets and e-book readers in their personal lives.
+Accessibility of educational technology is one of the biggest barrier that we are facing. Mobile devices are best way to make this problem less serious.
+**Advantages of mobile devices to be used as platform for ed-tech : **</description>
+    </item>
+    
+    <item>
+      <title>MIT 11.133x : Implementation and Evaluation of Educational Technology – Week 3 Sum Up</title>
+      <link>https://example.org/2015/08/23/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-3-sum-up/</link>
+      <pubDate>Sun, 23 Aug 2015 18:15:48 +0000</pubDate>
+      
+      <guid>https://example.org/2015/08/23/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-3-sum-up/</guid>
+      <description>What does it take to implement a educational technology? You have the idea that can supposedly change the world of ed tech and learning, but how to implement it?
+Throughout the course, in the past 3 weeks I was constantly having my idea of creating an ed tech. With each passing week the course taught me something new which can be used to carve the idea even better.
+By the end of 3 weeks I was having a very clear vision of what area of learning I have to target in my ed tech implementation, but again no technical knowledge was there on how to shape up the implementation wire-frame.</description>
+    </item>
+    
+    <item>
+      <title>MIT 11.133x : Implementation and Evaluation of Educational Technology – Week 2 Sum Up</title>
+      <link>https://example.org/2015/08/04/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-2-sum-up/</link>
+      <pubDate>Tue, 04 Aug 2015 17:21:25 +0000</pubDate>
+      
+      <guid>https://example.org/2015/08/04/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-2-sum-up/</guid>
+      <description>Here is it end of week 2 of 11.133x. And we are back with the sum up.
+This week was about many aspects that one should deal with while implementing an education technology, like deciding education technology framework, how to analyse a ed tech, technology buying process etc.
+This week started with TPACK. What is TPACK and why does it matter?
+TPACK is a framework which combines 3 knowledge. These are technological knowledge, content knowledge and pedagogical knowledge.</description>
+    </item>
+    
+    <item>
+      <title>MIT 11.133x : Implementation and Evaluation of Educational Technology – Week 1 Sum Up</title>
+      <link>https://example.org/2015/07/26/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-1-sum-up/</link>
+      <pubDate>Sun, 26 Jul 2015 18:51:48 +0000</pubDate>
+      
+      <guid>https://example.org/2015/07/26/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-1-sum-up/</guid>
+      <description>Here is it. End of week 1 of the course 11.133x.
+This week was a little more focused on educational technology. It covered various vital topics like :
+ 1. Stakeholders in ed tech. 2. Evaluation and assessment. 3. What makes a good ed tech? 4. Future of teaching. 5. Where to start with ed tech? 6. Concept of SAMR.  **Stakeholders in Ed Tech : **
+Stakeholders in ed tech are the ones who are going to be affected by the ed tech the most.</description>
+    </item>
+    
+    <item>
+      <title>MIT 11.133x  : Implementation and Evaluation of Educational Technology - Week 0 Sum Up</title>
+      <link>https://example.org/2015/07/19/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-0-sum-up/</link>
+      <pubDate>Sun, 19 Jul 2015 05:15:22 +0000</pubDate>
+      
+      <guid>https://example.org/2015/07/19/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-0-sum-up/</guid>
+      <description>This week I started with another MOOC by Edx &amp;ldquo;Implementation and Evaluation of Educational Technology&amp;rdquo;. It is a 5 weeks course going from week 0 to week 4.
+So here I will blog about my experiences with the course, each week.
+WEEK 0
+There was not much in the course in week 0. You can guess that by week number.
+Week started with introduction to forums and edx platform and how we are supposed to proceed with the course.</description>
+    </item>
+    
+  </channel>
+</rss>

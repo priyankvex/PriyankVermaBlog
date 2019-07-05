@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>database on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/database/</link>
+    <description>Recent content in database on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Apr 2019 10:40:27 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to LSM Trees: May the logs be with you</title>
+      <link>https://example.org/2019/04/28/introduction-to-lsm-trees-may-the-logs-be-with-you/</link>
+      <pubDate>Sun, 28 Apr 2019 10:40:27 +0000</pubDate>
+      
+      <guid>https://example.org/2019/04/28/introduction-to-lsm-trees-may-the-logs-be-with-you/</guid>
+      <description>LSM Trees overview
+  This post is a part of a newsletter that I run: “Scamming The Coding Interview“, which is geared towards helping people ACE their coding interviews. We send a coding question on weekdays along with a system design article like this one on weekends. Do subscribe If you find this article valuable.
+Introduction What will be the simplest implementation of a database that we can think of?</description>
+    </item>
+    
+    <item>
+      <title>Basics of Database Partitioning and Partition Strategies</title>
+      <link>https://example.org/2018/12/30/basics-of-database-partitioning-and-partition-strategies/</link>
+      <pubDate>Sun, 30 Dec 2018 16:50:55 +0000</pubDate>
+      
+      <guid>https://example.org/2018/12/30/basics-of-database-partitioning-and-partition-strategies/</guid>
+      <description>You are a part of a startup which has recently scaled to reach a huge number of users. This means that the increased number of users are going to generate a huge amount of data that you have to store and manage.
+It soon becomes evident that managing a huge dataset is a major hurdle to achieve query efficiency and it might make sense to break the database down into smaller and much more manageable chunks, just like good old low scale days.</description>
+    </item>
+    
+    <item>
+      <title>Tackling Lost Updates Problem In Database Using Stricter Transaction  Isolation Level</title>
+      <link>https://example.org/2018/10/20/tackling-lost-updates-problem-in-database-using-better-isolation-level/</link>
+      <pubDate>Sat, 20 Oct 2018 11:40:19 +0000</pubDate>
+      
+      <guid>https://example.org/2018/10/20/tackling-lost-updates-problem-in-database-using-better-isolation-level/</guid>
+      <description>** Introduction**
+Databases are made for scale and are a highly concurrent system. Thus it is normal for them to expect multiple concurrent connections.
+Also, in most situations, we&amp;rsquo;ll want our database to be the source of truth and always contain consistent data.
+There are many concurrency related phenomena that can occur in a database when multiple transactions try to access/modify the same block of data. Ex dirty reads, dirty writes etc.</description>
+    </item>
+    
+  </channel>
+</rss>

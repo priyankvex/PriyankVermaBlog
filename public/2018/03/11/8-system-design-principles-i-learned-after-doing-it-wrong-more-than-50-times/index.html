@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>8 System Design Principles I learned After Doing It Wrong More than 50 Times! &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>8 System Design Principles I learned After Doing It Wrong More than 50 Times!</h1>
+  <time datetime=2018-03-11T07:16:00Z class="post-date">Sun, Mar 11, 2018</time>
+  
+
+<p><img src="https://priyankvex.files.wordpress.com/2018/03/laptop-3190194_960_720.jpg" alt="laptop-3190194_960_720" /></p>
+
+<p>At <a href="https://www.squadplatform.com/">Squad</a>, we strive to build awesome products to solve customer(internal and external) needs. As a product engineer, paramount part of your job is to design and build products. Dig deep into the root cause of the problems, design solutions and implement them as the end product.</p>
+
+<p>Over the course of my journey so far, here are the 8 system and product design principles that I&rsquo;ve learned from other awesome people at Squad, from feedback and simply doing it not right enough multiple times.</p>
+
+<h1 id="1-what-is-the-underlying-problem-that-led-to-the-feature-request">1. What is the underlying problem that led to the feature request?</h1>
+
+<p>At Squad, you don&rsquo;t just code the requirements into the software. As a product engineer, it&rsquo;s your responsibility to remove the layers and expose the root problem that led to the feature requirement.</p>
+
+<p>Get to know the root cause of the problem that you are trying to solve. Or even better, as the lean principles say &ldquo;genchi genbutsu&rdquo; i.e go and see it yourself.</p>
+
+<h1 id="2-how-can-you-make-the-feature-more-robust-reliable-and-usable">2. How can you make the feature more robust, reliable and usable?</h1>
+
+<p>Once the essential feature requirements are finalized, we must press on how can we make the feature more robust, reliable and usable?</p>
+
+<p>Things to ponder upon and take into consideration can be :</p>
+
+<pre><code>  1. The persona of the users that's going to use that.
+  2. Scenarios in which that feature would be used. Ex, if in the case of fires, than show more data than needed for faster resolutions.
+  3. Building in the quality in the product itself or &quot;Jidoka&quot; as said in lean.
+</code></pre>
+
+<h1 id="3-what-is-the-first-iteration-going-to-be">3. What is the first iteration going to be?</h1>
+
+<p>Given the time and resources you have., what is the best possible first iteration of the product going to be? If it&rsquo;s a large system or something you are building from scratch, there are always going to be iterations.</p>
+
+<p>The main idea here should be to move fast and get things shipped. Good enough and shipped on time is always better than perfect and in-development forever.</p>
+
+<h1 id="4-how-easy-will-it-be-to-make-iterations-on-the-current-feature">4. How easy will it be to make iterations on the current feature?</h1>
+
+<p>The design should incorporate all the non-functional requirements to make future iterations easy.</p>
+
+<p>Scale the feature? Change a component? Use a different 3rd party service? Your implementation should be flexible enough to incorporate and encourage these enhancements.</p>
+
+<p>Design patterns are your best friend here.</p>
+
+<h1 id="5-what-are-the-potential-bottlenecks-with-scale">5. What are the potential bottlenecks with scale?</h1>
+
+<p>Scale-land is where everyone wants to be, but it is scary. It breaks what was not supposed to break and has witnessed more horror stories than a haunted castle.</p>
+
+<p>What are the potential bottlenecks that are not a problem now, but will break at 5X, 10X or 100X scale?</p>
+
+<p>List them down on the feature ticket, or better document it in the code itself.</p>
+
+<h1 id="6-what-s-the-data-that-has-to-be-captured-and-how-will-it-be-consumed">6. What&rsquo;s the data that has to be captured and how will it be consumed?</h1>
+
+<p>Every feature in the product will need some data that needs to be captured to track it. It can be but not limited to:</p>
+
+<pre><code>  1. Action logs.
+  2. Event logs.
+  3. Metrics
+  4. Failures.
+  5. Anamolies.
+</code></pre>
+
+<p>What affects this majorly is <strong>how that data will be consumed</strong>? Store it in a structure that will make the consumption of data easy and efficient. Afterall, the only motive to store data is to use it.</p>
+
+<h1 id="7-how-good-the-developer-experience-will-be-when-interacting-with-the-code-base-of-that-feature">7. How good the developer experience will be when interacting with the code base of that feature?</h1>
+
+<p>There can be many developers who&rsquo;ll use or modify the code that you are going to write.</p>
+
+<p>How will be their experience when doing that? Ex. Will the test cases you wrote, make them feel confident enough to make changes fast?</p>
+
+<p>Few points to consider:</p>
+
+<pre><code>  1. Is the code well documented?
+  2. Are test cases strong enough?
+  3. Is the code, re-usable where it makes sense?
+  4. Are functions small and code, simple to read?
+</code></pre>
+
+<h1 id="8-what-metrics-will-determine-that-the-feature-has-been-implemented-successfully">8. What metrics will determine that the feature has been implemented successfully?</h1>
+
+<p>Finally, after all the fun-time you had creating the feature, what will determine that the feature has been implemented successfully?</p>
+
+<p>The data you tracked will be of paramount importance here.</p>
+
+<p>It can be the case that to track this quantitatively is not possible, but can you track the qualitatively in that case?</p>
+
+<p>The idea here is that you can&rsquo;t improve what you can&rsquo;t measure?</p>
+
+<p>Processing 100,000 requests? Fewer errors by the users? 95% work done by the new system instead of old one?</p>
+
+<p>This can and will involve more stakeholders of the team and not just the developer.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Obviously, this is not the exhaustive things to take into consideration while designing a system or a product as an engineer. This just covered what I have learned so far by just doing things wrong or not right enough multiple-times.</p>
+
+<p>It&rsquo;s fun to build stuff! Continuously improve (&ldquo;Kaizen&rdquo; in lean)! Keep iterating! Keep shipping!</p>
+
+<h1 id="that-s-all-folks">That’s all, folks!</h1>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

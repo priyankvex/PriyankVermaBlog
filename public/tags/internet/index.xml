@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Internet on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/internet/</link>
+    <description>Recent content in Internet on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Sep 2018 17:42:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/internet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A plea for lean software: 6 Lessons I learned to help keep software simple</title>
+      <link>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</link>
+      <pubDate>Sun, 02 Sep 2018 17:42:58 +0000</pubDate>
+      
+      <guid>https://example.org/2018/09/02/a-plea-for-lean-software-6-lessons-i-learned-to-help-keep-software-simple/</guid>
+      <description>Preface Recently, I was browsing the codebase of my company and saw that it has three versions of dashboards for an analytics page in it. I am pretty sure that customers don&amp;rsquo;t need that. This sparked something in my naive brain and I started exploring the internet for related ideas. That&amp;rsquo;s when I found this age-old paper, A Plea for Lean Software.
+This post is largely influenced by ideas presented in the paper that resonated with me.</description>
+    </item>
+    
+    <item>
+      <title>Practical Problem Solving Framework: Inspired By The Toyota Way</title>
+      <link>https://example.org/2018/03/25/practical-problem-solving-framework-inspired-by-the-toyota-way/</link>
+      <pubDate>Sun, 25 Mar 2018 11:32:12 +0000</pubDate>
+      
+      <guid>https://example.org/2018/03/25/practical-problem-solving-framework-inspired-by-the-toyota-way/</guid>
+      <description>We all will agree to a certain point that having a system/process for anything reduces chances of errors.
+As an engineer or someone people look forward to propose solutions to problems it&amp;rsquo;s beneficial to have a framework in place to solve problems effectively.
+Recently I was reading _**The Toyota Way, **_and it suggested a framework to _Practical Problem Solving. _It almost felt trivial that this sort of framework would be invaluable to software engineers too (in fact for everyone).</description>
+    </item>
+    
+    <item>
+      <title>Deploying a nginx application using Kubernetes for Self-Healing and Scaling</title>
+      <link>https://example.org/2017/11/19/deploying-a-nginx-application-using-kubernetes-for-self-healing-and-scaling/</link>
+      <pubDate>Sun, 19 Nov 2017 15:50:50 +0000</pubDate>
+      
+      <guid>https://example.org/2017/11/19/deploying-a-nginx-application-using-kubernetes-for-self-healing-and-scaling/</guid>
+      <description>Kubernetes is an open source system for automating deployment, scaling and management of containerized applications. A more technical term for it is, container orchestrator which is used to manage large fleets of containers.
+Minikube is an all-in-one single node installation for trying out kubernetes on local machines. And the following post covers deploying a nginx application container using kubernetes in minikube.
+If you don&amp;rsquo;t have, then this link has it all to install minikube and kubectl (command line tool to access minikube) : Download and install minikube and kubectl</description>
+    </item>
+    
+    <item>
+      <title>The Blue Ocean Strategy : How To Create Uncontested Market Space and Make the Competition Irrelevant</title>
+      <link>https://example.org/2017/01/15/the-blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant/</link>
+      <pubDate>Sun, 15 Jan 2017 10:49:59 +0000</pubDate>
+      
+      <guid>https://example.org/2017/01/15/the-blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant/</guid>
+      <description>When Henry Ford made cheap, reliable cars people said, ‘Nah, what’s wrong with a horse?’ That was a huge bet he made, and it worked. The whole idea of _The Blue Ocean Strategy _is to create uncontested market spaces that creates new demands and make the competition irrelevant.
+The book describes _Red Oceans _as known market places that have bloody competition among businesses trying to win customers. Here there is a fixed existing demand of which every company wants a share.</description>
+    </item>
+    
+    <item>
+      <title>Learning How To Learn : Course Experience</title>
+      <link>https://example.org/2017/01/06/learning-how-to-learn-course-experience/</link>
+      <pubDate>Thu, 05 Jan 2017 18:43:36 +0000</pubDate>
+      
+      <guid>https://example.org/2017/01/06/learning-how-to-learn-course-experience/</guid>
+      <description>The human brain has 100 billion neurons, each neuron connected to 10 thousand other neurons. Sitting on your shoulders is the most complicated object in the known universe.
+What is learning? Well basically, forming and consolidation neural patterns.
+Recently I took the course “Learning How to Learn” on Coursera. I really wanted to figure out the best way to enhance my learning. And this course has been really helpful. It provides you with the right tools and tips to construct your own learning schedule.</description>
+    </item>
+    
+    <item>
+      <title>5 notes on MVP architecture pattern for Android</title>
+      <link>https://example.org/2016/12/19/5-notes-on-mvp-architecture-pattern-for-android/</link>
+      <pubDate>Mon, 19 Dec 2016 16:31:50 +0000</pubDate>
+      
+      <guid>https://example.org/2016/12/19/5-notes-on-mvp-architecture-pattern-for-android/</guid>
+      <description>Image credits Macoscope  MVP (Model View and Presenter) is an architectural pattern inspired by the popular MVC pattern.
+MVP addresses two main points :
+ 1. Make views as dumb as possible. The dumber the better. 2. Make each layer loosely coupled and easily testable in isolation.  I am using MVP in one of my production project and have used in some dem0 apps. Here are my 5 notes on using MVP for android.</description>
+    </item>
+    
+    <item>
+      <title>Marketing Your Retail Store in the Internet Age by Bob Negen  : Reading Experience</title>
+      <link>https://example.org/2016/06/21/marketing-your-retail-store-in-the-internet-age-by-bob-negen-reading-experience/</link>
+      <pubDate>Tue, 21 Jun 2016 15:24:50 +0000</pubDate>
+      
+      <guid>https://example.org/2016/06/21/marketing-your-retail-store-in-the-internet-age-by-bob-negen-reading-experience/</guid>
+      <description>This was the book that I knew prior to reading it that it won&amp;rsquo;t be too interesting and might even feel too slow. I searched it on the internet and picked it to read to get a perspective of a retail seller. As me and my team are trying to start a company that will work very closely with retail stores and their owners I thought this book will provide some value.</description>
+    </item>
+    
+  </channel>
+</rss>

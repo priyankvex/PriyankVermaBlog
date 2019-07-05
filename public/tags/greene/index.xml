@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>greene on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/greene/</link>
+    <description>Recent content in greene on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Apr 2017 20:39:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/greene/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mastery By Robert Greene : Reading Experience</title>
+      <link>https://example.org/2017/04/07/mastery-by-robert-greene-reading-experience/</link>
+      <pubDate>Thu, 06 Apr 2017 20:39:38 +0000</pubDate>
+      
+      <guid>https://example.org/2017/04/07/mastery-by-robert-greene-reading-experience/</guid>
+      <description>“The problem with all students, he said, is that they inevitably stop somewhere. They hear an idea and they hold on to it until it becomes dead; they want to flatter themselves that they know the truth. But true Zen never stops, never congeals into such truths. That is why everyone must constantly be pushed to the abyss, starting over and feeling their utter worthlessness as a student. Without suffering and doubts, the mind will come to rest on clichés and stay there, until the spirit dies as well.</description>
+    </item>
+    
+  </channel>
+</rss>

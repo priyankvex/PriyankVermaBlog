@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>easy OCR library on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/easy-ocr-library/</link>
+    <description>Recent content in easy OCR library on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Sep 2015 11:01:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/easy-ocr-library/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Making an OCR app for Android using Tesseract.</title>
+      <link>https://example.org/2015/09/02/making-an-ocr-app-for-android-using-tesseract/</link>
+      <pubDate>Wed, 02 Sep 2015 11:01:58 +0000</pubDate>
+      
+      <guid>https://example.org/2015/09/02/making-an-ocr-app-for-android-using-tesseract/</guid>
+      <description>Star on GitHub
+Recently I was playing with OCR library by google called as &amp;ldquo;Tesseract&amp;rdquo; (cool name for a library!).
+[caption id=&amp;ldquo;attachment_153&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;234&amp;rdquo;] App in action.[/caption]
+It was a fun experience. This post shows how you can make a simple OCR app in Android using Tesseract.
+We will be using Tess-Two a fork of Tesseract with some additional tools like Liptonica which is an image processing library.
+If you want an even easier way to get started with OCR on Android you can try this library built by me.</description>
+    </item>
+    
+  </channel>
+</rss>

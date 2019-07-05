@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LFS101x on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/lfs101x/</link>
+    <description>Recent content in LFS101x on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Aug 2014 10:13:09 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/lfs101x/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LFS101x : Introduction to Linux on edX</title>
+      <link>https://example.org/2014/08/16/lfs101x-introduction-to-linux-on-edx/</link>
+      <pubDate>Sat, 16 Aug 2014 10:13:09 +0000</pubDate>
+      
+      <guid>https://example.org/2014/08/16/lfs101x-introduction-to-linux-on-edx/</guid>
+      <description>It was this summer when I saw this course LFS101x being offered on edX by The Linux Foundation. Both the terms Linux and edX excited me . So I decided to take this course.
+My experience with prior online courses I have taken few online courses on edX and coursera . In both the cases I loved the excitement and knowledge they provide. They were also fun learning and thus worked well for me.</description>
+    </item>
+    
+  </channel>
+</rss>

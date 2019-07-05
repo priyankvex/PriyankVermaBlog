@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/android/</link>
+    <description>Recent content in android on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Dec 2016 16:31:50 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>5 notes on MVP architecture pattern for Android</title>
+      <link>https://example.org/2016/12/19/5-notes-on-mvp-architecture-pattern-for-android/</link>
+      <pubDate>Mon, 19 Dec 2016 16:31:50 +0000</pubDate>
+      
+      <guid>https://example.org/2016/12/19/5-notes-on-mvp-architecture-pattern-for-android/</guid>
+      <description>Image credits Macoscope  MVP (Model View and Presenter) is an architectural pattern inspired by the popular MVC pattern.
+MVP addresses two main points :
+ 1. Make views as dumb as possible. The dumber the better. 2. Make each layer loosely coupled and easily testable in isolation.  I am using MVP in one of my production project and have used in some dem0 apps. Here are my 5 notes on using MVP for android.</description>
+    </item>
+    
+    <item>
+      <title>How to detect emails, phone numbers, web URLs, hashtags in Android TextView? : SmartTextView library</title>
+      <link>https://example.org/2016/08/17/how-to-detect-emails-phone-numbers-web-urls-hashtags-in-android-textview-smarttextview-library/</link>
+      <pubDate>Wed, 17 Aug 2016 12:53:19 +0000</pubDate>
+      
+      <guid>https://example.org/2016/08/17/how-to-detect-emails-phone-numbers-web-urls-hashtags-in-android-textview-smarttextview-library/</guid>
+      <description>Smart Text View Star On GitHub Follow On GitHub
+Many applications in android use TextView that detects and highlight various string patterns like emails, phone numbers, web URLs and even hashtags.
+This functionality is very common and and is used extensively and frequently in many app. Thus to ease the process of adding this functionality I have authored an Android library SmartTextView.
+Find and Star it on GitHub : https://github.</description>
+    </item>
+    
+    <item>
+      <title>Business in Boxers : 1 Month Into Running a StartUp</title>
+      <link>https://example.org/2016/03/22/business-in-boxers-1-month-into-running-a-startup/</link>
+      <pubDate>Tue, 22 Mar 2016 20:49:58 +0000</pubDate>
+      
+      <guid>https://example.org/2016/03/22/business-in-boxers-1-month-into-running-a-startup/</guid>
+      <description>**Why the Series? **
+(Inspired by book : Business In Blue Jeans)
+Hi! This is Priyank. This series is about me pen downing my start-up ride. Don&amp;rsquo;t know if it&amp;rsquo;s fast or slow, all I really know is I&amp;rsquo;m gonna enjoy the ride.
+Why the name?
+Boxers is what you&amp;rsquo;ll find me almost every time in and business is what&amp;rsquo;s always in my mind and thus the name &amp;ldquo;Business In Boxers&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Practice Shapes : Android App To Learn Shapes</title>
+      <link>https://example.org/2015/12/28/practice-shapes-android-app-to-learn-shapes/</link>
+      <pubDate>Mon, 28 Dec 2015 14:56:00 +0000</pubDate>
+      
+      <guid>https://example.org/2015/12/28/practice-shapes-android-app-to-learn-shapes/</guid>
+      <description>Only way to learn something is to learn it by yourself. Recently I have been playing with Canvas in android and it has been fun! :D
+As they say knowledge is knowing tomato is a fruit. Wisdom is not putting it in vegetable basket. And best way to persist new gained &amp;ldquo;wisdom&amp;rdquo; is to put it in use.
+Practice Shapes is a fun app both for kids and grown-up kids (Yes.</description>
+    </item>
+    
+    <item>
+      <title>Rails Number Helper Port to Android</title>
+      <link>https://example.org/2015/10/06/rails-number-helper-port-to-android/</link>
+      <pubDate>Tue, 06 Oct 2015 14:06:02 +0000</pubDate>
+      
+      <guid>https://example.org/2015/10/06/rails-number-helper-port-to-android/</guid>
+      <description>A polyglot developer will understand, there is always something you like about one language and you wish was available for another language too.
+So, recently I started learning rails and found _number_helper _API very cool and fun to use. It gives you easy API to convert numbers into many formats like _number_to_human _which will convert 20000 to _20 Thousands _or number_to_human_size that will convert 1024 to 1 KB.
+That was it I wanted this stuff for Android too.</description>
+    </item>
+    
+    <item>
+      <title>Making GCM client in Android and Application server in Ruby on Rails</title>
+      <link>https://example.org/2015/09/11/making-gcm-client-in-android-and-application-server-in-ruby-on-rails/</link>
+      <pubDate>Fri, 11 Sep 2015 19:17:16 +0000</pubDate>
+      
+      <guid>https://example.org/2015/09/11/making-gcm-client-in-android-and-application-server-in-ruby-on-rails/</guid>
+      <description>It is always fun to play with new APIs and tools. GCM is not something I was getting my hands on for the first time but it changed completely since last time I did a project using this.
+But the good news is it has changed for good. New service classes makes it easier to write GCM clients for Android, GCM default configuration makes writing test servers and apps to play with very less tedious.</description>
+    </item>
+    
+    <item>
+      <title>Paint App in Android</title>
+      <link>https://example.org/2015/09/06/paint-app-in-android/</link>
+      <pubDate>Sun, 06 Sep 2015 10:14:04 +0000</pubDate>
+      
+      <guid>https://example.org/2015/09/06/paint-app-in-android/</guid>
+      <description>Recently I was learning about Canvas and Custom views in Android and to put the theory in practice I made a pretty simple **Paint App. **
+Source code of the app can be found https://github.com/priyankvex/Paint-App-Android.
+[caption id=&amp;ldquo;attachment_159&amp;rdquo; align=&amp;ldquo;aligncenter&amp;rdquo; width=&amp;ldquo;480&amp;rdquo;] Screenshot of the app[/caption]
+The App is pretty simple with features 1. Create Drawings (Obvious one :P). 2. Select different brush sizes. 3. Eraser with different sizes. 4. Color pallet. 5. Save drawings in Gallery.</description>
+    </item>
+    
+    <item>
+      <title>Making an OCR app for Android using Tesseract.</title>
+      <link>https://example.org/2015/09/02/making-an-ocr-app-for-android-using-tesseract/</link>
+      <pubDate>Wed, 02 Sep 2015 11:01:58 +0000</pubDate>
+      
+      <guid>https://example.org/2015/09/02/making-an-ocr-app-for-android-using-tesseract/</guid>
+      <description>Star on GitHub
+Recently I was playing with OCR library by google called as &amp;ldquo;Tesseract&amp;rdquo; (cool name for a library!).
+[caption id=&amp;ldquo;attachment_153&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;234&amp;rdquo;] App in action.[/caption]
+It was a fun experience. This post shows how you can make a simple OCR app in Android using Tesseract.
+We will be using Tess-Two a fork of Tesseract with some additional tools like Liptonica which is an image processing library.
+If you want an even easier way to get started with OCR on Android you can try this library built by me.</description>
+    </item>
+    
+    <item>
+      <title>How to build Tesseract OCR library for Android Studio?</title>
+      <link>https://example.org/2015/08/30/how-to-build-tesseract-ocr-library-for-android-studio/</link>
+      <pubDate>Sun, 30 Aug 2015 10:07:28 +0000</pubDate>
+      
+      <guid>https://example.org/2015/08/30/how-to-build-tesseract-ocr-library-for-android-studio/</guid>
+      <description>Star On GitHub
+If you ever tried to create an OCR app for Android you must have stumbled upon the OCR library by Google Tesseract. And then the problems began.
+To use the library in your project you first need to build it. But building the library to be compatible with gradle, which is the new build system for Android projects is little not so easily stated anywhere in the library manual.</description>
+    </item>
+    
+    <item>
+      <title>5 Coolest features of Android Studio</title>
+      <link>https://example.org/2015/01/26/5-coolest-features-of-android-studio/</link>
+      <pubDate>Mon, 26 Jan 2015 20:24:30 +0000</pubDate>
+      
+      <guid>https://example.org/2015/01/26/5-coolest-features-of-android-studio/</guid>
+      <description>Android Studio is out and stable now. It is always fun to try new tools. Right?
+So far it has been around 2 months since I have been using Android Studio. And I guess it is the best time to select my personal choice of 5 coolest features of it.
+If you want some technical or geeky feature list RTFM! This post is not meant for that.
+1. Code preview scrolling</description>
+    </item>
+    
+    <item>
+      <title>What to do? An android app made to guide people what to do in various scenarios.</title>
+      <link>https://example.org/2014/06/27/what-to-do-an-android-app-made-to-guide-people-what-to-do-in-various-scenarios/</link>
+      <pubDate>Fri, 27 Jun 2014 08:02:36 +0000</pubDate>
+      
+      <guid>https://example.org/2014/06/27/what-to-do-an-android-app-made-to-guide-people-what-to-do-in-various-scenarios/</guid>
+      <description>Click Here to download  _NOTE : _This app has been signed with default debug key
+We all face various scenarios in our life . Some are life threatening while some are just awkward moments . In each case it is kinda vital to do the write things at the write time . This app has been made to help you do the same with the help researched content and quick links provided within the app.</description>
+    </item>
+    
+    <item>
+      <title>Android Application for a basic Calculator.</title>
+      <link>https://example.org/2014/06/04/android-application-for-a-basic-calculator/</link>
+      <pubDate>Wed, 04 Jun 2014 19:35:10 +0000</pubDate>
+      
+      <guid>https://example.org/2014/06/04/android-application-for-a-basic-calculator/</guid>
+      <description>Hi there,
+This time would like to share my new project &amp;lsquo; A basic calculator built for the android platform.&amp;rsquo;
+Creating android apps always seemed cool to me . Able to start learning to create one is even cooler.
+This project uses simple things like XML layouts, Activities using java, Intents, OnclickListeners and some more basic concepts of java and android.
+Below are the screenshots of the app running in both real android device and AVD.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tackling Lost Updates Problem In Database Using Stricter Transaction  Isolation Level &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Tackling Lost Updates Problem In Database Using Stricter Transaction  Isolation Level</h1>
+  <time datetime=2018-10-20T11:40:19Z class="post-date">Sat, Oct 20, 2018</time>
+  
+
+<h2 id="elephant-picture-gallery-wc10011059-https-priyankvex-files-wordpress-com-2018-10-elephant-picture-gallery-wc10011059-jpg"><img src="https://priyankvex.files.wordpress.com/2018/10/elephant-picture-gallery-wc10011059.jpg" alt="elephant-picture-gallery-wc10011059" /></h2>
+
+<h2 id="toc_1">**</h2>
+
+<p>Introduction**</p>
+
+<p>Databases are made for scale and are a highly concurrent system. Thus it is normal for them to expect multiple concurrent connections.</p>
+
+<p>Also, in most situations, we&rsquo;ll want our database to be the source of truth and always contain consistent data.</p>
+
+<p>There are many concurrency related phenomena that can occur in a database when multiple transactions try to access/modify the same block of data. Ex dirty reads, dirty writes etc.</p>
+
+<p>One such phenomenon is the <em><strong>lost update problem</strong></em>.</p>
+
+<p>Before we jump in to discuss what the lost update problem is and how we can tackle it, let&rsquo;s quickly brush the different isolation levels that are supported in most databases.</p>
+
+<h2 id="database-transaction-isolation-level"><strong>Database Transaction Isolation Level</strong></h2>
+
+<p>Most databases provide the following transaction isolation levels.</p>
+
+<p><strong>Read Committed Isolation</strong></p>
+
+<p>The most basic level of transaction isolation is <em>read committed.</em></p>
+
+<p>It makes two promises:</p>
+
+<pre><code>  1. You'll only read data that has been committed. (no dirty reads)
+  2. You'll only overwrite the data that has been already committed.
+</code></pre>
+
+<p>This is the default isolation level on most databases including postgres and mysql.</p>
+
+<p>In postgres, we can check the transaction isolation level using the following command:</p>
+
+<pre><code>&lt;code&gt;&lt;span class=&quot;pln&quot;&gt;SHOW default_transaction_isolation;&lt;/span&gt;&lt;/code&gt;
+</code></pre>
+
+<p><strong>Snapshot Isolation or Repeatable Reads</strong></p>
+
+<p>Here the idea is that each transaction reads from a consistent snapshot of the database.</p>
+
+<p>That is, the transaction sees all the data that was committed in the database at the time the transaction started.</p>
+
+<p>Databases generally implement snapshot isolation using a technique called as <a href="https://en.wikipedia.org/wiki/Multiversion_concurrency_control">MVCC</a>.</p>
+
+<p>**
+Serializable Isolation Level**</p>
+
+<p>Even though snapshot isolation looks like it should suffice in resolving our concurrency perils, it doesn&rsquo;t protect us from problems like Phantom reads (we&rsquo;ll cover this in another blog post).</p>
+
+<p>This is the most strict isolation level that databases provide. These are logical equivalent of as if there was no concurrency in the database and all transactions were performed sequentially one after the other.</p>
+
+<p>This is generally implemented using two-phase locking.</p>
+
+<h2 id="the-lost-update-problem"><strong>The Lost Update Problem</strong></h2>
+
+<p>Lost update problem occurs when multiple transactions try to touch the same rows in the database.</p>
+
+<p>The lost update problem can occur if an application reads a value, modifies it and writes it back to the database. If multiple transactions are trying to do the same thing on this same row, one or more updates will be lost.</p>
+
+<p>This can have serious implications depending on the type of application.</p>
+
+<p>Imagine, two transactions reading the account balance, modifying it (adding $100) and committing it back. What is one of the updates for lost?</p>
+
+<p><img src="https://priyankvex.files.wordpress.com/2018/10/142d943e2b6b9dbcbadc39a72a4bbd68.png" alt="142d943e2b6b9dbcbadc39a72a4bbd68" /></p>
+
+<p>In the above figure, the counter is incremented twice but the value gets incremented by just one. An update got lost!</p>
+
+<h2 id="ways-to-tackle-the-lost-update-problem"><strong>Ways To Tackle The Lost Update Problem</strong></h2>
+
+<p>In my opinion for any application, having the lost update problem is unacceptable as it can compromise the durability (updates getting lost) and consistency (updates not causing the intended effect) for the database.</p>
+
+<p>There are a few ways which can be used to tackle the problem:</p>
+
+<p><strong>1. Using SELECT FOR UPDATE:</strong></p>
+
+<p>In this method, transactions will have to take locks on the rows that they are trying to alter when reading them.</p>
+
+<p>Other transactions will have to wait for the lock to be released to acquire the lock.</p>
+
+<p>Though this solves the problem, the database won&rsquo;t throw an error or let the user know that something wrong has happened even if the application developer forgets to acquire the lock via code.</p>
+
+<pre><code>&lt;code&gt;&lt;span class=&quot;pln&quot;&gt;BEGIN;
+SELECT * FROM LOG WHERE ID = 4444 FOR UPDATE;&lt;/span&gt;
+&lt;/code&gt;
+</code></pre>
+
+<p><strong>2. Repeatable Read Isolation Level</strong></p>
+
+<p>One way to ensure that the lost updates don&rsquo;t happen at the database level is to use stricter isolation level.</p>
+
+<pre><code>&lt;code&gt;&lt;span class=&quot;pln&quot;&gt;SET default_transaction_isolation = &quot;repeatable read&quot;&lt;/span&gt;&lt;/code&gt;
+</code></pre>
+
+<p>This, in my opinion, puts us in a much safer state. We can still acquire the lock to make sure that transaction doesn&rsquo;t try to overwrite each other&rsquo;s updates, but if that ever happens, the database will fail the transaction that does so.</p>
+
+<p>In most of the cases, retrying the failing transaction should suffice.</p>
+
+<p>Please note that stricter isolation level like Serializable will also solve the issue.</p>
+
+<h2 id="conclusion"><strong>Conclusion</strong></h2>
+
+<p>Lost updates can happen in the databases, and depending upon the severity of the application it can have calamitous effects.</p>
+
+<p>Though acquiring lock can prevent this problem but a miss in the application code can harm database&rsquo;s ACID guarantees.</p>
+
+<p>Thus it can be a better design choice to let the database throw an error and let the application know that it&rsquo;s trying to overwrite an update instead of silently doing the damage.</p>
+
+<h1 id="that-s-all-folks">That’s all, folks!</h1>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fun on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/fun/</link>
+    <description>Recent content in fun on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Aug 2018 18:41:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/fun/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Acceptance Tests: The Best Medium of Communication Between Stakeholders (if done right)</title>
+      <link>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</link>
+      <pubDate>Sun, 05 Aug 2018 18:41:18 +0000</pubDate>
+      
+      <guid>https://example.org/2018/08/06/acceptance-tests-the-best-medium-of-communication-between-stakeholders-if-done-right/</guid>
+      <description>It&amp;rsquo;s a nice pleasant morning, and you have just entered the office. You greet your friends and grab a cup of coffee. You check your email and there is a new story assigned to you.
+&amp;ldquo;As a customer, I get my usage logs backed up&amp;rdquo;
+This is where is fun begins.
+Communicating Requirements A product engineer&amp;rsquo;s job is to have effective and clear communication as much as it is to write code.</description>
+    </item>
+    
+    <item>
+      <title>Practical Problem Solving Framework: Inspired By The Toyota Way</title>
+      <link>https://example.org/2018/03/25/practical-problem-solving-framework-inspired-by-the-toyota-way/</link>
+      <pubDate>Sun, 25 Mar 2018 11:32:12 +0000</pubDate>
+      
+      <guid>https://example.org/2018/03/25/practical-problem-solving-framework-inspired-by-the-toyota-way/</guid>
+      <description>We all will agree to a certain point that having a system/process for anything reduces chances of errors.
+As an engineer or someone people look forward to propose solutions to problems it&amp;rsquo;s beneficial to have a framework in place to solve problems effectively.
+Recently I was reading _**The Toyota Way, **_and it suggested a framework to _Practical Problem Solving. _It almost felt trivial that this sort of framework would be invaluable to software engineers too (in fact for everyone).</description>
+    </item>
+    
+    <item>
+      <title>E-Summit ’17 IIT Bombay — Experience</title>
+      <link>https://example.org/2017/02/03/e-summit-17-iit-bombay%e2%80%8a-%e2%80%8aexperience/</link>
+      <pubDate>Fri, 03 Feb 2017 17:16:01 +0000</pubDate>
+      
+      <guid>https://example.org/2017/02/03/e-summit-17-iit-bombay%e2%80%8a-%e2%80%8aexperience/</guid>
+      <description>E-Summit is the flagship entrepreneurship event organized by IITB. The two-day annual summit promises to be an amazing meeting ground for industry experts, business leaders, investors and entrepreneurs and of course, students, many of whom are aspiring entrepreneurs.
+I attended this event in its 2017 edition and had mixed feelings on how the whole thing turned out holistically. There were some good parts and some not so good parts, but as a whole the event was worth attending.</description>
+    </item>
+    
+    <item>
+      <title>Learning How To Learn : Course Experience</title>
+      <link>https://example.org/2017/01/06/learning-how-to-learn-course-experience/</link>
+      <pubDate>Thu, 05 Jan 2017 18:43:36 +0000</pubDate>
+      
+      <guid>https://example.org/2017/01/06/learning-how-to-learn-course-experience/</guid>
+      <description>The human brain has 100 billion neurons, each neuron connected to 10 thousand other neurons. Sitting on your shoulders is the most complicated object in the known universe.
+What is learning? Well basically, forming and consolidation neural patterns.
+Recently I took the course “Learning How to Learn” on Coursera. I really wanted to figure out the best way to enhance my learning. And this course has been really helpful. It provides you with the right tools and tips to construct your own learning schedule.</description>
+    </item>
+    
+    <item>
+      <title>5 notes on MVP architecture pattern for Android</title>
+      <link>https://example.org/2016/12/19/5-notes-on-mvp-architecture-pattern-for-android/</link>
+      <pubDate>Mon, 19 Dec 2016 16:31:50 +0000</pubDate>
+      
+      <guid>https://example.org/2016/12/19/5-notes-on-mvp-architecture-pattern-for-android/</guid>
+      <description>Image credits Macoscope  MVP (Model View and Presenter) is an architectural pattern inspired by the popular MVC pattern.
+MVP addresses two main points :
+ 1. Make views as dumb as possible. The dumber the better. 2. Make each layer loosely coupled and easily testable in isolation.  I am using MVP in one of my production project and have used in some dem0 apps. Here are my 5 notes on using MVP for android.</description>
+    </item>
+    
+    <item>
+      <title>10 Things I want to do before I graduate.</title>
+      <link>https://example.org/2014/10/01/10-things-i-want-to-do-before-i-graduate/</link>
+      <pubDate>Wed, 01 Oct 2014 18:21:20 +0000</pubDate>
+      
+      <guid>https://example.org/2014/10/01/10-things-i-want-to-do-before-i-graduate/</guid>
+      <description>I am almost half an engineer by this time. Two and a half year and I will be a graduate. Sounds like fun. So I guess this is the best time to reveal 10 things I want to do before I die . Oh! sorry, before I graduate.
+1. Google Summer Of Code Okay. First one should not be a surprise for computer students. Gsoc is like a dream for almost every computer engineering student.</description>
+    </item>
+    
+  </channel>
+</rss>

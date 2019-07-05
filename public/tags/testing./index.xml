@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>testing. on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/testing./</link>
+    <description>Recent content in testing. on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Jun 2019 13:29:07 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/testing./index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dependency Injection: Taming the modules that make up our software.</title>
+      <link>https://example.org/2019/06/25/dependency-injection-taming-the-modules-that-make-up-our-software/</link>
+      <pubDate>Tue, 25 Jun 2019 13:29:07 +0000</pubDate>
+      
+      <guid>https://example.org/2019/06/25/dependency-injection-taming-the-modules-that-make-up-our-software/</guid>
+      <description>Introduction All software projects, (even relatively smaller ones) are the result of aggregation of several components and modules. As these software projects grow and evolve, the way we connect these components becomes a win or lose factor.
+I believe, that the way we orchestrate these components decides if the software will evolve as fast as the business needs it to, or gets tangled in its own complexity and slows the business down.</description>
+    </item>
+    
+    <item>
+      <title>Organization Archetypes And The Concept Of Market-Oriented &#34;Solver Teams&#34;</title>
+      <link>https://example.org/2018/05/05/organization-archetypes-and-the-concept-of-market-oriented-solver-teams/</link>
+      <pubDate>Sat, 05 May 2018 15:56:15 +0000</pubDate>
+      
+      <guid>https://example.org/2018/05/05/organization-archetypes-and-the-concept-of-market-oriented-solver-teams/</guid>
+      <description>Organizations which designs systems are constrained to produce designs which are copies of the communication structure of the organization.
+In other words, how we organize our teams has a powerful effect on the software we produce, as well as our resulting architectural and production outcomes.
+Thus, in order to get a fast flow of work from Development to Operations, with high quality, great customer outcomes and fast speed of delivery, we must organize our teams to bring the team structure to our advantage.</description>
+    </item>
+    
+    <item>
+      <title>Devops and The Principle Of Flow</title>
+      <link>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</link>
+      <pubDate>Sun, 29 Apr 2018 17:01:20 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</guid>
+      <description>In the technology value stream, work typically flows from Development to Operations, steps consisting of functional areas between our business and our customers.
+As stated in the lean principles developed by Toyota, we should optimize to get a single-piece fast and smooth flow for our releases.
+We increase flow by:
+ 1. Making work visible, 2. Reducing batch sizes and intervals of work 3. Building in the quality, preventing defects from being passed to downstream work centers.</description>
+    </item>
+    
+  </channel>
+</rss>

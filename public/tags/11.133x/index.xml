@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>11.133x on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/11.133x/</link>
+    <description>Recent content in 11.133x on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Aug 2015 18:15:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/11.133x/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MIT 11.133x : Implementation and Evaluation of Educational Technology – Week 3 Sum Up</title>
+      <link>https://example.org/2015/08/23/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-3-sum-up/</link>
+      <pubDate>Sun, 23 Aug 2015 18:15:48 +0000</pubDate>
+      
+      <guid>https://example.org/2015/08/23/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-3-sum-up/</guid>
+      <description>What does it take to implement a educational technology? You have the idea that can supposedly change the world of ed tech and learning, but how to implement it?
+Throughout the course, in the past 3 weeks I was constantly having my idea of creating an ed tech. With each passing week the course taught me something new which can be used to carve the idea even better.
+By the end of 3 weeks I was having a very clear vision of what area of learning I have to target in my ed tech implementation, but again no technical knowledge was there on how to shape up the implementation wire-frame.</description>
+    </item>
+    
+    <item>
+      <title>MIT 11.133x : Implementation and Evaluation of Educational Technology – Week 2 Sum Up</title>
+      <link>https://example.org/2015/08/04/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-2-sum-up/</link>
+      <pubDate>Tue, 04 Aug 2015 17:21:25 +0000</pubDate>
+      
+      <guid>https://example.org/2015/08/04/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-2-sum-up/</guid>
+      <description>Here is it end of week 2 of 11.133x. And we are back with the sum up.
+This week was about many aspects that one should deal with while implementing an education technology, like deciding education technology framework, how to analyse a ed tech, technology buying process etc.
+This week started with TPACK. What is TPACK and why does it matter?
+TPACK is a framework which combines 3 knowledge. These are technological knowledge, content knowledge and pedagogical knowledge.</description>
+    </item>
+    
+    <item>
+      <title>MIT 11.133x : Implementation and Evaluation of Educational Technology – Week 1 Sum Up</title>
+      <link>https://example.org/2015/07/26/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-1-sum-up/</link>
+      <pubDate>Sun, 26 Jul 2015 18:51:48 +0000</pubDate>
+      
+      <guid>https://example.org/2015/07/26/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-1-sum-up/</guid>
+      <description>Here is it. End of week 1 of the course 11.133x.
+This week was a little more focused on educational technology. It covered various vital topics like :
+ 1. Stakeholders in ed tech. 2. Evaluation and assessment. 3. What makes a good ed tech? 4. Future of teaching. 5. Where to start with ed tech? 6. Concept of SAMR.  **Stakeholders in Ed Tech : **
+Stakeholders in ed tech are the ones who are going to be affected by the ed tech the most.</description>
+    </item>
+    
+    <item>
+      <title>MIT 11.133x  : Implementation and Evaluation of Educational Technology - Week 0 Sum Up</title>
+      <link>https://example.org/2015/07/19/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-0-sum-up/</link>
+      <pubDate>Sun, 19 Jul 2015 05:15:22 +0000</pubDate>
+      
+      <guid>https://example.org/2015/07/19/mit-11-133x-implementation-and-evaluation-of-educational-technology-week-0-sum-up/</guid>
+      <description>This week I started with another MOOC by Edx &amp;ldquo;Implementation and Evaluation of Educational Technology&amp;rdquo;. It is a 5 weeks course going from week 0 to week 4.
+So here I will blog about my experiences with the course, each week.
+WEEK 0
+There was not much in the course in week 0. You can guess that by week number.
+Week started with introduction to forums and edx platform and how we are supposed to proceed with the course.</description>
+    </item>
+    
+  </channel>
+</rss>

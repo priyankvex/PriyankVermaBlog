@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>own on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/own/</link>
+    <description>Recent content in own on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Jul 2018 18:17:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/own/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>6 Lessons On Work Ethic I Learned In One Year Of Professional Career</title>
+      <link>https://example.org/2018/07/21/6-lessons-on-work-ethic-i-learned-in-one-year-of-professional-career/</link>
+      <pubDate>Sat, 21 Jul 2018 18:17:06 +0000</pubDate>
+      
+      <guid>https://example.org/2018/07/21/6-lessons-on-work-ethic-i-learned-in-one-year-of-professional-career/</guid>
+      <description>Time flies. Recently I had completed one year as a full-time employee at my current employer **Squad. **A year has passed, and I decided it was time to revisit instances, memories, and experiences and to recollect what I had learned as a professional in this past year.
+It was also a wake-up call to reassess and redirect the ship named professional career to make sure it doesn&amp;rsquo;t get stuck in a whirlpool.</description>
+    </item>
+    
+    <item>
+      <title>Organization Archetypes And The Concept Of Market-Oriented &#34;Solver Teams&#34;</title>
+      <link>https://example.org/2018/05/05/organization-archetypes-and-the-concept-of-market-oriented-solver-teams/</link>
+      <pubDate>Sat, 05 May 2018 15:56:15 +0000</pubDate>
+      
+      <guid>https://example.org/2018/05/05/organization-archetypes-and-the-concept-of-market-oriented-solver-teams/</guid>
+      <description>Organizations which designs systems are constrained to produce designs which are copies of the communication structure of the organization.
+In other words, how we organize our teams has a powerful effect on the software we produce, as well as our resulting architectural and production outcomes.
+Thus, in order to get a fast flow of work from Development to Operations, with high quality, great customer outcomes and fast speed of delivery, we must organize our teams to bring the team structure to our advantage.</description>
+    </item>
+    
+    <item>
+      <title>Devops and The Principle Of Flow</title>
+      <link>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</link>
+      <pubDate>Sun, 29 Apr 2018 17:01:20 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/29/devops-and-the-principle-of-lean/</guid>
+      <description>In the technology value stream, work typically flows from Development to Operations, steps consisting of functional areas between our business and our customers.
+As stated in the lean principles developed by Toyota, we should optimize to get a single-piece fast and smooth flow for our releases.
+We increase flow by:
+ 1. Making work visible, 2. Reducing batch sizes and intervals of work 3. Building in the quality, preventing defects from being passed to downstream work centers.</description>
+    </item>
+    
+    <item>
+      <title>Fail Fast: Hone Your Ability to Recover and Respond Quickly</title>
+      <link>https://example.org/2018/04/14/fail-fast-hone-your-ability-to-recover-and-respond-quickly/</link>
+      <pubDate>Sat, 14 Apr 2018 18:16:23 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/14/fail-fast-hone-your-ability-to-recover-and-respond-quickly/</guid>
+      <description>It&amp;rsquo;s close to midnight and you are about to wrap your day off. Suddenly you get a pager-duty to resolve a critical bug that&amp;rsquo;s failing some of the automated reporting emails.
+You go on to check the logs in the log management tool. This is not the ideal time to find out that logs are not getting streamed to the log management service properly.
+Next, you decide to check the performance metrics of the email API and you realize that you don&amp;rsquo;t know the new monitoring tool well enough to get the right metrics quickly.</description>
+    </item>
+    
+  </channel>
+</rss>

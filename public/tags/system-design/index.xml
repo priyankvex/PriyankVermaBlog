@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>system design on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/system-design/</link>
+    <description>Recent content in system design on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Jan 2019 15:54:40 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/system-design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How To Objectively Reason About Systems: Correctness Properties Of A System</title>
+      <link>https://example.org/2019/01/06/how-to-objectively-reason-about-systems-correctness-properties-of-a-system/</link>
+      <pubDate>Sun, 06 Jan 2019 15:54:40 +0000</pubDate>
+      
+      <guid>https://example.org/2019/01/06/how-to-objectively-reason-about-systems-correctness-properties-of-a-system/</guid>
+      <description>This post is a part of a newsletter that I run: &amp;ldquo;Scamming The Coding Interview&amp;rdquo;, which is geared towards helping people ACE their coding interviews. We send a coding question on weekdays along with a system design article like this one on weekends. Do subscribe If you find this article valuable.
+When a new system is to be designed, the first and the most important step is to generally get the expectations from the system to be crystal clear.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fail Fast: Hone Your Ability to Recover and Respond Quickly &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Fail Fast: Hone Your Ability to Recover and Respond Quickly</h1>
+  <time datetime=2018-04-14T18:16:23Z class="post-date">Sat, Apr 14, 2018</time>
+  
+
+<p><img src="https://priyankvex.files.wordpress.com/2018/04/veteran-turned-software-engineer-e1485204975427.jpg" alt="veteran-turned-software-engineer-e1485204975427" /></p>
+
+<p>It&rsquo;s close to midnight and you are about to wrap your day off. Suddenly you get a pager-duty to resolve a critical bug that&rsquo;s failing some of the automated reporting emails.</p>
+
+<p>You go on to check the logs in the log management tool. This is not the ideal time to find out that logs are not getting streamed to the log management service properly.</p>
+
+<p>Next, you decide to check the performance metrics of the email API and you realize that you don&rsquo;t know the new monitoring tool well enough to get the right metrics quickly.</p>
+
+<p>That sets the theme to why as effective engineers we should fail fast and hone our abilities to recover and respond quickly to failures.</p>
+
+<p><strong>Another post I wrote on failing fast:</strong></p>
+
+<p><a href="https://priyankvex.wordpress.com/2017/07/08/philosophy-behind-the-offensive-programming/">https://priyankvex.wordpress.com/2017/07/08/philosophy-behind-the-offensive-programming/</a></p>
+
+<blockquote>“The best defense against major unexpected failures is to fail often.”</blockquote>
+
+<p>Netflix knows its way around when we talk about creating reliable systems. What engineers at Netflix have done may sound counter-intuitive, but they have made a tool called <a href="https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey">Chaos Monkey</a>. It randomly kills services in their own infrastructure.</p>
+
+<p>It turns out that this strategy helps Netflix to increase site&rsquo;s reliability. Failing services during office hours when all the engineers are available, helps them perform recovery drills effectively and prepares them well enough for actual emergencies.</p>
+
+<h2 id="why-is-it-so-important-to-prepare-for-failures">Why is it so important to prepare for failures?</h2>
+
+<p>As software engineers, our systems are bound to fail at some point and some releases certainly will have some bugs. In such scenarios, learning and investing time in the ability to recover quickly becomes a high leverage activity. It gives you the confidence to move fast with your product having peace of mind that you are ready to tackle problems if they arise.</p>
+
+<p>Few reasons to invest time in recovering from failures:</p>
+
+<pre><code>  1. Prepares the team to write scripts for success via mock drills.
+  2. Surfaces gaping holes in the systems used for monitoring and debugging.
+  3. Helps develop better tools and processes to handle emergencies.
+  4. Helps control stress and panic in the cases of actual failures.
+</code></pre>
+
+<h2 id="write-your-contingency-plans">Write your contingency plans</h2>
+
+<p><img src="https://priyankvex.files.wordpress.com/2018/04/what-if-800x435.png" alt="what-if-800x435" /></p>
+
+<p>Ask yourself &ldquo;what if&rdquo; questions and work-through contingency plans:</p>
+
+<pre><code>  1. What if a critical bug gets deployed with a release?
+  2. What if a user raises an urgent ticket?
+  3. What if my message broker goes down?
+  4. What if my systems face a spike in usage?
+</code></pre>
+
+<p>This can be applied to even more aspects of software engineering:</p>
+
+<pre><code>  1. What if the due date for a feature gets preponed?
+  2. What if a critical team member goes sick?
+  3. What if there is a dilemma in the product plan and prioritization?
+</code></pre>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>No matter how careful we are and what we are working on, things will go wrong some of the time.</p>
+
+<p>The better our tools and processes for recovering quickly from failures, and the more we practice using them, the higher our confidence and the lower our stress levels will be. This allows us to move forward much more quickly.</p>
+
+<h1 id="that-s-all-folks">That’s all, folks!</h1>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

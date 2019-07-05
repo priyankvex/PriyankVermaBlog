@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iterate on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/iterate/</link>
+    <description>Recent content in iterate on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Mar 2018 07:16:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/iterate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>8 System Design Principles I learned After Doing It Wrong More than 50 Times!</title>
+      <link>https://example.org/2018/03/11/8-system-design-principles-i-learned-after-doing-it-wrong-more-than-50-times/</link>
+      <pubDate>Sun, 11 Mar 2018 07:16:00 +0000</pubDate>
+      
+      <guid>https://example.org/2018/03/11/8-system-design-principles-i-learned-after-doing-it-wrong-more-than-50-times/</guid>
+      <description>At Squad, we strive to build awesome products to solve customer(internal and external) needs. As a product engineer, paramount part of your job is to design and build products. Dig deep into the root cause of the problems, design solutions and implement them as the end product.
+Over the course of my journey so far, here are the 8 system and product design principles that I&amp;rsquo;ve learned from other awesome people at Squad, from feedback and simply doing it not right enough multiple times.</description>
+    </item>
+    
+  </channel>
+</rss>

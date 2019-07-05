@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Why systems fail and what can be done about it? &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Why systems fail and what can be done about it?</h1>
+  <time datetime=2018-12-22T15:49:35Z class="post-date">Sat, Dec 22, 2018</time>
+  
+
+<p><img src="https://priyankvex.files.wordpress.com/2018/12/69a12-stag-625B15D.jpg" alt="" /></p>
+
+<p>A recent team meeting at <strong><a href="https://www.squadvoice.co">Squad</a></strong> touched the topic of <strong>&ldquo;system robustness&rdquo;</strong>. Clients and business operations want their systems to work, which is a very reasonable expectation. That&rsquo;s what we engineers are paid for after all.</p>
+
+<p>Everybody gave their input over what a <strong><em>robust system</em></strong> means to them. The responses made two points very clear:<br />
+1. There is an understanding gap in differentiating, robustness and availability of the system.<br />
+2. People don&rsquo;t take the business domain into account when considering robustness and availability of the system.</p>
+
+<p>Out of all the responses, one response caught my attention. It was,</p>
+
+<pre><code>&quot;System should do, what it is expected to do&quot;&lt;br&gt;
+</code></pre>
+
+<p>This sparked my interest in the topic and made me research and explore <strong><em>why systems fail and what can we do about it</em></strong>?</p>
+
+<h2 id="what-are-system-failures"><strong>What are system failures?</strong></h2>
+
+<p>In simple language, a system failure occurs when it fails to do, what it was expected to do.</p>
+
+<p>System failures are related to two properties of the system, &ldquo;Availability&rdquo; and &ldquo;Reliability (Robustness)&rdquo;.</p>
+
+<p>Reliability and availability are different: <strong>Availability</strong> is doing the right thing within the specified response time. <strong>Reliability</strong> is not doing the wrong thing.</p>
+
+<p>So whenever a system fault occurs, we either compromise on the availability (system didn&rsquo;t respond in the specified time) or robustness (system didn&rsquo;t do the correct thing).</p>
+
+<p>The domain that the system is deployed to serve dictates how much availability and robustness is required.<br />
+Numbers like <strong>&ldquo;99% up-time&rdquo;</strong> are often misleading.</p>
+
+<p>Availability of 99% means that the system can be <strong>down for 1.7 hours</strong> in any given week. How does this sound for a heart rate monitoring system in an ICU?<br />
+Reliability of 99% means, 1 request can fail in every 100 requests. What if that 1 request is an update to a customers CRM that represented a deal size of 100000$ dollars?</p>
+
+<p>This shows that there must be a strong relationship between the domain in which the system is deployed and the system failures that we can afford.</p>
+
+<h2 id="how-to-design-systems-that-are-robust-and-available"><strong>How to design systems that are robust and available?</strong></h2>
+
+<p>Hardware failures also contribute to system failures but with managed cloud services, the mean time between failures is in decades, most of the system failures occur because of software faults.</p>
+
+<p><strong>Fault-tolerant execution</strong> of the software is the key in designing systems that are robust and available.</p>
+
+<p>Though I&rsquo;m by no means an expert in this field, but few points that I have read and experienced may help in designing a more fault-tolerant software.</p>
+
+<p><strong>1.</strong> <strong>Software modularity through processes and messages:</strong></p>
+
+<p>A key to making fault-tolerant software is to hierarchically decompose the software into modules, and modules into components. Each component is a unit of failure.<br />
+A failure in a component should not be propagated to the other parts of the software.</p>
+
+<p>A design possibility is to use <strong><em>messaging</em></strong> to make components talk to each other via Kafka etc. These messages can be replayed if they are not successfully processed by the component.</p>
+
+<p><strong>2. Design modules to be</strong> <strong>fail-fast and sandbox faults:</strong></p>
+
+<p>This relates to the idea of  &ldquo;<strong><a href="https://priyankvex.wordpress.com/2017/07/08/philosophy-behind-the-offensive-programming/">offensive programming</a></strong>&rdquo;.<br />
+The modules and the components should be designed to fail-fast. Either they should function correctly or it should detect a fault and raise the signal.</p>
+
+<p>The key idea here is to keep the fault detection latency low.<br />
+If a component detects a fault early, they faulty state is not shared with other components via messages etc and thus <strong>faults are sandboxed</strong>.</p>
+
+<p><strong>3. Do effective checkpointing and make actions easy to retry:</strong></p>
+
+<p>There is a hypothesis called as &ldquo;<strong><em><a href="https://en.wikipedia.org/wiki/Heisenbug">Heisenbug</a></em></strong>&rdquo;. It basically means that the fault-tolerance of the systems can be increased by simply retrying them one more time.</p>
+
+<p>Imagine a software action failed because of a rare race condition occurred or some assertion failed or out of memory error. This can also be extended to cases when a request to some external service failed because their server was busy.<br />
+In such cases, the system can recover from the fault by simply retrying the action.<br />
+Making software easy to retry helps deals with such &ldquo;hesienbug&rdquo; or and &ldquo;<a href="https://en.wikipedia.org/wiki/Single_event_upset">single event upsets</a>&rdquo;.</p>
+
+<p>Effective checkpointing helps in making the actions not to be retried with &ldquo;amnesia&rdquo;.<br />
+For example, if an action consists of two network calls and one of them failed, when the action is re-tried, we&rsquo;ll want the successful network request to not be repeated and be successfully checkpointed.</p>
+
+<p><strong>4. Use transactions to maintain data integrity:</strong></p>
+
+<p>Transactions help to keep the system state stored in the database in a consistent state.<br />
+Though transactions don&rsquo;t directly contribute towards system&rsquo;s availability or robustness, as a software fault can still occur from within a transaction and sometimes even due to a transaction.<br />
+But they do know how to **UNDO **the changes in the state if a fault occurs.</p>
+
+<p>One more practical thing to do is to try coupling a DB write and a network call in a single transaction and this violates point 1, that&rsquo;s to keep the faults at the component level.</p>
+
+<h2 id="conclusion"><strong>Conclusion</strong></h2>
+
+<p>Software faults do occur and no amount of testing and QA can prevent software bugs in production environments.<br />
+Following certain system designing techniques and proper understanding of the &ldquo;availability&rdquo; and  &ldquo;robustness&rdquo; guarantees can help us create software that is highly available and fault-tolerant and always <strong>seem &ldquo;to do what it is expected to do&rdquo;</strong>.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

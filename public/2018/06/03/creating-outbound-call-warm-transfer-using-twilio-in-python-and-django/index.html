@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Creating Outbound Call Warm Transfer Using Twilio In Python and Django &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Creating Outbound Call Warm Transfer Using Twilio In Python and Django</h1>
+  <time datetime=2018-06-03T13:14:07Z class="post-date">Sun, Jun 3, 2018</time>
+  
+
+<p><img src="https://priyankvex.files.wordpress.com/2018/06/twilio-730x365.jpg" alt="twilio-730x365" /></p>
+
+<p>Have you ever been connected to a call where it was transferred to a third person for further assistance? Well, that&rsquo;s call transferring.</p>
+
+<p>Warm transfer of calls, in contrast to cold transfer, doesn&rsquo;t disconnect the call in between and thus gives the customers a  more seamless experience.</p>
+
+<p>Recently at work, I was building a system to convert regular calls to a warm transfer if needed. And in this post, I&rsquo;ll be sharing what I learned while building the warm transfer system.</p>
+
+<h2 id="outbound-calling-and-warm-transfer">Outbound calling and warm transfer</h2>
+
+<p>An outbound call is a call initiated by a call center agent to the customer. Warm transfer in the case of an outbound call means, a transfer to the second agent while the first agent is also on the call and can drop off later after introducing the customer to the new agent.</p>
+
+<p>For the rest of the post, we&rsquo;ll be referring the parties as:</p>
+
+<pre><code>  1. The First Agent (Leg 1 of the call)
+  2. The Customer (Leg 2 of the call)
+  3. The Second Agent (Leg 3 of the call, warm transferred to this agent)
+</code></pre>
+
+<p>We&rsquo;ll be using <a href="https://www.twilio.com/">Twilio</a> to build our warm transfer system.</p>
+
+<h2 id="overview-of-the-system">Overview of the system</h2>
+
+<p>The system mainly follows the workflow given below:</p>
+
+<pre><code>  1. A call is created to the first agent (leg 1).
+  2. Once the first agent is connected, call to the customer is initiated (leg 2).
+  3. When the customer picks the call, the agent and the customer are connected by a regular call.
+  4. The agent triggers the warm transfer.
+  5. The customer's leg is updated to be in a new conference call.
+  6. The first agent also joins the same conference call (Negligible delay).
+  7. Now the first agent and the customer are on a conference call.
+  8. The second agent is connected to the conference directly (leg 3).
+  9. The call is warm transferred to the second agent.
+</code></pre>
+
+<p>Connecting the customer and the first agent by a regular call was done both to retrofit the existing system that supported only regular calls and also not all calls will be needing warm transfers.</p>
+
+<h2 id="connecting-the-first-agent-and-the-customer">Connecting the first agent and the customer</h2>
+
+<p>First, we&rsquo;ll connect the first agent and then the customer. Note that customer is connected in the second leg making it an outbound call.</p>
+
+<p><a href="https://gist.github.com/priyankvex/11c391ff0a594a9824aa3ff4e144dfd3">https://gist.github.com/priyankvex/11c391ff0a594a9824aa3ff4e144dfd3</a></p>
+
+<p>&lsquo;twiml_second_leg_url&rsquo; is the URL that Twilio will hit to get the TwiML once the first agent picks the call.</p>
+
+<p>We want our URL to return a TwiML Dial verb to connect the second leg to the customer.</p>
+
+<p><a href="https://gist.github.com/priyankvex/91831d714b4d8bb6e9c06344462aeaf2">https://gist.github.com/priyankvex/91831d714b4d8bb6e9c06344462aeaf2</a></p>
+
+<p>Ideally, we would want our TwiML views to be stateless. Thus all the parameters needed by these views are passed as query parameters.</p>
+
+<p>Note the action URL. Action URL is the URL Twilio will hit when the first leg is disconnected.</p>
+
+<p>We&rsquo;ll use this action URL callback to connect the first agent to the conference call.</p>
+
+<p>At this point, the first agent and the customer are in a regular call.</p>
+
+<p>Next, we&rsquo;ll start the process of warm transfer.</p>
+
+<h2 id="triggering-warm-transfer">Triggering warm transfer</h2>
+
+<p>The process of warm transfer looks like following:</p>
+
+<pre><code>  1. We move the customer the conference.
+  2. We move the first agent to the same conference. (negligible delay for humans to perceive).
+  3. We add the second agent as the participant to this conference.
+</code></pre>
+
+<p><strong>1. Updating the customer leg to be in the conference</strong></p>
+
+<p><a href="https://gist.github.com/priyankvex/9b56dc9327ac95fb2866b7312bd85710">https://gist.github.com/priyankvex/9b56dc9327ac95fb2866b7312bd85710</a></p>
+
+<p>We did the following:</p>
+
+<pre><code>  1. Created a URL that the Twilio will hit to get the updated TwiML.
+  2. Updated the URL for the customer's leg by its call sid.
+</code></pre>
+
+<p>As soon as we update the URL, Twilio will hit the TwiMLDialConferenceView written below and will put the customer&rsquo;s leg in the conference.</p>
+
+<p><a href="https://gist.github.com/priyankvex/30fa20b8c69986f632edba78e6ebc1e0">https://gist.github.com/priyankvex/30fa20b8c69986f632edba78e6ebc1e0</a></p>
+
+<p><strong>2. Putting the first agent&rsquo;s leg in the conference.</strong></p>
+
+<p>Remember we gave an action URL (&ldquo;first_leg_disconnected_url&rdquo;) for the first agent&rsquo;s leg when dialing the customer&rsquo;s leg. This is where we&rsquo;ll leverage it to put this leg into the same conference as the customer.</p>
+
+<p><a href="https://gist.github.com/priyankvex/375ebdc5ae886929cd62ebbf0ec43285">https://gist.github.com/priyankvex/375ebdc5ae886929cd62ebbf0ec43285</a></p>
+
+<p>Twilio will hit this view when the first leg gets disconnected because we&rsquo;ve moved the second leg of the agent to the conference call.</p>
+
+<p>As we can see, we are returning TwiML to put this leg also on the conference call.</p>
+
+<p>For the cases when we don&rsquo;t want the first leg to go into the conference upon disconnect, we can simply return TwiML HangUp verb to end the call.</p>
+
+<p>So, at this point, the first agent and the customer are on a conference call.</p>
+
+<p>Now, we&rsquo;ll take the final step towards warm transferring the call, connect the second agent to this conference call.</p>
+
+<p><strong>3. Connecting the second agent to the conference call</strong></p>
+
+<p><a href="https://gist.github.com/priyankvex/e87cc0ab4f68e3b1f0fc7efd42e667f4">https://gist.github.com/priyankvex/e87cc0ab4f68e3b1f0fc7efd42e667f4</a></p>
+
+<p>As we can see, to connect the second agent on the conference call we use the conferences API of the Twilio python client.</p>
+
+<p>With early media set to true, we are able to listen live call status of the second agent on the conference call like ringing, busy or answered.</p>
+
+<p><strong>4. Bonus step</strong></p>
+
+<p>Treat yourself to a chocolate pudding! We &rsquo;ve implemented a warm transfer system using Twilio, Python, and Django!</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Outbound calls are an important factor in inside sales. Creating a seamless warm transfer can help the businesses drive conversions by connecting the customer to the right person at the right time.</p>
+
+<p>In this post, we implemented an outbound call warm transfer system using Twilio, Python, and Django.</p>
+
+<h2 id="references">References</h2>
+
+<ol>
+<li><p><a href="https://www.twilio.com/docs/voice/tutorials/warm-transfer">https://www.twilio.com/docs/voice/tutorials/warm-transfer</a></p></li>
+
+<li><p><a href="https://www.twilio.com/docs/voice/twiml/conference">https://www.twilio.com/docs/voice/twiml/conference</a></p></li>
+</ol>
+
+<h1 id="that-s-all-folks">That’s all, folks!</h1>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

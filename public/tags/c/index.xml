@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/c/</link>
+    <description>Recent content in c on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Aug 2017 08:21:28 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Clean Code Chapter 1&amp;2: Clean Code &amp; Meaningful names</title>
+      <link>https://example.org/2017/08/05/clean-code-chapter-12-clean-code-meaningful-names/</link>
+      <pubDate>Sat, 05 Aug 2017 08:21:28 +0000</pubDate>
+      
+      <guid>https://example.org/2017/08/05/clean-code-chapter-12-clean-code-meaningful-names/</guid>
+      <description>I have started reading the book _Clean Code by Robert C. Martin, _which is considered to be a industry standard for writing maintainable and elegant code.
+Because this book is such a heavy read, and each chapter is full of content and a knowledge bank in itself, for personal reference I&amp;rsquo;ve decided to summarise each chapter in a set of blog posts.
+Chapter 1 : Clean Code This was more like chapter 0.</description>
+    </item>
+    
+    <item>
+      <title>Starting c/c&#43;&#43; programming in Linux.</title>
+      <link>https://example.org/2014/03/11/starting-cc-programming-in-linux/</link>
+      <pubDate>Tue, 11 Mar 2014 19:04:44 +0000</pubDate>
+      
+      <guid>https://example.org/2014/03/11/starting-cc-programming-in-linux/</guid>
+      <description>So, guys this post is just a kick off to my blog.
+This post is about coding in c or c++ in Linux . So, if you are a beginner looking to get your hand on coding in c or c++ in Linux, this will be of great help.
+STEPS:
+1.You can use gedit or i recommend you download Sublime Text for Linux.
+ Select your language as c/c++ and code and save the file.</description>
+    </item>
+    
+  </channel>
+</rss>

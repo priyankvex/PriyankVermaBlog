@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IDE on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/ide/</link>
+    <description>Recent content in IDE on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Jul 2018 18:17:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/ide/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>6 Lessons On Work Ethic I Learned In One Year Of Professional Career</title>
+      <link>https://example.org/2018/07/21/6-lessons-on-work-ethic-i-learned-in-one-year-of-professional-career/</link>
+      <pubDate>Sat, 21 Jul 2018 18:17:06 +0000</pubDate>
+      
+      <guid>https://example.org/2018/07/21/6-lessons-on-work-ethic-i-learned-in-one-year-of-professional-career/</guid>
+      <description>Time flies. Recently I had completed one year as a full-time employee at my current employer **Squad. **A year has passed, and I decided it was time to revisit instances, memories, and experiences and to recollect what I had learned as a professional in this past year.
+It was also a wake-up call to reassess and redirect the ship named professional career to make sure it doesn&amp;rsquo;t get stuck in a whirlpool.</description>
+    </item>
+    
+    <item>
+      <title>7 Tips On Making Your Engineering Workflow Faster</title>
+      <link>https://example.org/2018/04/23/7-tips-on-making-your-engineering-workflow-faster/</link>
+      <pubDate>Sun, 22 Apr 2018 19:55:28 +0000</pubDate>
+      
+      <guid>https://example.org/2018/04/23/7-tips-on-making-your-engineering-workflow-faster/</guid>
+      <description>One of the most important thing that I like about pair programming with other awesome engineers is you get to see their workflows. How they get things done? How they get find and make their way around tools, terminal, and editors?
+After witnessing and getting awestruck by many such experiences I realized that having an effective workflow can increase your day to productivity many folds.
+The next step was to take action, and while doing so, I have compiled few tips to make your engineering flow faster too.</description>
+    </item>
+    
+    <item>
+      <title>5 Coolest features of Android Studio</title>
+      <link>https://example.org/2015/01/26/5-coolest-features-of-android-studio/</link>
+      <pubDate>Mon, 26 Jan 2015 20:24:30 +0000</pubDate>
+      
+      <guid>https://example.org/2015/01/26/5-coolest-features-of-android-studio/</guid>
+      <description>Android Studio is out and stable now. It is always fun to try new tools. Right?
+So far it has been around 2 months since I have been using Android Studio. And I guess it is the best time to select my personal choice of 5 coolest features of it.
+If you want some technical or geeky feature list RTFM! This post is not meant for that.
+1. Code preview scrolling</description>
+    </item>
+    
+  </channel>
+</rss>

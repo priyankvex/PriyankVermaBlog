@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>messaging on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/messaging/</link>
+    <description>Recent content in messaging on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Sep 2015 19:17:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/messaging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Making GCM client in Android and Application server in Ruby on Rails</title>
+      <link>https://example.org/2015/09/11/making-gcm-client-in-android-and-application-server-in-ruby-on-rails/</link>
+      <pubDate>Fri, 11 Sep 2015 19:17:16 +0000</pubDate>
+      
+      <guid>https://example.org/2015/09/11/making-gcm-client-in-android-and-application-server-in-ruby-on-rails/</guid>
+      <description>It is always fun to play with new APIs and tools. GCM is not something I was getting my hands on for the first time but it changed completely since last time I did a project using this.
+But the good news is it has changed for good. New service classes makes it easier to write GCM clients for Android, GCM default configuration makes writing test servers and apps to play with very less tedious.</description>
+    </item>
+    
+  </channel>
+</rss>

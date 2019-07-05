@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>paint on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/paint/</link>
+    <description>Recent content in paint on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Sep 2015 10:14:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/paint/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Paint App in Android</title>
+      <link>https://example.org/2015/09/06/paint-app-in-android/</link>
+      <pubDate>Sun, 06 Sep 2015 10:14:04 +0000</pubDate>
+      
+      <guid>https://example.org/2015/09/06/paint-app-in-android/</guid>
+      <description>Recently I was learning about Canvas and Custom views in Android and to put the theory in practice I made a pretty simple **Paint App. **
+Source code of the app can be found https://github.com/priyankvex/Paint-App-Android.
+[caption id=&amp;ldquo;attachment_159&amp;rdquo; align=&amp;ldquo;aligncenter&amp;rdquo; width=&amp;ldquo;480&amp;rdquo;] Screenshot of the app[/caption]
+The App is pretty simple with features 1. Create Drawings (Obvious one :P). 2. Select different brush sizes. 3. Eraser with different sizes. 4. Color pallet. 5. Save drawings in Gallery.</description>
+    </item>
+    
+  </channel>
+</rss>

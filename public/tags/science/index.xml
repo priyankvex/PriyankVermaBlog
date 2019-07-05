@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>science on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/science/</link>
+    <description>Recent content in science on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Jan 2017 18:43:36 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning How To Learn : Course Experience</title>
+      <link>https://example.org/2017/01/06/learning-how-to-learn-course-experience/</link>
+      <pubDate>Thu, 05 Jan 2017 18:43:36 +0000</pubDate>
+      
+      <guid>https://example.org/2017/01/06/learning-how-to-learn-course-experience/</guid>
+      <description>The human brain has 100 billion neurons, each neuron connected to 10 thousand other neurons. Sitting on your shoulders is the most complicated object in the known universe.
+What is learning? Well basically, forming and consolidation neural patterns.
+Recently I took the course “Learning How to Learn” on Coursera. I really wanted to figure out the best way to enhance my learning. And this course has been really helpful. It provides you with the right tools and tips to construct your own learning schedule.</description>
+    </item>
+    
+    <item>
+      <title>10 Things I want to do before I graduate.</title>
+      <link>https://example.org/2014/10/01/10-things-i-want-to-do-before-i-graduate/</link>
+      <pubDate>Wed, 01 Oct 2014 18:21:20 +0000</pubDate>
+      
+      <guid>https://example.org/2014/10/01/10-things-i-want-to-do-before-i-graduate/</guid>
+      <description>I am almost half an engineer by this time. Two and a half year and I will be a graduate. Sounds like fun. So I guess this is the best time to reveal 10 things I want to do before I die . Oh! sorry, before I graduate.
+1. Google Summer Of Code Okay. First one should not be a surprise for computer students. Gsoc is like a dream for almost every computer engineering student.</description>
+    </item>
+    
+  </channel>
+</rss>

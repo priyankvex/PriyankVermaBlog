@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Practical Problem Solving Framework: Inspired By The Toyota Way &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Practical Problem Solving Framework: Inspired By The Toyota Way</h1>
+  <time datetime=2018-03-25T11:32:12Z class="post-date">Sun, Mar 25, 2018</time>
+  
+
+<p><img src="https://priyankvex.files.wordpress.com/2018/03/toyota-7-step-pratical-problem-solving-process.png" alt="toyota-7-step-pratical-problem-solving-process" /></p>
+
+<p>We all will agree to a certain point that having a system/process for anything reduces chances of errors.</p>
+
+<p>As an engineer or someone people look forward to propose solutions to problems it&rsquo;s beneficial to have a framework in place to solve problems effectively.</p>
+
+<p>Recently I was reading _**The Toyota Way, **_and it suggested a framework to <strong>_Practical Problem Solving. _</strong>It almost felt trivial that this sort of framework would be invaluable to software engineers too (in fact for everyone).</p>
+
+<p>When confronted with a problem, first we want to make it crystal clear and get a grasp of the real point of cause. That&rsquo;s followed by a series of 5 WHYs? to investigate the root cause. And finally countermeasures, evaluations, and countermeasures.</p>
+
+<h2 id="1-initial-problem-perception">1. Initial Problem Perception</h2>
+
+<p>Large, vague and complicated problem is presented. The first step is to perceive all the information available at this point information of time.</p>
+
+<p>Ex. &ldquo;Hey! Metric X is showing incorrect value&rdquo;</p>
+
+<p>This doesn&rsquo;t show the actual problem, but just a perception of how some internal user saw it.</p>
+
+<h2 id="2-clarify-the-problem">2. Clarify The Problem</h2>
+
+<p>Next step is to clarify the problem to scope it down. Go and see the problem yourself. Analyse it and get a clear understanding.</p>
+
+<p>As you are seeing the problem first hand, we want to gather as much information as possible.</p>
+
+<p>Ex. So the entire analytics data was actually not consistent.</p>
+
+<h2 id="3-locate-point-of-cause">3. Locate Point Of Cause</h2>
+
+<p>Next step is to dig a little deeper and try finding the point fo cause.</p>
+
+<p>Where is the problem observed? Where is the likely cause? This will lead us to the vicinity of the root cause, which we find in step 4.</p>
+
+<p>Ex. Analytics system is working correctly, just that it sometimes doesn&rsquo;t get updated every 5 minutes like it&rsquo;s supposed to.</p>
+
+<p>Here we rule out other possible causes, like a bug in the code or wrong data was tracked in the first place.</p>
+
+<h2 id="4-ask-5-whys-investigation-of-the-root-cause">4. Ask, 5 WHYs? Investigation of  the root cause</h2>
+
+<p>Here from the direct cause, we expose and go deep to the root cause of the problem by asking WHY five times.</p>
+
+<p>Ex.</p>
+
+<ol>
+<li><p>1st why - Why was data inconsistent: Because analytics didn&rsquo;t get updated on time.</p></li>
+
+<li><p>2nd Why - Why analytics were not updated on time - Because scheduled ETL jobs didn&rsquo;t run on time.</p></li>
+
+<li><p>3rd Why - Why the schedule jobs didn&rsquo;t run on time - Because CPU usage was 100%</p></li>
+
+<li><p>4th Why - Why CPU reached 100% - Because server instance size was not enough to handle increased number jobs.</p></li>
+
+<li><p>5th Why - Why server size was not enough to handle the spike in usage -  Because our auto-scaling is slow.</p></li>
+</ol>
+
+<p>By asking a series of 5 whys, we can generally get to the root cause of the problem and fix it there instead of just duct-taping it and be waiting for it to rise again.</p>
+
+<h2 id="5-countermeasures">5. Countermeasures</h2>
+
+<p>This step is fixing the root cause of the problem so that this doesn&rsquo;t come up again.</p>
+
+<p>Ex. Moved to a more sophisticated auto-scaler to manage spikes in usages and setting up alerts to monitor the performance.</p>
+
+<h2 id="6-evaluate">6. Evaluate</h2>
+
+<p>After the countermeasure have been executed, it&rsquo;s important to evaluate the effect post that. Was the problem solved?</p>
+
+<p>Ex. &ldquo;Now analytics are always in sync and even if they miss getting updated, we get an alert to know it beforehand and take action.&rdquo;</p>
+
+<h2 id="7-standardize">7. Standardize</h2>
+
+<p>This resonates with another Toyota principle of_** jidoka**, _meaning building in the quality.</p>
+
+<p>How can we standardize the countermeasures such that similar problems are not faced again? How can we propagate our learnings across the organization?</p>
+
+<p>Ex. &ldquo;Document and standardize the process that for all our instances and jobs proper alerts must be in place so that we know when they are malfunctioning&rdquo;</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>This was my take on how we can learn from a cross-discipline organization like Toyota on how to have a process and framework in place to solve problems effectively.</p>
+
+<p>Afterall, problem-solving is supposed to be fun and having a proper framework in place, helps us keep it that way!</p>
+
+<h1 id="that-s-all-folks">That’s all, folks!</h1>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IIMX on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/iimx/</link>
+    <description>Recent content in IIMX on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Jul 2016 09:57:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/iimx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IIMBx: EP101x DO Your Venture : Course Experience on edX</title>
+      <link>https://example.org/2016/07/26/iimbx-ep101x-do-your-venture-course-experience-on-edx/</link>
+      <pubDate>Tue, 26 Jul 2016 09:57:18 +0000</pubDate>
+      
+      <guid>https://example.org/2016/07/26/iimbx-ep101x-do-your-venture-course-experience-on-edx/</guid>
+      <description>The best way to win is to show grit and bid on your strengths and intuitions. I have been trying to start my own company now for quite a some time. This course came into my mail box by edX, title looked captivating and thus I decided to take it.
+It was a light course. Not much effort needed other that just watching the videos and doing some assignments.
+The course was focused on making people get off with their venture from the idea phase to execution phase.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MIT on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/mit/</link>
+    <description>Recent content in MIT on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Sep 2014 03:09:50 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/mit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>6.00.1x: Introduction to Computer Science and Programming Using Python : The Experience</title>
+      <link>https://example.org/2014/09/20/6-00-1x-introduction-to-computer-science-and-programming-using-python-the-experience/</link>
+      <pubDate>Sat, 20 Sep 2014 03:09:50 +0000</pubDate>
+      
+      <guid>https://example.org/2014/09/20/6-00-1x-introduction-to-computer-science-and-programming-using-python-the-experience/</guid>
+      <description>Hi, guys. I am a very active participant of MOOC. In my previous post I shared my experience with LFS101x : Introduction to linux .And this time I am back with a new course.
+It was summer of 2014, I was having my semester break. And 6.00.1x was on my enrollment list on edx. I was really excited to get started with it.
+As this course says, it is meant for people with little to no programming experience, I was there having some programming experience but quiet a novice to python.</description>
+    </item>
+    
+  </channel>
+</rss>

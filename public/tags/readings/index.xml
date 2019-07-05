@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Readings on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/readings/</link>
+    <description>Recent content in Readings on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Mar 2016 21:06:43 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/readings/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Lean Startup : Reading Experience</title>
+      <link>https://example.org/2016/03/28/the-lean-startup-reading-experience/</link>
+      <pubDate>Mon, 28 Mar 2016 21:06:43 +0000</pubDate>
+      
+      <guid>https://example.org/2016/03/28/the-lean-startup-reading-experience/</guid>
+      <description>My 3rd book of the year was The Lean Startup by Eric Ries. I first got to know about the existence of this book during a keynote video of Gary Vaynerchuk where it was up for display. Finally got the time to read it.
+The book focuses on how the lean manufacturing using in Toyota can be used in startups as well. And it makes sense! The case studies to new terms defined all help you shape your mind to run your startup in a lean manner.</description>
+    </item>
+    
+    <item>
+      <title>Business in Boxers : 1 Month Into Running a StartUp</title>
+      <link>https://example.org/2016/03/22/business-in-boxers-1-month-into-running-a-startup/</link>
+      <pubDate>Tue, 22 Mar 2016 20:49:58 +0000</pubDate>
+      
+      <guid>https://example.org/2016/03/22/business-in-boxers-1-month-into-running-a-startup/</guid>
+      <description>**Why the Series? **
+(Inspired by book : Business In Blue Jeans)
+Hi! This is Priyank. This series is about me pen downing my start-up ride. Don&amp;rsquo;t know if it&amp;rsquo;s fast or slow, all I really know is I&amp;rsquo;m gonna enjoy the ride.
+Why the name?
+Boxers is what you&amp;rsquo;ll find me almost every time in and business is what&amp;rsquo;s always in my mind and thus the name &amp;ldquo;Business In Boxers&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Losing My Virginity By Richard Branson -  Reading Experience</title>
+      <link>https://example.org/2016/01/19/losing-my-virginity-by-richard-branson-reading-experience/</link>
+      <pubDate>Tue, 19 Jan 2016 17:10:37 +0000</pubDate>
+      
+      <guid>https://example.org/2016/01/19/losing-my-virginity-by-richard-branson-reading-experience/</guid>
+      <description>**Oh, screw it, let&#39;s do it.** That&amp;rsquo;s the philosophy of Richard Branson that has allowed him to start ventures in markets that no one dared to enter and even considered ludicrous to try.
+Losing my virginity is the most unusual biography you will ever get to read. It looks like you are reading a biography of not a global entrepreneur but an adventurist.
+This is the story of how Richard Branson started his entrepreneur journey by starting the Student magazine and strolled his way to opening more than 400 companies under the Virgin brand.</description>
+    </item>
+    
+    <item>
+      <title>Outliers: The Story of Success : Reading Review</title>
+      <link>https://example.org/2015/11/04/outliers-the-story-of-success-reading-review/</link>
+      <pubDate>Wed, 04 Nov 2015 17:14:19 +0000</pubDate>
+      
+      <guid>https://example.org/2015/11/04/outliers-the-story-of-success-reading-review/</guid>
+      <description>My 6th book of the year was a handpicked one &amp;ldquo;Outliers: The Story of Success&amp;rdquo;. This book was actually recommended to me by my cousin as a &amp;ldquo;must read&amp;rdquo;. And actually I was amazed how great this book is. It takes your intellectual thinking to a roller coaster ride.
+As the book description says :
+In this stunning new book, Malcolm Gladwell takes us on an intellectual journey through the world of &#34;</description>
+    </item>
+    
+    <item>
+      <title>Rafa  : Reading Experience</title>
+      <link>https://example.org/2015/09/05/rafa-reading-experience/</link>
+      <pubDate>Sat, 05 Sep 2015 13:44:23 +0000</pubDate>
+      
+      <guid>https://example.org/2015/09/05/rafa-reading-experience/</guid>
+      <description>Here it is. 4th book of the year Rafa by Rafael Nadal and John Carlin.
+Being arguably the biggest Rafa fan on this planet this book was in my reading bucket list from a long time. Finally got the opportunity to read this.
+This is great in both sense, it gives you a more closer look into the life of your idol and at the same time shows you what does it take to be a champion?</description>
+    </item>
+    
+    <item>
+      <title>The Passionate Programmer : Reading Experience</title>
+      <link>https://example.org/2015/07/22/the-passionate-programmer-reading-experience/</link>
+      <pubDate>Wed, 22 Jul 2015 17:36:30 +0000</pubDate>
+      
+      <guid>https://example.org/2015/07/22/the-passionate-programmer-reading-experience/</guid>
+      <description>Here we go for the 3rd time. My 3rd book for 2015&amp;rsquo;s 10 book reading challenge is _The Passionate Programmer. _
+I picked this book from pragmatic programmer book shelf. All books listed there are awesome and are a must read. Anyways continuing with this book, it was an awesome reading experience. It was one of those books you wish to never end.
+The author covers many aspects of what constitutes a not good but a great software developing career.</description>
+    </item>
+    
+    <item>
+      <title>The Pragmatic Programmer: From Journeyman to Master :  Reading Experience</title>
+      <link>https://example.org/2015/06/20/the-pragmatic-programmer-from-journeyman-to-master/</link>
+      <pubDate>Sat, 20 Jun 2015 07:47:38 +0000</pubDate>
+      
+      <guid>https://example.org/2015/06/20/the-pragmatic-programmer-from-journeyman-to-master/</guid>
+      <description>The Pragmatic Programmer
+From this day forth, I have decided to develop my love for reading. I have made a reading goal of minimum 10 books a year, including technical and non technical books. Majority of them are going to be technical but I will get my hands to some non technical ones too. I am going to avoid love stories and pure fiction ones.
+Okay, the reason for this much rambling on the net?</description>
+    </item>
+    
+  </channel>
+</rss>

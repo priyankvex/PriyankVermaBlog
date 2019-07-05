@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>swing. calculator on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/swing.-calculator/</link>
+    <description>Recent content in swing. calculator on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 May 2014 17:34:12 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/swing.-calculator/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Basic Calculator using Swing and JAVA(TM).</title>
+      <link>https://example.org/2014/05/22/a-basic-calculator-using-swing-and-javatm/</link>
+      <pubDate>Thu, 22 May 2014 17:34:12 +0000</pubDate>
+      
+      <guid>https://example.org/2014/05/22/a-basic-calculator-using-swing-and-javatm/</guid>
+      <description>Hi,there . This time i would like to share my new work. This a basic four function calculator made using java and Swing. The GUI created is with the help of&amp;hellip;.you guessed it right SWING.
+
+Java simple calculator
+ A four-function calculator with the following functions: Addition – adds two numbers Subtraction – subtracts number two from number one Multiplication – Multiplies two numbers Division – divides number two into number one</description>
+    </item>
+    
+  </channel>
+</rss>

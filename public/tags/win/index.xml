@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>win on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/win/</link>
+    <description>Recent content in win on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Jul 2016 19:20:54 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/win/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Win Friends and Influence People : Reading Experience and Summary</title>
+      <link>https://example.org/2016/07/19/how-to-win-friends-and-influence-people-reading-experience-and-summary/</link>
+      <pubDate>Mon, 18 Jul 2016 19:20:54 +0000</pubDate>
+      
+      <guid>https://example.org/2016/07/19/how-to-win-friends-and-influence-people-reading-experience-and-summary/</guid>
+      <description>_How to win friends and influence people _is an all time classic book. I got to know about this book from the _Goodreads _recommendations and instantly decided to read this one. It starts stating that leadership is 15% technical skills and 85% skill to manage human relations. This sentence alone suffices the need of this book.
+What you can get out of the book?
+ * Gives you new ways to carry on meaningful conversations.</description>
+    </item>
+    
+  </channel>
+</rss>

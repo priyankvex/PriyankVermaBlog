@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vtc on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/vtc/</link>
+    <description>Recent content in vtc on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 May 2014 15:54:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/vtc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>House Of Horrors : A responsive web design</title>
+      <link>https://example.org/2014/05/06/house-of-horrors-a-responsive-web-design/</link>
+      <pubDate>Tue, 06 May 2014 15:54:18 +0000</pubDate>
+      
+      <guid>https://example.org/2014/05/06/house-of-horrors-a-responsive-web-design/</guid>
+      <description>Hi there. This post is to share my experience and work under getting started with &amp;lsquo;Responsive web design&amp;rsquo;. I created a website under the theme of House Of Horrors, and I am not even leaving my desk and posting this right away. Any suggestions are more then welcome!.As it was a project under &amp;lsquo;Responsive Web design&amp;rsquo;, so firstly what i did was, i created 3 wire frames of the website as high resolution, medium resolution and low resolution.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mobile on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/mobile/</link>
+    <description>Recent content in mobile on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Dec 2016 16:31:50 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>5 notes on MVP architecture pattern for Android</title>
+      <link>https://example.org/2016/12/19/5-notes-on-mvp-architecture-pattern-for-android/</link>
+      <pubDate>Mon, 19 Dec 2016 16:31:50 +0000</pubDate>
+      
+      <guid>https://example.org/2016/12/19/5-notes-on-mvp-architecture-pattern-for-android/</guid>
+      <description>Image credits Macoscope  MVP (Model View and Presenter) is an architectural pattern inspired by the popular MVC pattern.
+MVP addresses two main points :
+ 1. Make views as dumb as possible. The dumber the better. 2. Make each layer loosely coupled and easily testable in isolation.  I am using MVP in one of my production project and have used in some dem0 apps. Here are my 5 notes on using MVP for android.</description>
+    </item>
+    
+    <item>
+      <title>How Mobile Devices Can Change the Educational Technology and Education?</title>
+      <link>https://example.org/2015/10/20/how-mobile-devices-can-change-the-educational-technology-and-education/</link>
+      <pubDate>Tue, 20 Oct 2015 18:02:32 +0000</pubDate>
+      
+      <guid>https://example.org/2015/10/20/how-mobile-devices-can-change-the-educational-technology-and-education/</guid>
+      <description>Educational technology is growing rapidly and thus is catching everyone&amp;rsquo;s attention. At the same time mobile devices are part of are lives from a long time now. Students and teachers are increasingly embracing tablets and e-book readers in their personal lives.
+Accessibility of educational technology is one of the biggest barrier that we are facing. Mobile devices are best way to make this problem less serious.
+**Advantages of mobile devices to be used as platform for ed-tech : **</description>
+    </item>
+    
+  </channel>
+</rss>

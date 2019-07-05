@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>summary on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/summary/</link>
+    <description>Recent content in summary on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Mar 2019 15:54:40 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/summary/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Architecting for Scale by Lee Atchison: Reading Experience</title>
+      <link>https://example.org/2019/03/07/architecting-for-scale-by-lee-atchison-reading-experience/</link>
+      <pubDate>Thu, 07 Mar 2019 15:54:40 +0000</pubDate>
+      
+      <guid>https://example.org/2019/03/07/architecting-for-scale-by-lee-atchison-reading-experience/</guid>
+      <description>I recently read the book Architecting for Scale by Lee Atchison. The book contains a high-level overview of the major concepts that revolve around the topic of building highly-available and scalable apps.
+I felt the book to be more suited as a light read for people already familiar with these concepts rather than being an informative book for the new readers.
+The book divided into 5 parts mainly:
+1. Availability</description>
+    </item>
+    
+    <item>
+      <title>Clean Code Chapter 1&amp;2: Clean Code &amp; Meaningful names</title>
+      <link>https://example.org/2017/08/05/clean-code-chapter-12-clean-code-meaningful-names/</link>
+      <pubDate>Sat, 05 Aug 2017 08:21:28 +0000</pubDate>
+      
+      <guid>https://example.org/2017/08/05/clean-code-chapter-12-clean-code-meaningful-names/</guid>
+      <description>I have started reading the book _Clean Code by Robert C. Martin, _which is considered to be a industry standard for writing maintainable and elegant code.
+Because this book is such a heavy read, and each chapter is full of content and a knowledge bank in itself, for personal reference I&amp;rsquo;ve decided to summarise each chapter in a set of blog posts.
+Chapter 1 : Clean Code This was more like chapter 0.</description>
+    </item>
+    
+    <item>
+      <title>The Alchemist : Reading Experience</title>
+      <link>https://example.org/2017/05/22/the-alchemist-reading-experience/</link>
+      <pubDate>Mon, 22 May 2017 18:28:09 +0000</pubDate>
+      
+      <guid>https://example.org/2017/05/22/the-alchemist-reading-experience/</guid>
+      <description>Reading **The Alchemist **was like getting up at dawn and seeing the sun rise, while the whole world slept.
+The Alchemist doesn&amp;rsquo;t teach you anything, but you can learn a million things from it.
+&amp;ldquo;Lead will play its role until the world has no further need for the lead, and then the lead will have to turn itself into gold.&amp;rdquo;
+My 6th book of the year was **The Alchemist **by Paulo Coelho.</description>
+    </item>
+    
+    <item>
+      <title>Mastery By Robert Greene : Reading Experience</title>
+      <link>https://example.org/2017/04/07/mastery-by-robert-greene-reading-experience/</link>
+      <pubDate>Thu, 06 Apr 2017 20:39:38 +0000</pubDate>
+      
+      <guid>https://example.org/2017/04/07/mastery-by-robert-greene-reading-experience/</guid>
+      <description>“The problem with all students, he said, is that they inevitably stop somewhere. They hear an idea and they hold on to it until it becomes dead; they want to flatter themselves that they know the truth. But true Zen never stops, never congeals into such truths. That is why everyone must constantly be pushed to the abyss, starting over and feeling their utter worthlessness as a student. Without suffering and doubts, the mind will come to rest on clichés and stay there, until the spirit dies as well.</description>
+    </item>
+    
+    <item>
+      <title>The Blue Ocean Strategy : How To Create Uncontested Market Space and Make the Competition Irrelevant</title>
+      <link>https://example.org/2017/01/15/the-blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant/</link>
+      <pubDate>Sun, 15 Jan 2017 10:49:59 +0000</pubDate>
+      
+      <guid>https://example.org/2017/01/15/the-blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant/</guid>
+      <description>When Henry Ford made cheap, reliable cars people said, ‘Nah, what’s wrong with a horse?’ That was a huge bet he made, and it worked. The whole idea of _The Blue Ocean Strategy _is to create uncontested market spaces that creates new demands and make the competition irrelevant.
+The book describes _Red Oceans _as known market places that have bloody competition among businesses trying to win customers. Here there is a fixed existing demand of which every company wants a share.</description>
+    </item>
+    
+    <item>
+      <title>Zen and the Art of Motorcycle Maintenance : Reading Experience</title>
+      <link>https://example.org/2016/12/25/zen-and-the-art-of-motorcycle-maintenance-reading-experience/</link>
+      <pubDate>Sun, 25 Dec 2016 11:13:06 +0000</pubDate>
+      
+      <guid>https://example.org/2016/12/25/zen-and-the-art-of-motorcycle-maintenance-reading-experience/</guid>
+      <description>The Japanese motorcycle maintenance guide says “ Assembly of Japanese bicycle requires great piece of mind”. There is a thing about everything you build, including bikes. If you build it with non-serene mind, then you build your problems into it.
+The book takes you on a cross country bike journey that will teach you mind opening lessons that leave lasting impressions on your mind. Your mind will simple refuse to contract itself to older stage.</description>
+    </item>
+    
+    <item>
+      <title>How to Win Friends and Influence People : Reading Experience and Summary</title>
+      <link>https://example.org/2016/07/19/how-to-win-friends-and-influence-people-reading-experience-and-summary/</link>
+      <pubDate>Mon, 18 Jul 2016 19:20:54 +0000</pubDate>
+      
+      <guid>https://example.org/2016/07/19/how-to-win-friends-and-influence-people-reading-experience-and-summary/</guid>
+      <description>_How to win friends and influence people _is an all time classic book. I got to know about this book from the _Goodreads _recommendations and instantly decided to read this one. It starts stating that leadership is 15% technical skills and 85% skill to manage human relations. This sentence alone suffices the need of this book.
+What you can get out of the book?
+ * Gives you new ways to carry on meaningful conversations.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>glossary on Steam - a minimal theme for Hugo</title>
+    <link>https://example.org/tags/glossary/</link>
+    <description>Recent content in glossary on Steam - a minimal theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Apr 2017 20:39:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/glossary/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mastery By Robert Greene : Reading Experience</title>
+      <link>https://example.org/2017/04/07/mastery-by-robert-greene-reading-experience/</link>
+      <pubDate>Thu, 06 Apr 2017 20:39:38 +0000</pubDate>
+      
+      <guid>https://example.org/2017/04/07/mastery-by-robert-greene-reading-experience/</guid>
+      <description>“The problem with all students, he said, is that they inevitably stop somewhere. They hear an idea and they hold on to it until it becomes dead; they want to flatter themselves that they know the truth. But true Zen never stops, never congeals into such truths. That is why everyone must constantly be pushed to the abyss, starting over and feeling their utter worthlessness as a student. Without suffering and doubts, the mind will come to rest on clichés and stay there, until the spirit dies as well.</description>
+    </item>
+    
+    <item>
+      <title>The Blue Ocean Strategy : How To Create Uncontested Market Space and Make the Competition Irrelevant</title>
+      <link>https://example.org/2017/01/15/the-blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant/</link>
+      <pubDate>Sun, 15 Jan 2017 10:49:59 +0000</pubDate>
+      
+      <guid>https://example.org/2017/01/15/the-blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant/</guid>
+      <description>When Henry Ford made cheap, reliable cars people said, ‘Nah, what’s wrong with a horse?’ That was a huge bet he made, and it worked. The whole idea of _The Blue Ocean Strategy _is to create uncontested market spaces that creates new demands and make the competition irrelevant.
+The book describes _Red Oceans _as known market places that have bloody competition among businesses trying to win customers. Here there is a fixed existing demand of which every company wants a share.</description>
+    </item>
+    
+    <item>
+      <title>How to Win Friends and Influence People : Reading Experience and Summary</title>
+      <link>https://example.org/2016/07/19/how-to-win-friends-and-influence-people-reading-experience-and-summary/</link>
+      <pubDate>Mon, 18 Jul 2016 19:20:54 +0000</pubDate>
+      
+      <guid>https://example.org/2016/07/19/how-to-win-friends-and-influence-people-reading-experience-and-summary/</guid>
+      <description>_How to win friends and influence people _is an all time classic book. I got to know about this book from the _Goodreads _recommendations and instantly decided to read this one. It starts stating that leadership is 15% technical skills and 85% skill to manage human relations. This sentence alone suffices the need of this book.
+What you can get out of the book?
+ * Gives you new ways to carry on meaningful conversations.</description>
+    </item>
+    
+  </channel>
+</rss>

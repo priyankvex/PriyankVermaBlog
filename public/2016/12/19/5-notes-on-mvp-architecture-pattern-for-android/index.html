@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>5 notes on MVP architecture pattern for Android &middot; Steam - a minimal theme for Hugo</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+
+  <div>
+    <div class="intravert-space" id="space-e2130d146072"></div>
+  <script defer src="https://intravert.co/serve/e2130d1460.72.js"></script>
+  </div>
+
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Steam - a minimal theme for Hugo</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>5 notes on MVP architecture pattern for Android</h1>
+  <time datetime=2016-12-19T16:31:50Z class="post-date">Mon, Dec 19, 2016</time>
+  <p><img src="https://cdn-images-1.medium.com/max/800/1*R1x_nwQcYY4GRClC1q2ehA@2x.png" alt="" /></p>
+
+<pre><code>                            Image credits Macoscope
+</code></pre>
+
+<p>MVP (Model View and Presenter) is an architectural pattern inspired by the popular MVC pattern.</p>
+
+<p>MVP addresses two main points :</p>
+
+<pre><code>  1. Make views as dumb as possible. The dumber the better.
+  2. Make each layer loosely coupled and easily testable in isolation.
+</code></pre>
+
+<p>I am using MVP in one of my production project and have used in some dem0 apps. Here are my 5 notes on using MVP for android.</p>
+
+<pre><code>  1. **Package Structure :**
+</code></pre>
+
+<p>Android project contains lots of code and files even for application of medium complexity. Even when not following MVP I have found that arranging the project files in such a way that files that are accessed together are put in same package is more efficient and intuitive than any other approach.</p>
+
+<p>What I prefer doing is create separate package for separate verticals of the app and put all related files like activities, fragments, views, presenters, adapters etc in that package.</p>
+
+<p>ex. packages like add task, view task, list task for a To-Do app.</p>
+
+<ol>
+<li><strong>Libraries that are useful for MVP :</strong></li>
+</ol>
+
+<p>In MVP you want your model and presenter to be independent of the life cycle of view. For this, you can use dependency injector library like Dagger2.</p>
+
+<p>Other than that, using RxJava and reactive programming principles for creating presenter is also becoming increasingly popular.</p>
+
+<p>Libraries you can use for this purpose are : RxAndroid and EventBus.</p>
+
+<ol>
+<li><strong>Managing Remote and local data sources in the Model :</strong></li>
+</ol>
+
+<p>Android apps have to fetch data from the server. At the same time fetched data must be cached to make the app usable offline and increase the speed.</p>
+
+<p>What I prefer doing is to create three model classes :</p>
+
+<ol>
+<li><p>Remote Data Source</p></li>
+
+<li><p>Local Data Source</p></li>
+
+<li><p>Data Repository</p></li>
+</ol>
+
+<p>All presenters talk to Data Repository class. Data repository model contains references to Local and Remote data repository and calls data from either according to situation.</p>
+
+<p>As the name suggests Local Data Source deals with cached data and disk storage whereas Remote Data Source deals with API calls and responses.</p>
+
+<ol>
+<li><strong>User Experience is the top priority :</strong></li>
+</ol>
+
+<p>One thing that we all have to keep in mind that the real test of application is, if it is able to provide user a nice experience.</p>
+
+<p>At the end of the day, user only notices the user experience of the application and not the architecture used. So if you have to make some design sacrifices to make the UX better, do it.</p>
+
+<p>The real test of the machine is the satisfaction it provides to the mind. There is no other bigger test.</p>
+
+<p><strong>5. Testing Advantages :</strong></p>
+
+<p>Main motive behind MVP pattern was to make the testing of layers easy.</p>
+
+<p>Basic idea is to keep the presenter and model android free, so that they can be tested without Android instrumentation by the JVM itself.</p>
+
+<p>Views can then be tested by Android Instrumentation tests.</p>
+
+<p>Mockito and Espresso can come handy for testing purposes.</p>
+
+<p><strong>Conclusion :</strong></p>
+
+<p>MVP, in my opinion is so far the best way to architect your android application project. It simplifies many issues like testing and making views lighter. Combine it it RxJava and dependency injection and you’ve got a nice recipe for android projects.</p>
+
+<p>I am learning more about RxJava and testing frameworks will share my views on that soon.</p>
+
+<p>Thanks.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>
